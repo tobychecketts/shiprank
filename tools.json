@@ -1,0 +1,583 @@
+{
+  "updated": "2026-10-16",
+  "tools": [
+    {
+      "name": "Cursor",
+      "category": "AI code editors",
+      "rank": 1,
+      "url": "https://cursor.com",
+      "bestFor": "Day-to-day AI-assisted coding in a VS Code-style editor",
+      "pricing": "Free tier: Yes · Entry: $8/month (Plus, Grok models only); Premium $30/month",
+      "pros": [
+        "Strong agent mode",
+        "Familiar VS Code UX"
+      ],
+      "cons": [
+        "Usage limits on heavy models"
+      ],
+      "freeTier": "Yes",
+      "entryPrice": "$8/month (Plus, Grok models only); Premium $30/month",
+      "pricingUrl": "https://cursor.com/pricing",
+      "pricingNote": "Plans are now bundled with X/Grok subscription; third-party models billed at API price",
+      "rankReason": "Best all-round agentic editor; deepest agent + cloud agent features",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "GitHub Copilot",
+      "category": "AI code editors",
+      "rank": 2,
+      "url": "https://github.com/features/copilot",
+      "bestFor": "Completions and agents inside your existing IDE",
+      "pricing": "Free tier: Yes · Entry: $10/month (Pro)",
+      "pros": [
+        "Works in many IDEs",
+        "Deep GitHub integration"
+      ],
+      "cons": [
+        "Best features tied to GitHub"
+      ],
+      "freeTier": "Yes",
+      "entryPrice": "$10/month (Pro)",
+      "pricingUrl": "https://github.com/features/copilot/plans",
+      "pricingNote": "Page also lists AI-credit add-on tiers",
+      "rankReason": "Cheapest solid paid tier and works in almost any IDE",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "Windsurf",
+      "category": "AI code editors",
+      "rank": 3,
+      "url": "https://windsurf.com",
+      "bestFor": "Agentic editing with an AI-native editor",
+      "pricing": "Free tier: Yes · Entry: $20/month (Pro)",
+      "pros": [
+        "Agentic flows"
+      ],
+      "cons": [
+        "Smaller ecosystem"
+      ],
+      "freeTier": "Yes",
+      "entryPrice": "$20/month (Pro)",
+      "pricingUrl": "https://windsurf.com/pricing",
+      "pricingNote": "",
+      "rankReason": "Capable agentic editor but smaller ecosystem than the top two",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "Lovable",
+      "category": "App builders",
+      "rank": 1,
+      "url": "https://lovable.dev",
+      "bestFor": "Prompt-to-full-stack web apps for non-coders",
+      "pricing": "Free tier: Yes (5 daily build credits, up to 30/month) · Entry: Unknown – price not shown in fetched page",
+      "pros": [
+        "Very fast to first app",
+        "Supabase integration"
+      ],
+      "cons": [
+        "Less control over code"
+      ],
+      "freeTier": "Yes (5 daily build credits, up to 30/month)",
+      "entryPrice": "Unknown – price not shown in fetched page",
+      "pricingUrl": "https://lovable.dev/pricing",
+      "pricingNote": "Credit-based; unlimited members",
+      "rankReason": "Fastest path from prompt to full-stack app for non-coders",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "Bolt.new",
+      "category": "App builders",
+      "rank": 2,
+      "url": "https://bolt.new",
+      "bestFor": "In-browser full-stack prototypes",
+      "pricing": "Free tier: Yes · Entry: $25/month (Pro)",
+      "pros": [
+        "Runs entirely in browser"
+      ],
+      "cons": [
+        "Token-based usage can add up"
+      ],
+      "freeTier": "Yes",
+      "entryPrice": "$25/month (Pro)",
+      "pricingUrl": "https://bolt.new/pricing",
+      "pricingNote": "Up to 28% off yearly",
+      "rankReason": "Great in-browser full-stack prototyping, slightly less polished output",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "v0",
+      "category": "App builders",
+      "rank": 3,
+      "url": "https://v0.app",
+      "bestFor": "React/Next.js UI generation",
+      "pricing": "Free tier: Yes (7 messages/day) · Entry: $30/user/month (Plus)",
+      "pros": [
+        "High-quality UI output",
+        "Deploys to Vercel"
+      ],
+      "cons": [
+        "Next.js-centric"
+      ],
+      "freeTier": "Yes (7 messages/day)",
+      "entryPrice": "$30/user/month (Plus)",
+      "pricingUrl": "https://v0.app/pricing",
+      "pricingNote": "",
+      "rankReason": "Best UI quality but tied to React/Next.js",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "Replit",
+      "category": "App builders",
+      "rank": 4,
+      "url": "https://replit.com",
+      "bestFor": "Build, host and deploy apps with an agent in one place",
+      "pricing": "Free tier: Yes (Free Mode) · Entry: $20/month (Core; $18 billed annually)",
+      "pros": [
+        "Hosting included"
+      ],
+      "cons": [
+        "Costs scale with agent use"
+      ],
+      "freeTier": "Yes (Free Mode)",
+      "entryPrice": "$20/month (Core; $18 billed annually)",
+      "pricingUrl": "https://replit.com/pricing",
+      "pricingNote": "",
+      "rankReason": "All-in-one build+host, but costs climb with agent use",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "Claude Code",
+      "category": "Coding agents",
+      "rank": 1,
+      "url": "https://claude.com/product/claude-code",
+      "bestFor": "Terminal-based agentic coding on real repos",
+      "pricing": "Free tier: Unknown whether included on Free · Entry: $20/month (Claude Pro; $17/month annually)",
+      "pros": [
+        "Excellent on large codebases"
+      ],
+      "cons": [
+        "Needs paid plan or API credits"
+      ],
+      "freeTier": "Unknown whether included on Free",
+      "entryPrice": "$20/month (Claude Pro; $17/month annually)",
+      "pricingUrl": "https://claude.com/pricing",
+      "pricingNote": "Max plan from $100/month",
+      "rankReason": "Strongest terminal agent on real codebases",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "OpenAI Codex",
+      "category": "Coding agents",
+      "rank": 2,
+      "url": "https://openai.com/codex",
+      "bestFor": "Cloud and CLI coding agent",
+      "pricing": "Free tier: Limited Codex access on ChatGPT Free · Entry: Unknown – Plus price not shown in fetched page",
+      "pros": [
+        "Parallel cloud tasks"
+      ],
+      "cons": [
+        "Plan-dependent limits"
+      ],
+      "freeTier": "Limited Codex access on ChatGPT Free",
+      "entryPrice": "Unknown – Plus price not shown in fetched page",
+      "pricingUrl": "https://chatgpt.com/pricing",
+      "pricingNote": "Expanded on Plus/Pro",
+      "rankReason": "Strong agent with parallel cloud tasks; close second",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "Devin",
+      "category": "Coding agents",
+      "rank": 3,
+      "url": "https://devin.ai",
+      "bestFor": "Autonomous delegated engineering tasks",
+      "pricing": "Free tier: Yes · Entry: $20/month (Pro)",
+      "pros": [
+        "Highly autonomous"
+      ],
+      "cons": [
+        "Pricier for individuals"
+      ],
+      "freeTier": "Yes",
+      "entryPrice": "$20/month (Pro)",
+      "pricingUrl": "https://devin.ai/pricing",
+      "pricingNote": "devin.ai/pricing shows the same plan page as Windsurf (Free/Pro/Max $200)",
+      "rankReason": "Most autonomous option, best for delegated tasks rather than hands-on coding",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "OpenAI API",
+      "category": "LLM APIs",
+      "rank": 1,
+      "url": "https://platform.openai.com",
+      "bestFor": "General-purpose models for your app",
+      "pricing": "Free tier: Unknown · Entry: From $0.05 per 1M input tokens (gpt-5-nano); gpt-6.1-sol $2/$10 per 1M in/out",
+      "pros": [
+        "Broad model range"
+      ],
+      "cons": [
+        "Costs at scale"
+      ],
+      "freeTier": "Unknown",
+      "entryPrice": "From $0.05 per 1M input tokens (gpt-5-nano); gpt-6.1-sol $2/$10 per 1M in/out",
+      "pricingUrl": "https://platform.openai.com/docs/pricing",
+      "pricingNote": "USD, pay-as-you-go",
+      "rankReason": "Widest model range and tooling",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "Anthropic API",
+      "category": "LLM APIs",
+      "rank": 2,
+      "url": "https://www.anthropic.com/api",
+      "bestFor": "Coding and agentic workloads",
+      "pricing": "Free tier: Small free credits for new users · Entry: From $0.10 per 1M input tokens (Haiku 5.5); Sonnet 5 $2/$10 per 1M in/out",
+      "pros": [
+        "Strong tool use"
+      ],
+      "cons": [
+        "Rate limits on new accounts"
+      ],
+      "freeTier": "Small free credits for new users",
+      "entryPrice": "From $0.10 per 1M input tokens (Haiku 5.5); Sonnet 5 $2/$10 per 1M in/out",
+      "pricingUrl": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+      "pricingNote": "USD",
+      "rankReason": "Top choice for coding/agent workloads; ranked just behind OpenAI on breadth",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "Google Gemini API",
+      "category": "LLM APIs",
+      "rank": 3,
+      "url": "https://ai.google.dev",
+      "bestFor": "Long-context and multimodal apps",
+      "pricing": "Free tier: Yes for some models (not all) · Entry: Example paid model: $2/$10 per 1M in/out, rising to $4/$20 from 1 Dec 2026",
+      "pros": [
+        "Generous free tier",
+        "Long context"
+      ],
+      "cons": [
+        "Docs spread across products"
+      ],
+      "freeTier": "Yes for some models (not all)",
+      "entryPrice": "Example paid model: $2/$10 per 1M in/out, rising to $4/$20 from 1 Dec 2026",
+      "pricingUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+      "pricingNote": "Price rise announced for 1 Dec 2026",
+      "rankReason": "Generous free tier and long context",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "OpenRouter",
+      "category": "LLM APIs",
+      "rank": 4,
+      "url": "https://openrouter.ai",
+      "bestFor": "One API key for many models",
+      "pricing": "Free tier: Unknown · Entry: Pay-as-you-go; Standard plan includes $25,000/month of list-price inference with no fees, 5% fee after",
+      "pros": [
+        "Easy model switching"
+      ],
+      "cons": [
+        "Extra layer between you and provider"
+      ],
+      "freeTier": "Unknown",
+      "entryPrice": "Pay-as-you-go; Standard plan includes $25,000/month of list-price inference with no fees, 5% fee after",
+      "pricingUrl": "https://openrouter.ai/pricing",
+      "pricingNote": "",
+      "rankReason": "Best for switching models, but adds a middle layer",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "Figma Make",
+      "category": "Design-to-code",
+      "rank": 1,
+      "url": "https://www.figma.com",
+      "bestFor": "Turning Figma designs into working prototypes",
+      "pricing": "Free tier: Unknown · Entry: $16/month (Professional full seat); Dev seat $12/month",
+      "pros": [
+        "Native to Figma"
+      ],
+      "cons": [
+        "Requires Figma plan"
+      ],
+      "freeTier": "Unknown",
+      "entryPrice": "$16/month (Professional full seat); Dev seat $12/month",
+      "pricingUrl": "https://www.figma.com/pricing",
+      "pricingNote": "Includes AI credits",
+      "rankReason": "Native to where designs already live",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "Builder.io",
+      "category": "Design-to-code",
+      "rank": 2,
+      "url": "https://www.builder.io",
+      "bestFor": "Figma-to-code for existing codebases",
+      "pricing": "Free tier: Yes · Entry: $24/user/month (Pro)",
+      "pros": [
+        "Maps to your components"
+      ],
+      "cons": [
+        "Setup effort"
+      ],
+      "freeTier": "Yes",
+      "entryPrice": "$24/user/month (Pro)",
+      "pricingUrl": "https://www.builder.io/pricing",
+      "pricingNote": "",
+      "rankReason": "Maps designs to your own components, more setup",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "Vercel",
+      "category": "Deployment & backend",
+      "rank": 1,
+      "url": "https://vercel.com",
+      "bestFor": "Deploying frontends and Next.js apps",
+      "pricing": "Free tier: Yes (Hobby) · Entry: $20/month (Pro)",
+      "pros": [
+        "Instant previews"
+      ],
+      "cons": [
+        "Bills can spike with traffic"
+      ],
+      "freeTier": "Yes (Hobby)",
+      "entryPrice": "$20/month (Pro)",
+      "pricingUrl": "https://vercel.com/pricing",
+      "pricingNote": "Usage-based extras",
+      "rankReason": "Smoothest frontend/Next.js deploys with previews",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "Supabase",
+      "category": "Deployment & backend",
+      "rank": 2,
+      "url": "https://supabase.com",
+      "bestFor": "Postgres, auth and storage for vibe-coded apps",
+      "pricing": "Free tier: Yes · Entry: From $25/month (Pro)",
+      "pros": [
+        "Works with Lovable/Bolt"
+      ],
+      "cons": [
+        "Free projects pause when idle"
+      ],
+      "freeTier": "Yes",
+      "entryPrice": "From $25/month (Pro)",
+      "pricingUrl": "https://supabase.com/pricing",
+      "pricingNote": "Additional projects from $10/month",
+      "rankReason": "Default backend for vibe-coded apps (Lovable/Bolt integration)",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "Netlify",
+      "category": "Deployment & backend",
+      "rank": 3,
+      "url": "https://www.netlify.com",
+      "bestFor": "Static sites and serverless functions",
+      "pricing": "Free tier: Yes · Entry: $9/month (Personal); Pro $20/month",
+      "pros": [
+        "Simple static hosting"
+      ],
+      "cons": [
+        "Less Next.js-optimised"
+      ],
+      "freeTier": "Yes",
+      "entryPrice": "$9/month (Personal); Pro $20/month",
+      "pricingUrl": "https://www.netlify.com/pricing",
+      "pricingNote": "Credit-based",
+      "rankReason": "Simple, cheap static hosting",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "ElevenLabs",
+      "category": "Voice & video for demos",
+      "rank": 1,
+      "url": "https://elevenlabs.io",
+      "bestFor": "Voiceovers for demo videos",
+      "pricing": "Free tier: Yes · Entry: $6/month (Starter; $1 first month offer until 18 Oct)",
+      "pros": [
+        "Natural voices"
+      ],
+      "cons": [
+        "Character limits on free tier"
+      ],
+      "freeTier": "Yes",
+      "entryPrice": "$6/month (Starter; $1 first month offer until 18 Oct)",
+      "pricingUrl": "https://elevenlabs.io/pricing",
+      "pricingNote": "",
+      "rankReason": "Most natural voiceovers for demos",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "Descript",
+      "category": "Voice & video for demos",
+      "rank": 2,
+      "url": "https://www.descript.com",
+      "bestFor": "Editing product demo videos by text",
+      "pricing": "Free tier: Unknown · Entry: $16/month billed annually ($24 monthly) – Hobbyist",
+      "pros": [
+        "Text-based editing"
+      ],
+      "cons": [
+        "Exports limited on free tier"
+      ],
+      "freeTier": "Unknown",
+      "entryPrice": "$16/month billed annually ($24 monthly) – Hobbyist",
+      "pricingUrl": "https://www.descript.com/pricing",
+      "pricingNote": "",
+      "rankReason": "Text-based video editing makes polished demos quick",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "Loom",
+      "category": "Voice & video for demos",
+      "rank": 3,
+      "url": "https://www.loom.com",
+      "bestFor": "Quick screen-recorded walkthroughs",
+      "pricing": "Free tier: Yes (Starter: 25 videos, 5-min limit) · Entry: $18/user/month",
+      "pros": [
+        "Fast sharing"
+      ],
+      "cons": [
+        "Free tier length limits"
+      ],
+      "freeTier": "Yes (Starter: 25 videos, 5-min limit)",
+      "entryPrice": "$18/user/month",
+      "pricingUrl": "https://www.loom.com/pricing",
+      "pricingNote": "",
+      "rankReason": "Fastest for quick walkthroughs, fewer editing tools",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "LangGraph",
+      "category": "Agent frameworks",
+      "rank": 1,
+      "url": "https://www.langchain.com/langgraph",
+      "bestFor": "Stateful, controllable agent workflows",
+      "pricing": "Free tier: Yes (open source; LangSmith Developer $0) · Entry: $39/seat/month (LangSmith Plus)",
+      "pros": [
+        "Fine-grained control"
+      ],
+      "cons": [
+        "Learning curve"
+      ],
+      "freeTier": "Yes (open source; LangSmith Developer $0)",
+      "entryPrice": "$39/seat/month (LangSmith Plus)",
+      "pricingUrl": "https://www.langchain.com/pricing",
+      "pricingNote": "Plus pay-as-you-go usage",
+      "rankReason": "Most control for production stateful agents",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "CrewAI",
+      "category": "Agent frameworks",
+      "rank": 2,
+      "url": "https://www.crewai.com",
+      "bestFor": "Multi-agent role-based crews",
+      "pricing": "Free tier: Yes (50 workflow executions/month) · Entry: Enterprise: custom",
+      "pros": [
+        "Quick to start"
+      ],
+      "cons": [
+        "Less low-level control"
+      ],
+      "freeTier": "Yes (50 workflow executions/month)",
+      "entryPrice": "Enterprise: custom",
+      "pricingUrl": "https://www.crewai.com/pricing",
+      "pricingNote": "No self-serve paid tier listed",
+      "rankReason": "Quickest way to multi-agent crews",
+      "lastChecked": "2026-10-16"
+    },
+    {
+      "name": "OpenAI Agents SDK",
+      "category": "Agent frameworks",
+      "rank": 3,
+      "url": "https://openai.github.io/openai-agents-python/",
+      "bestFor": "Lightweight agents with tools and handoffs",
+      "pricing": "Free tier: Yes (open source) · Entry: Model usage billed at OpenAI API rates",
+      "pros": [
+        "Minimal API"
+      ],
+      "cons": [
+        "OpenAI-leaning"
+      ],
+      "freeTier": "Yes (open source)",
+      "entryPrice": "Model usage billed at OpenAI API rates",
+      "pricingUrl": "https://platform.openai.com/docs/pricing",
+      "pricingNote": "No separate SDK pricing page",
+      "rankReason": "Minimal and simple, but less flexible than LangGraph",
+      "lastChecked": "2026-10-16"
+    }
+  ],
+  "releases": [
+    {
+      "name": "Graphicle (KarLex AI)",
+      "date": "2026-10-14",
+      "summary": "Open-source Rust tool giving coding agents local code graphs and memory via MCP.",
+      "url": "https://digestai.news/story/karlex-ai-releases-graphicle-to-give-coding-agents-local-code-graphs-a",
+      "verified": "2026-10-16"
+    },
+    {
+      "name": "Meta Muse Spark Open",
+      "date": "2026-10-15",
+      "summary": "Coding-optimised open-weight MoE model (816B, 42B active) with 1M-token context.",
+      "url": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+      "verified": "2026-10-16"
+    },
+    {
+      "name": "Vercel Token Pass (early access)",
+      "date": "2026-10-15",
+      "summary": "$30/month for $80 of GLM 5.3 and Kimi K3 credit via AI Gateway, for Pro teams.",
+      "url": "https://vercel.com/changelog/introducing-token-pass",
+      "verified": "2026-10-16"
+    },
+    {
+      "name": "Vercel AI SDK 7",
+      "date": "2026-10-15",
+      "summary": "AI SDK becomes a provider-agnostic toolkit for building multi-turn agents, announced at Vercel Ship 2026.",
+      "url": "https://vercel.com/blog/vercel-ship-2026-recap",
+      "verified": "2026-10-16"
+    },
+    {
+      "name": "GitHub AI Scan for PRs (GA)",
+      "date": "2026-10-15",
+      "summary": "AI vulnerability scanning on pull requests, complementing CodeQL.",
+      "url": "https://github.blog/changelog/month/10-2026/",
+      "verified": "2026-10-16"
+    },
+    {
+      "name": "GitHub agentic autofix for code scanning (GA)",
+      "date": "2026-10-15",
+      "summary": "Agents propose fixes for code scanning alerts.",
+      "url": "https://github.blog/changelog/month/10-2026/",
+      "verified": "2026-10-16"
+    },
+    {
+      "name": "Gemini 4 Argon in GitHub Copilot",
+      "date": "2026-10-13",
+      "summary": "Google's newest frontier model now GA in Copilot.",
+      "url": "https://github.blog/changelog/month/10-2026/",
+      "verified": "2026-10-16"
+    },
+    {
+      "name": "Replit: cross-project chat + Windows Desktop preview",
+      "date": "2026-10-09",
+      "summary": "Send tasks across projects from one chat; Windows desktop app in private preview.",
+      "url": "https://docs.replit.com/updates/2026/10/09/changelog",
+      "verified": "2026-10-16"
+    },
+    {
+      "name": "Google Gemini agent",
+      "date": "2026-10-08",
+      "summary": "Universal work agent that writes and runs code, announced at Gemini at Work 2026.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
+      "verified": "2026-10-16"
+    },
+    {
+      "name": "Supabase Select: code-first backend + app MCP servers",
+      "date": "2026-10-02",
+      "summary": "Schema/config in code for agents, Docker-free local Supabase (alpha), and authenticated MCP servers for your app.",
+      "url": "https://supabase.com/blog/supabase-select-2026-recap",
+      "verified": "2026-10-16"
+    }
+  ],
+  "lastVerified": "2026-10-16"
+}
