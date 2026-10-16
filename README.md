@@ -14,4 +14,6 @@ Run locally: `python3 -m http.server` then open http://localhost:8000
 - `best/<category-slug>/index.html` – one ranking page per category
 - `sitemap.xml` and `robots.txt`
 
+Comparison articles live in `data/compare.json` (rendered to `compare/<slug>/`; add tools not in tools.json under `extraTools`).
+
 Daily routine: update `tools.json` → run `python3 build.py` → commit and push to `main` (GitHub Pages serves the repo root).
