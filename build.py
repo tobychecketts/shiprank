@@ -16,7 +16,7 @@ def page(path, title, desc, body):
 <main>{body}</main><footer>{cats_nav}</footer></body></html>"""
     os.makedirs(path or ".", exist_ok=True); open(os.path.join(path, "index.html"), "w").write(out); urls.append(url)
 cats = sorted({t["category"] for t in d["tools"]}, key=lambda c: [t["category"] for t in d["tools"]].index(c))
-cats_nav = f'<a href="{BASE}compare/">Comparisons</a> · Browse: ' + " · ".join(f'<a href="{BASE}best/{slug(c)}/">Best {e(c)}</a>' for c in cats)
+cats_nav = f'<a href="{BASE}compare/">Comparisons</a> · <a href="{BASE}guides/">Guides</a> · <a href="{BASE}weekly/">Weekly</a> · Browse: ' + " · ".join(f'<a href="{BASE}best/{slug(c)}/">Best {e(c)}</a>' for c in cats)
 for p in ("tools", "best"): shutil.rmtree(p, ignore_errors=True)
 urls = [BASE]
 compare_links = {}
@@ -55,6 +55,40 @@ for a in cmp["articles"]:
     page(f"compare/{a['slug']}", a["title"] + " – ShipRank", a["desc"][:160], body)
     idx += f'<div class=card><a href="{BASE}compare/{a["slug"]}/"><b>{e(a["title"])}</b></a><p>{e(a["desc"])}</p></div>'
 page("compare", f"AI Tool Comparisons for Vibe Coders {YEAR} – ShipRank", "Head-to-head comparisons of AI code editors, app builders, coding agents, backends and hosting for vibe coders.", "<h1>AI tool comparisons</h1>" + idx)
+
+# ---- guides ----
+import datetime
+G = json.load(open("data/guides.json"))["guides"]; shutil.rmtree("guides", ignore_errors=True)
+gidx = ""
+for g in G:
+    items = ""
+    for i, n in enumerate(g["tools"], 1):
+        t = alltools[n]
+        items += f'<div class=card><span class=rank>#{i}</span> {tlink(n)}<p>{e(t["bestFor"])}</p>' + (f'<p class=why>💡 {e(g["notes"][n])}</p>' if n in g.get("notes",{}) else "") + f'<small>Free tier: {e(t["freeTier"])} · Entry: {e(t["entryPrice"])} · <a href="{t["pricingUrl"]}" rel="nofollow">pricing</a> checked {t["lastChecked"]}</small></div>'
+    rel = [a for a in cmp["articles"] if set(a["tools"]) & set(g["tools"])]
+    body = f'<p><a href="{BASE}guides/">← All guides</a></p><h1>{e(g["title"])}</h1><p>{e(g["intro"])}</p>{items}<h2>FAQ</h2>' + "".join(f'<div class=card><b>{e(q)}</b><p>{e(x)}</p></div>' for q, x in g["faq"]) + "<h2>Related comparisons</h2><ul>" + "".join(f'<li><a href="{BASE}compare/{a["slug"]}/">{e(a["title"])}</a></li>' for a in rel) + "</ul><small>Prices in USD from official pages. Anything marked unverified could not be confirmed.</small>"
+    page(f"guides/{g['slug']}", g["title"] + " – ShipRank", g["desc"][:160], body)
+    gidx += f'<div class=card><a href="{BASE}guides/{g["slug"]}/"><b>{e(g["title"])}</b></a><p>{e(g["desc"])}</p></div>'
+page("guides", f"AI Tool Guides for Vibe Coders {YEAR} – ShipRank", "Guides to the best free, cheapest and beginner-friendly AI tools for vibe coders and solo builders.", "<h1>Guides</h1>" + gidx)
+
+# ---- weekly roundups ----
+shutil.rmtree("weekly", ignore_errors=True)
+weeks = {}
+for r in d["releases"]:
+    try: dt = datetime.date.fromisoformat(r["date"])
+    except ValueError: continue
+    y, w, _ = dt.isocalendar(); weeks.setdefault(f"{y}-w{w:02d}", []).append(r)
+def wbody(k, rs):
+    by = {}
+    for r in sorted(rs, key=lambda r: r["date"], reverse=True): by.setdefault(r["date"], []).append(r)
+    return "".join(f'<h2>{datetime.date.fromisoformat(dd).strftime("%A %-d %B %Y")}</h2>' + "".join(f'<div class=card><b>{e(r["name"])}</b><p>{e(r["summary"])}</p><small><a href="{r["url"]}" rel="nofollow">Source</a> · verified {r.get("verified","unknown")}</small></div>' for r in lst) for dd, lst in by.items())
+keys = sorted(weeks, reverse=True)
+arch = "<h2>Archive</h2><ul>" + "".join(f'<li><a href="{BASE}weekly/{k}/">Week {k[-2:]}, {k[:4]}</a> ({len(weeks[k])} launches)</li>' for k in keys) + "</ul>"
+for k in keys:
+    page(f"weekly/{k}", f"AI builder tool launches – week {int(k[-2:])}, {k[:4]} – ShipRank", f"Verified AI tool launches for vibe coders and builders in ISO week {int(k[-2:])} of {k[:4]}, grouped by date with sources."[:160], f'<p><a href="{BASE}weekly/">← Latest roundup</a></p><h1>AI launches: week {int(k[-2:])}, {k[:4]}</h1>' + wbody(k, weeks[k]) + arch)
+if keys:
+    k = keys[0]
+    page("weekly", "This Week in AI Builder Tools – ShipRank Weekly Roundup", f"This week's verified AI tool launches for vibe coders (week {int(k[-2:])}, {k[:4]}), grouped by date with sources.", f'<h1>This week in AI builder tools</h1><p>Week {int(k[-2:])}, {k[:4]} · only launches confirmed on the source page.</p>' + wbody(k, weeks[k]) + arch)
 open("sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"<url><loc>{u}</loc><lastmod>{d['lastVerified']}</lastmod></url>\n" for u in urls) + "</urlset>\n")
 open("robots.txt", "w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\n")
 print(f"Built {len(urls)} URLs")

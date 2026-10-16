@@ -16,4 +16,6 @@ Run locally: `python3 -m http.server` then open http://localhost:8000
 
 Comparison articles live in `data/compare.json` (rendered to `compare/<slug>/`; add tools not in tools.json under `extraTools`).
 
+Guides live in `data/guides.json` (→ `guides/<slug>/`). Weekly roundups are generated from `releases` in `tools.json` (→ `weekly/` latest + `weekly/<year>-w<NN>/` archive; undated releases are skipped).
+
 Daily routine: update `tools.json` → run `python3 build.py` → commit and push to `main` (GitHub Pages serves the repo root).
