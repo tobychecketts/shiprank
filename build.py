@@ -9,7 +9,7 @@ YEAR = d["lastVerified"][:4]
 CSS = """body{margin:0;font-family:system-ui,sans-serif;background:#0b0d12;color:#e7e9ee;line-height:1.5}header{padding:28px 24px;background:linear-gradient(135deg,#3b2aff,#00b3a4)}header a{color:#fff;text-decoration:none}main{max-width:900px;margin:auto;padding:24px}.card{background:#161a22;border:1px solid #232835;border-radius:14px;padding:16px;margin:12px 0}a{color:#7fb2ff}small{color:#9aa}.rank{color:#00d1bd;font-weight:700}footer{max-width:900px;margin:auto;padding:24px;color:#9aa}"""
 def page(path, title, desc, body):
     url = BASE + path
-    out = f"""<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+    out = f"""<!doctype html><html lang="en-GB"><head><meta name='impact-site-verification' value='433c0488-f7f6-4a86-9b9a-075a81062f41'><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{url}">
 <meta property="og:type" content="website"><meta property="og:site_name" content="ShipRank"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{BASE}screenshot.png"><meta name="twitter:card" content="summary_large_image">
 <style>{CSS}</style></head><body><header><a href="{BASE}"><h1 style="margin:0">🚢 ShipRank</h1></a><small style="color:#fff">AI tool rankings for vibe coders and builders · Last verified {d['lastVerified']}</small></header>
