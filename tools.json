@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "tools": [
     {
       "name": "Cursor",
@@ -47,7 +47,7 @@
       "name": "Windsurf",
       "category": "AI code editors",
       "rank": 3,
-      "url": "https://windsurf.com",
+      "url": "https://devin.ai/desktop",
       "bestFor": "Agentic editing with an AI-native editor",
       "pricing": "Free tier: Yes · Entry: $20/month (Pro)",
       "pros": [
@@ -58,10 +58,10 @@
       ],
       "freeTier": "Yes",
       "entryPrice": "$20/month (Pro)",
-      "pricingUrl": "https://windsurf.com/pricing",
-      "pricingNote": "",
+      "pricingUrl": "https://devin.ai/pricing",
+      "pricingNote": "Windsurf is now Devin Desktop (windsurf.com redirects to devin.ai); Max plan $200/month",
       "rankReason": "Capable agentic editor but smaller ecosystem than the top two",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-10-17"
     },
     {
       "name": "Lovable",
@@ -82,7 +82,7 @@
       "pricingUrl": "https://lovable.dev/pricing",
       "pricingNote": "Credit-based; unlimited members",
       "rankReason": "Fastest path from prompt to full-stack app for non-coders",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-10-17"
     },
     {
       "name": "Bolt.new",
@@ -102,7 +102,7 @@
       "pricingUrl": "https://bolt.new/pricing",
       "pricingNote": "Up to 28% off yearly",
       "rankReason": "Great in-browser full-stack prototyping, slightly less polished output",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-10-17"
     },
     {
       "name": "v0",
@@ -509,11 +509,25 @@
   ],
   "releases": [
     {
-      "name": "Graphicle (KarLex AI)",
-      "date": "2026-10-14",
-      "summary": "Open-source Rust tool giving coding agents local code graphs and memory via MCP.",
-      "url": "https://digestai.news/story/karlex-ai-releases-graphicle-to-give-coding-agents-local-code-graphs-a",
-      "verified": "2026-10-16"
+      "name": "Cursor: canvases from cloud agents + Environments API (beta)",
+      "date": "2026-10-16",
+      "summary": "Cloud agents can build shareable interactive canvases; Environments API in beta; environments now support up to 300 repos and load 5x faster.",
+      "url": "https://cursor.com/changelog",
+      "verified": "2026-10-17"
+    },
+    {
+      "name": "Chainguard Workspaces and Checks (beta)",
+      "date": "2026-10-16",
+      "summary": "Hardened microVM dev environments for developers and coding agents, plus fast in-loop CI checks agents can call via MCP or SDK. 30-day beta trials.",
+      "url": "https://www.infoq.com/news/2026/10/chainguard-workspaces-checks/",
+      "verified": "2026-10-17"
+    },
+    {
+      "name": "Band for Developers",
+      "date": "2026-10-15",
+      "summary": "Desktop app and CLI for managing a team of coding agents at once: projects, ownership, blockers, questions and progress in one view.",
+      "url": "https://siliconangle.com/2026/10/16/band-launches-desktop-app-for-developer-collaboration-and-control-of-multiple-ai-coding-agents/",
+      "verified": "2026-10-17"
     },
     {
       "name": "Meta Muse Spark Open",
@@ -551,6 +565,20 @@
       "verified": "2026-10-16"
     },
     {
+      "name": "Builder.io Agent-Native (beta)",
+      "date": "2026-10-14",
+      "summary": "Open-source TypeScript framework for agentic apps where the agent and UI share actions, data and state; every app is also an MCP server and supports A2A.",
+      "url": "https://www.builder.io/blog/introducing-agent-native",
+      "verified": "2026-10-17"
+    },
+    {
+      "name": "Graphicle (KarLex AI)",
+      "date": "2026-10-14",
+      "summary": "Open-source Rust tool giving coding agents local code graphs and memory via MCP.",
+      "url": "https://digestai.news/story/karlex-ai-releases-graphicle-to-give-coding-agents-local-code-graphs-a",
+      "verified": "2026-10-16"
+    },
+    {
       "name": "Gemini 4 Argon in GitHub Copilot",
       "date": "2026-10-13",
       "summary": "Google's newest frontier model now GA in Copilot.",
@@ -579,5 +607,5 @@
       "verified": "2026-10-16"
     }
   ],
-  "lastVerified": "2026-10-16"
+  "lastVerified": "2026-10-17"
 }
