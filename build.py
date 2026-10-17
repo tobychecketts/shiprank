@@ -11,12 +11,12 @@ def page(path, title, desc, body):
     url = BASE + path
     out = f"""<!doctype html><html lang="en-GB"><head><meta name='impact-site-verification' value='433c0488-f7f6-4a86-9b9a-075a81062f41'><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{url}">
-<meta property="og:type" content="website"><meta property="og:site_name" content="ShipRank"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{BASE}screenshot.png"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:type" content="website"><meta property="og:site_name" content="ShipRank"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{BASE}screenshot.png"><link rel="alternate" type="application/rss+xml" title="ShipRank Weekly" href="{BASE}weekly/feed.xml"><meta name="twitter:card" content="summary_large_image">
 <style>{CSS}</style></head><body><header><a href="{BASE}"><h1 style="margin:0">🚢 ShipRank</h1></a><small style="color:#fff">AI tool rankings for vibe coders and builders · Last verified {d['lastVerified']}</small></header>
-<main>{body}</main><footer>{cats_nav}</footer></body></html>"""
+<main>{body}</main><footer>{cats_nav}<p><small>Disclosure: some links on ShipRank may be affiliate links, and we may earn a commission if you buy through them, at no extra cost to you. Sponsored placements are always labelled. Neither affects our rankings, which are editorial.</small></p></footer></body></html>"""
     os.makedirs(path or ".", exist_ok=True); open(os.path.join(path, "index.html"), "w").write(out); urls.append(url)
 cats = sorted({t["category"] for t in d["tools"]}, key=lambda c: [t["category"] for t in d["tools"]].index(c))
-cats_nav = f'<a href="{BASE}compare/">Comparisons</a> · <a href="{BASE}guides/">Guides</a> · <a href="{BASE}weekly/">Weekly</a> · Browse: ' + " · ".join(f'<a href="{BASE}best/{slug(c)}/">Best {e(c)}</a>' for c in cats)
+cats_nav = f'<a href="{BASE}compare/">Comparisons</a> · <a href="{BASE}guides/">Guides</a> · <a href="{BASE}weekly/">Weekly</a> · <a href="{BASE}weekly/feed.xml">RSS</a> · <a href="{BASE}featured/">Get featured</a> · Browse: ' + " · ".join(f'<a href="{BASE}best/{slug(c)}/">Best {e(c)}</a>' for c in cats)
 for p in ("tools", "best"): shutil.rmtree(p, ignore_errors=True)
 urls = [BASE]
 compare_links = {}
@@ -35,7 +35,7 @@ for t in d["tools"]:
 for c in cats:
     ts = sorted([x for x in d["tools"] if x["category"] == c], key=lambda x: x["rank"])
     body = f"<h1>Best {e(c)} for vibe coders ({YEAR})</h1><p>Our ranking of the best {e(c.lower())} for builders, with verified pricing.</p>" + "".join(
-        f'<div class=card><span class=rank>#{x["rank"]}</span> <a href="{BASE}tools/{slug(x["name"])}/"><b>{e(x["name"])}</b></a><p>{e(x["bestFor"])}</p><small>💡 {e(x["rankReason"])}<br>Free tier: {e(x["freeTier"])} · Entry: {e(x["entryPrice"])}</small></div>' for x in ts)
+        f'<div class=card><span class=rank>#{x["rank"]}</span> <a href="{BASE}tools/{slug(x["name"])}/"><b>{e(x["name"])}</b></a><p>{e(x["bestFor"])}</p><small>💡 {e(x["rankReason"])}<br>Free tier: {e(x["freeTier"])} · Entry: {e(x["entryPrice"])}</small></div>' for x in ts) + f'<div class=card style="border-style:dashed"><b>🌟 Your tool here</b><p>Make AI tools for builders? <a href="{BASE}featured/">Get featured on ShipRank</a> (sponsored slots are clearly labelled).</p></div>'
     page(f"best/{slug(c)}", f"Best {c} for Vibe Coders {YEAR} – ShipRank", f"The best {c.lower()} for vibe coders and builders in {YEAR}: " + ", ".join(x["name"] for x in ts) + ". Ranked with verified pricing."[:160], body)
 cmp = json.load(open("data/compare.json")); shutil.rmtree("compare", ignore_errors=True)
 alltools = {t["name"]: t for t in d["tools"]}; alltools.update(cmp["extraTools"])
@@ -88,7 +88,28 @@ for k in keys:
     page(f"weekly/{k}", f"AI builder tool launches – week {int(k[-2:])}, {k[:4]} – ShipRank", f"Verified AI tool launches for vibe coders and builders in ISO week {int(k[-2:])} of {k[:4]}, grouped by date with sources."[:160], f'<p><a href="{BASE}weekly/">← Latest roundup</a></p><h1>AI launches: week {int(k[-2:])}, {k[:4]}</h1>' + wbody(k, weeks[k]) + arch)
 if keys:
     k = keys[0]
-    page("weekly", "This Week in AI Builder Tools – ShipRank Weekly Roundup", f"This week's verified AI tool launches for vibe coders (week {int(k[-2:])}, {k[:4]}), grouped by date with sources.", f'<h1>This week in AI builder tools</h1><p>Week {int(k[-2:])}, {k[:4]} · only launches confirmed on the source page.</p>' + wbody(k, weeks[k]) + arch)
+    page("weekly", "This Week in AI Builder Tools – ShipRank Weekly Roundup", f"This week's verified AI tool launches for vibe coders (week {int(k[-2:])}, {k[:4]}), grouped by date with sources.", f'<h1>This week in AI builder tools</h1><p>Week {int(k[-2:])}, {k[:4]} · only launches confirmed on the source page.</p><div class=card>📡 <a href="{BASE}weekly/feed.xml"><b>Follow via RSS</b></a> · Email signup coming soon.</div>' + wbody(k, weeks[k]) + arch)
+
+# ---- featured (sponsorship) page ----
+MAILTO = "mailto:toby211@hotmail.co.uk?subject=" + "Get%20featured%20on%20ShipRank"
+opts = [("Featured category slot","£49","per week","A highlighted ‘Featured’ card at the top of one category ranking page (e.g. Best app builders), clearly labelled as sponsored, with your logo, one-line pitch and link."),
+        ("Weekly roundup spotlight","£29","per week","A spotlight card at the top of that week’s /weekly/ roundup page and its RSS item, labelled as sponsored."),
+        ("Launch listing","£19","per week","Your launch listed on the homepage ‘New releases’ feed and the weekly roundup, labelled as sponsored. Must be a genuine, live launch.")]
+fbody = "<h1>Get featured on ShipRank</h1><p>ShipRank helps vibe coders and builders pick AI tools, with verified pricing and honest rankings. Tool makers can sponsor a clearly labelled slot. <b>Sponsorship never changes our rankings or reviews.</b></p>"
+fbody += "<div class=card><b>🚀 Launch pricing</b><p>These are introductory prices for early sponsors and will change as traffic grows. Prices in GBP, per week.</p></div>"
+fbody += "".join(f'<div class=card><h2>{e(n)} — {p} <small>{u} (launch pricing)</small></h2><p>{e(w)}</p><p><a href="{MAILTO}%20-%20{n.replace(" ","%20")}">Enquire about {e(n)} →</a></p></div>' for n,p,u,w in opts)
+fbody += "<div class=card><h2>Honest traffic note</h2><p>ShipRank is a new site (launched October 2026). We don’t yet have meaningful traffic numbers to share, which is why prices are low. We’ll publish stats here once we have them.</p></div>"
+fbody += f'<div class=card><h2>Get in touch</h2><p>Email <a href="{MAILTO}">toby211@hotmail.co.uk</a> with your tool, the option you want and your preferred week.</p></div>'
+page("featured", "Get Featured on ShipRank – Sponsor a Slot for Your AI Tool", "Sponsor a clearly labelled slot on ShipRank: featured category, weekly roundup spotlight or launch listing. Introductory launch pricing in GBP.", fbody)
+
+# ---- RSS feed of releases ----
+from email.utils import format_datetime
+items = ""
+for r in sorted([r for r in d["releases"] if re.match(r"\d{4}-\d{2}-\d{2}$", r["date"])], key=lambda r: r["date"], reverse=True):
+    dt = datetime.datetime.fromisoformat(r["date"] + "T09:00:00+00:00")
+    y, w, _ = dt.date().isocalendar()
+    items += f"<item><title>{e(r['name'])}</title><link>{e(r['url'])}</link><guid isPermaLink=\"false\">{e(r['date']+'-'+slug(r['name']))}</guid><pubDate>{format_datetime(dt)}</pubDate><description>{e(r['summary'])} (ShipRank weekly roundup: {BASE}weekly/{y}-w{w:02d}/)</description></item>\n"
+open("weekly/feed.xml", "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ShipRank Weekly – AI builder tool launches</title><link>{BASE}weekly/</link><atom:link href="{BASE}weekly/feed.xml" rel="self" type="application/rss+xml"/><description>Verified AI tool launches for vibe coders and builders.</description><language>en-gb</language><lastBuildDate>{format_datetime(datetime.datetime.now(datetime.timezone.utc))}</lastBuildDate>\n{items}</channel></rss>\n')
 open("sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"<url><loc>{u}</loc><lastmod>{d['lastVerified']}</lastmod></url>\n" for u in urls) + "</urlset>\n")
 open("robots.txt", "w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\n")
 print(f"Built {len(urls)} URLs")
