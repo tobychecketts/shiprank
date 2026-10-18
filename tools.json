@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "tools": [
     {
       "name": "Cursor",
@@ -183,7 +183,7 @@
       "pricingUrl": "https://chatgpt.com/pricing",
       "pricingNote": "Expanded on Plus/Pro",
       "rankReason": "Strong agent with parallel cloud tasks; close second",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-10-18"
     },
     {
       "name": "Devin",
@@ -404,7 +404,7 @@
       "pricingUrl": "https://elevenlabs.io/pricing",
       "pricingNote": "",
       "rankReason": "Most natural voiceovers for demos",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-10-18"
     },
     {
       "name": "Descript",
@@ -509,6 +509,13 @@
   ],
   "releases": [
     {
+      "name": "Perplexity Computer: REA reverse-engineering skill",
+      "date": "2026-10-17",
+      "summary": "New /reverse-engineer skill lets Computer inspect an existing app without its source and rebuild a working version, using the open-source REA MCP toolkit. Tasks free up to 10,000 credits per user until 31 Oct.",
+      "url": "https://www.tao.media/perplexity-computer-adds-rea-to-inspect-and-rebuild-apps-without-source-code/",
+      "verified": "2026-10-18"
+    },
+    {
       "name": "Cursor: canvases from cloud agents + Environments API (beta)",
       "date": "2026-10-16",
       "summary": "Cloud agents can build shareable interactive canvases; Environments API in beta; environments now support up to 300 repos and load 5x faster.",
@@ -565,6 +572,27 @@
       "verified": "2026-10-16"
     },
     {
+      "name": "Claude Code Review (GA)",
+      "date": "2026-10-15",
+      "summary": "Multi-agent review of GitHub pull requests is out of research preview for Claude Team and Enterprise, with reviews ~3x faster (6-10 min) and Quick, Standard or Deep levels per repo.",
+      "url": "https://claude.com/resources/articles/code-review-is-now-generally-available",
+      "verified": "2026-10-18"
+    },
+    {
+      "name": "Lovable: AI models and tools inside your apps",
+      "date": "2026-10-15",
+      "summary": "Apps built in Lovable can now use GPT-Live voice, the latest Claude models, Gemini 4 Argon, Gemini Omni, Lyria, Perplexity, Firecrawl, Parallel and Jev without leaving Lovable.",
+      "url": "https://lovable.dev/blog/ai-models-and-tools-in-lovable",
+      "verified": "2026-10-18"
+    },
+    {
+      "name": "Bluesky Attie site builder",
+      "date": "2026-10-15",
+      "summary": "\"Social vibe coding\": describe a poll, quiz, guestbook or game and Attie builds a shareable page on attie.site that Bluesky followers can sign in to and use.",
+      "url": "https://madrobot.blog/2026/10/16/bluesky-attie-ai-site-builder-vibe-code-games-polls-websites/",
+      "verified": "2026-10-18"
+    },
+    {
       "name": "Builder.io Agent-Native (beta)",
       "date": "2026-10-14",
       "summary": "Open-source TypeScript framework for agentic apps where the agent and UI share actions, data and state; every app is also an MCP server and supports A2A.",
@@ -607,5 +635,5 @@
       "verified": "2026-10-16"
     }
   ],
-  "lastVerified": "2026-10-17"
+  "lastVerified": "2026-10-18"
 }
