@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-10-23",
   "tools": [
     {
       "name": "Cursor",
@@ -41,7 +41,7 @@
       "pricingUrl": "https://github.com/features/copilot/plans",
       "pricingNote": "Page also lists AI-credit add-on tiers",
       "rankReason": "Cheapest solid paid tier and works in almost any IDE",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-10-23"
     },
     {
       "name": "Windsurf",
@@ -82,7 +82,7 @@
       "pricingUrl": "https://lovable.dev/pricing",
       "pricingNote": "Credit-based; unlimited members",
       "rankReason": "Fastest path from prompt to full-stack app for non-coders",
-      "lastChecked": "2026-10-17"
+      "lastChecked": "2026-10-23"
     },
     {
       "name": "Bolt.new",
@@ -90,7 +90,7 @@
       "rank": 2,
       "url": "https://bolt.new",
       "bestFor": "In-browser full-stack prototypes",
-      "pricing": "Free tier: Yes · Entry: $25/month (Pro)",
+      "pricing": "Free tier: Yes · Entry: $25/month (Pro; $18/month billed annually)",
       "pros": [
         "Runs entirely in browser"
       ],
@@ -98,11 +98,11 @@
         "Token-based usage can add up"
       ],
       "freeTier": "Yes",
-      "entryPrice": "$25/month (Pro)",
+      "entryPrice": "$25/month (Pro; $18/month billed annually)",
       "pricingUrl": "https://bolt.new/pricing",
       "pricingNote": "Up to 28% off yearly",
       "rankReason": "Great in-browser full-stack prototyping, slightly less polished output",
-      "lastChecked": "2026-10-17"
+      "lastChecked": "2026-10-23"
     },
     {
       "name": "v0",
@@ -143,7 +143,7 @@
       "pricingUrl": "https://replit.com/pricing",
       "pricingNote": "",
       "rankReason": "All-in-one build+host, but costs climb with agent use",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-10-23"
     },
     {
       "name": "Claude Code",
@@ -509,6 +509,76 @@
   ],
   "releases": [
     {
+      "name": "Replit Monitoring Agent",
+      "date": "2026-10-22",
+      "summary": "An autonomous on-call agent for apps published on Replit: it reads production logs and metrics, investigates alerts, validates a fix and can auto-publish it, then emails you a summary.",
+      "url": "https://replit.com/blog/replit-monitoring-agent",
+      "verified": "2026-10-23"
+    },
+    {
+      "name": "Wodby Agent for vibe coding",
+      "date": "2026-10-22",
+      "summary": "Describe an app and Wodby Agent picks a stack, creates a private repo in your own GitHub/GitLab/Bitbucket, builds it in a live workspace with previews, opens a PR and deploys to infrastructure you control or Wodby Cloud.",
+      "url": "https://wodby.com/blog/vibe-coding-with-wodby-agent",
+      "verified": "2026-10-23"
+    },
+    {
+      "name": "Recursive Flint",
+      "date": "2026-10-21",
+      "summary": "Free, Apache 2.0 coding model small enough to run on a laptop (40B-parameter MoE, 2.5B active), so you can code offline and keep your code private. Download on Hugging Face.",
+      "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+      "verified": "2026-10-23"
+    },
+    {
+      "name": "Claude Duet (research preview)",
+      "date": "2026-10-21",
+      "summary": "Anthropic's proactive agent app: runs tasks on its own cloud computer, sends a morning brief from your connected apps, can prototype and build web apps, and asks before sending, paying or deleting. Waitlist for US Pro and Max.",
+      "url": "https://claude.com/resources/articles/claude-duet",
+      "verified": "2026-10-23"
+    },
+    {
+      "name": "OpenAI models and Codex on Google Cloud (private preview)",
+      "date": "2026-10-21",
+      "summary": "OpenAI's frontier models and Codex workflows are coming to Google Cloud's Model Garden, billed via Google Cloud Marketplace; private preview now, GA planned in the coming weeks.",
+      "url": "https://openai.com/index/openai-models-google-cloud/",
+      "verified": "2026-10-23"
+    },
+    {
+      "name": "GemDB Code (VS Code extension)",
+      "date": "2026-10-21",
+      "summary": "Free VS Code extension with an object database where your code is the schema, so you or your coding agent change a class and commit with no migration scripts. Python only at launch; includes an MCP server.",
+      "url": "https://www.businesswire.com/news/home/20261021228398/en/GemDB-Makes-Code-the-Schema-Eliminating-Database-Migration-Bottlenecks-to-Accelerate-AI-Driven-Development",
+      "verified": "2026-10-23"
+    },
+    {
+      "name": "Vercel WebSockets in Functions (GA)",
+      "date": "2026-10-20",
+      "summary": "WebSocket support in Vercel Functions is generally available, for AI chat, streaming and realtime multiplayer apps, at normal Function pricing (CPU billed only while processing messages).",
+      "url": "https://vercel.com/changelog/websocket-support-is-now-generally-available",
+      "verified": "2026-10-23"
+    },
+    {
+      "name": "Lovable can create your Supabase project",
+      "date": "2026-10-20",
+      "summary": "Ask Lovable to create a Supabase project for an app with no backend: pick the organisation and region and Lovable creates and connects it, billed to your own Supabase org.",
+      "url": "https://docs.lovable.dev/changelog",
+      "verified": "2026-10-23"
+    },
+    {
+      "name": "Mistral Voxtral 3 + voice agent SDK",
+      "date": "2026-10-20",
+      "summary": "New speech-to-text and text-to-speech models (50+ languages) plus a voice agent SDK that listens, reasons, calls tools and speaks in one real-time pipeline. Transcription from $0.0035/min.",
+      "url": "https://mistral.ai/news/voxtral-3/",
+      "verified": "2026-10-23"
+    },
+    {
+      "name": "v0: Slack MCP integration",
+      "date": "2026-10-19",
+      "summary": "Connect Slack to v0 so it can use team discussions as context for a change and post updates to Slack when you ask. Available on all v0 plans.",
+      "url": "https://v0.app/changelog",
+      "verified": "2026-10-23"
+    },
+    {
       "name": "Perplexity Computer: REA reverse-engineering skill",
       "date": "2026-10-17",
       "summary": "New /reverse-engineer skill lets Computer inspect an existing app without its source and rebuild a working version, using the open-source REA MCP toolkit. Tasks free up to 10,000 credits per user until 31 Oct.",
@@ -635,5 +705,5 @@
       "verified": "2026-10-16"
     }
   ],
-  "lastVerified": "2026-10-18"
+  "lastVerified": "2026-10-23"
 }
