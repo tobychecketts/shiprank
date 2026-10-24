@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "tools": [
     {
       "name": "Cursor",
@@ -82,7 +82,7 @@
       "pricingUrl": "https://lovable.dev/pricing",
       "pricingNote": "Credit-based; unlimited members",
       "rankReason": "Fastest path from prompt to full-stack app for non-coders",
-      "lastChecked": "2026-10-23"
+      "lastChecked": "2026-10-24"
     },
     {
       "name": "Bolt.new",
@@ -123,7 +123,7 @@
       "pricingUrl": "https://v0.app/pricing",
       "pricingNote": "",
       "rankReason": "Best UI quality but tied to React/Next.js",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-10-24"
     },
     {
       "name": "Replit",
@@ -509,6 +509,34 @@
   ],
   "releases": [
     {
+      "name": "GitHub app for Microsoft Teams with Copilot",
+      "date": "2026-10-23",
+      "summary": "The new consolidated GitHub app in Teams brings notifications and Copilot together: @mention GitHub on an issue notification and Copilot investigates, fixes the bug and opens a pull request. The legacy app retires on 16 November.",
+      "url": "https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams/",
+      "verified": "2026-10-24"
+    },
+    {
+      "name": "TanStack AI 1.0",
+      "date": "2026-10-23",
+      "summary": "The open-source, provider-agnostic AI toolkit hits 1.0 with stable core APIs, 23 provider adapters, support for coding agents like Claude Code, Codex and OpenCode in sandboxes, plus a new experimental agent harness.",
+      "url": "https://tanstack.com/blog/tanstack-ai-1-0",
+      "verified": "2026-10-24"
+    },
+    {
+      "name": "Microsoft Copilot Code (Frontier preview)",
+      "date": "2026-10-22",
+      "summary": "A natural-language coding agent in the Microsoft Copilot app that builds apps, dashboards, tools and scripts from a description, using your work context, with a live preview, local or cloud runs, GitHub draft PRs and publishing to Copilot Managed Runtime. Rolling out via the Frontier program.",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/copilot-code-make-the-power-of-coding-accessible-to-everyone/4562358",
+      "verified": "2026-10-24"
+    },
+    {
+      "name": "Google Elephant-Goldfish Model plugin (open source)",
+      "date": "2026-10-22",
+      "summary": "Google open-sourced its internal design-first AI coding plugin: a long-context 'Elephant' session co-designs a spec, then stateless 'Goldfish' sessions review it before any code is written. Apache 2.0, built for Antigravity first.",
+      "url": "https://opensource.googleblog.com/2026/10/introducing-elephant-goldfish-model-plugin.html",
+      "verified": "2026-10-24"
+    },
+    {
       "name": "Replit Monitoring Agent",
       "date": "2026-10-22",
       "summary": "An autonomous on-call agent for apps published on Replit: it reads production logs and metrics, investigates alerts, validates a fix and can auto-publish it, then emails you a summary.",
@@ -705,5 +733,5 @@
       "verified": "2026-10-16"
     }
   ],
-  "lastVerified": "2026-10-23"
+  "lastVerified": "2026-10-24"
 }
