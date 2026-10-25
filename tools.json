@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "tools": [
     {
       "name": "Cursor",
@@ -203,7 +203,7 @@
       "pricingUrl": "https://devin.ai/pricing",
       "pricingNote": "devin.ai/pricing shows the same plan page as Windsurf (Free/Pro/Max $200)",
       "rankReason": "Most autonomous option, best for delegated tasks rather than hands-on coding",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-10-25"
     },
     {
       "name": "OpenAI API",
@@ -364,7 +364,7 @@
       "pricingUrl": "https://supabase.com/pricing",
       "pricingNote": "Additional projects from $10/month",
       "rankReason": "Default backend for vibe-coded apps (Lovable/Bolt integration)",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-10-25"
     },
     {
       "name": "Netlify",
@@ -509,6 +509,20 @@
   ],
   "releases": [
     {
+      "name": "OpenAI Agents API: Scheduled Automations",
+      "date": "2026-10-23",
+      "summary": "Schedule a message into an existing agent session or have it start a new one, using a cron expression for recurring jobs or a timestamp for one-offs. Add the automations tool and agents can create, update or remove their own schedules from natural-language requests.",
+      "url": "https://community.openai.com/t/introducing-scheduled-automations-to-the-agents-api/1409223",
+      "verified": "2026-10-25"
+    },
+    {
+      "name": "AWS Infinity agent runtime (open source)",
+      "date": "2026-10-23",
+      "summary": "An Apache-2.0 research runtime from AWS and UC Berkeley's Hydro project that suspends an agent during each tool call and resumes it when the result arrives, so idle agents cost little more than their history and can run on serverless platforms. AWS says 75,000 concurrent agents fit in a Raspberry Pi 5's 8 GB.",
+      "url": "https://aws.amazon.com/blogs/opensource/introducing-infinity-a-runtime-for-extreme-agent-concurrency/",
+      "verified": "2026-10-25"
+    },
+    {
       "name": "GitHub app for Microsoft Teams with Copilot",
       "date": "2026-10-23",
       "summary": "The new consolidated GitHub app in Teams brings notifications and Copilot together: @mention GitHub on an issue notification and Copilot investigates, fixes the bug and opens a pull request. The legacy app retires on 16 November.",
@@ -521,6 +535,13 @@
       "summary": "The open-source, provider-agnostic AI toolkit hits 1.0 with stable core APIs, 23 provider adapters, support for coding agents like Claude Code, Codex and OpenCode in sandboxes, plus a new experimental agent harness.",
       "url": "https://tanstack.com/blog/tanstack-ai-1-0",
       "verified": "2026-10-24"
+    },
+    {
+      "name": "Vercel: deploy without an account",
+      "date": "2026-10-22",
+      "summary": "Run vercel deploy --temporary to get a live tmp.now URL for a project or a single file without signing in. Temporary deployments expire after one hour unless you claim the project via the link in the CLI output.",
+      "url": "https://vercel.com/changelog/deploy-without-an-account-using-vercel-cli",
+      "verified": "2026-10-25"
     },
     {
       "name": "Microsoft Copilot Code (Frontier preview)",
@@ -733,5 +754,5 @@
       "verified": "2026-10-16"
     }
   ],
-  "lastVerified": "2026-10-24"
+  "lastVerified": "2026-10-25"
 }
