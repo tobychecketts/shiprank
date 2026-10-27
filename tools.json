@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "tools": [
     {
       "name": "Cursor",
@@ -61,7 +61,7 @@
       "pricingUrl": "https://devin.ai/pricing",
       "pricingNote": "Windsurf is now Devin Desktop (windsurf.com redirects to devin.ai); Max plan $200/month",
       "rankReason": "Capable agentic editor but smaller ecosystem than the top two",
-      "lastChecked": "2026-10-17"
+      "lastChecked": "2026-10-27"
     },
     {
       "name": "Lovable",
@@ -344,7 +344,7 @@
       "pricingUrl": "https://vercel.com/pricing",
       "pricingNote": "Usage-based extras",
       "rankReason": "Smoothest frontend/Next.js deploys with previews",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-10-27"
     },
     {
       "name": "Supabase",
@@ -384,7 +384,7 @@
       "pricingUrl": "https://www.netlify.com/pricing",
       "pricingNote": "Credit-based",
       "rankReason": "Simple, cheap static hosting",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-10-27"
     },
     {
       "name": "ElevenLabs",
@@ -508,6 +508,41 @@
     }
   ],
   "releases": [
+    {
+      "name": "Entire Git forge for agents and humans",
+      "date": "2026-10-26",
+      "summary": "Former GitHub CEO Thomas Dohmke's Entire launched a Git-compatible forge built for coding agents. It replaces pull requests with Trails (agent-scored evals on every push), adds Continuous Memory that syncs agent sessions into the repo, and integrates with Buildkite and Depot CI. Available to every developer today.",
+      "url": "https://entire.com/news/entire-launches-an-independent-git-forge-for-agent-human-collaboration",
+      "verified": "2026-10-27"
+    },
+    {
+      "name": "Runway App Studio",
+      "date": "2026-10-26",
+      "summary": "Describe a creative tool in plain language and Runway builds, tests and deploys a custom app that generates images, video and audio using your Brand Kits and Workflows. Share it with your team or publish a link; code stays visible and you can roll back versions.",
+      "url": "https://runway.com/news/company-news/introducing-runway-app-studio",
+      "verified": "2026-10-27"
+    },
+    {
+      "name": "GPT-6.1 Terra in GitHub Copilot",
+      "date": "2026-10-26",
+      "summary": "OpenAI's newest model is generally available in Copilot for everyday agentic coding and terminal work at a lower cost than GPT-6.1 Sol. Available on Pro, Pro+, Max, Business and Enterprise across VS Code, Copilot CLI, cloud agent, JetBrains, Xcode and more; billed at provider list pricing.",
+      "url": "https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot/",
+      "verified": "2026-10-27"
+    },
+    {
+      "name": "GitHub Copilot assisted permissions (GA)",
+      "date": "2026-10-26",
+      "summary": "When Copilot asks to run a command, touch a path or open a URL, a model evaluates the request: clearly safe ones proceed automatically, the rest still need your approval. Generally available in Copilot CLI (/permissions), the Copilot app and VS Code, with enterprise controls.",
+      "url": "https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available/",
+      "verified": "2026-10-27"
+    },
+    {
+      "name": "Replit Agent workspace skills + keep apps running past credits",
+      "date": "2026-10-23",
+      "summary": "Replit Agent can now suggest new or improved workspace skills from your chats and projects, which you review and approve before they land. The same update lets eligible top-up customers keep published apps running when credits run out, up to an overage limit, and adds Stripe Atlas on Replit.",
+      "url": "https://docs.replit.com/updates",
+      "verified": "2026-10-27"
+    },
     {
       "name": "OpenAI Agents API: Scheduled Automations",
       "date": "2026-10-23",
@@ -789,5 +824,5 @@
       "verified": "2026-10-16"
     }
   ],
-  "lastVerified": "2026-10-26"
+  "lastVerified": "2026-10-27"
 }
