@@ -28,7 +28,7 @@
       "rank": 2,
       "url": "https://github.com/features/copilot",
       "bestFor": "Completions and agents inside your existing IDE",
-      "pricing": "Free tier: Yes · Entry: $10/month (Pro)",
+      "pricing": "Free tier: Yes (2,000 completions/month, limited chat and agent use) · Entry: $10/month (Pro)",
       "pros": [
         "Works in many IDEs",
         "Deep GitHub integration"
@@ -36,12 +36,12 @@
       "cons": [
         "Best features tied to GitHub"
       ],
-      "freeTier": "Yes",
+      "freeTier": "Yes (2,000 completions/month, limited chat and agent use)",
       "entryPrice": "$10/month (Pro)",
       "pricingUrl": "https://github.com/features/copilot/plans",
       "pricingNote": "Page also lists AI-credit add-on tiers",
       "rankReason": "Cheapest solid paid tier and works in almost any IDE",
-      "lastChecked": "2026-10-23"
+      "lastChecked": "2026-10-27"
     },
     {
       "name": "Windsurf",
@@ -90,19 +90,19 @@
       "rank": 2,
       "url": "https://bolt.new",
       "bestFor": "In-browser full-stack prototypes",
-      "pricing": "Free tier: Yes · Entry: $25/month (Pro; $18/month billed annually)",
+      "pricing": "Free tier: Yes (1M tokens/month, 300K/day; Bolt branding) · Entry: $25/month (Pro; $18/month billed annually)",
       "pros": [
         "Runs entirely in browser"
       ],
       "cons": [
         "Token-based usage can add up"
       ],
-      "freeTier": "Yes",
+      "freeTier": "Yes (1M tokens/month, 300K/day; Bolt branding)",
       "entryPrice": "$25/month (Pro; $18/month billed annually)",
       "pricingUrl": "https://bolt.new/pricing",
       "pricingNote": "Up to 28% off yearly",
       "rankReason": "Great in-browser full-stack prototyping, slightly less polished output",
-      "lastChecked": "2026-10-23"
+      "lastChecked": "2026-10-27"
     },
     {
       "name": "v0",
@@ -151,19 +151,19 @@
       "rank": 1,
       "url": "https://claude.com/product/claude-code",
       "bestFor": "Terminal-based agentic coding on real repos",
-      "pricing": "Free tier: Unknown whether included on Free · Entry: $20/month (Claude Pro; $17/month annually)",
+      "pricing": "Free tier: No (not included on Claude Free; needs Pro or above) · Entry: $20/month (Claude Pro; $17/month annually)",
       "pros": [
         "Excellent on large codebases"
       ],
       "cons": [
         "Needs paid plan or API credits"
       ],
-      "freeTier": "Unknown whether included on Free",
+      "freeTier": "No (not included on Claude Free; needs Pro or above)",
       "entryPrice": "$20/month (Claude Pro; $17/month annually)",
       "pricingUrl": "https://claude.com/pricing",
       "pricingNote": "Max plan from $100/month",
       "rankReason": "Strongest terminal agent on real codebases",
-      "lastChecked": "2026-10-26"
+      "lastChecked": "2026-10-27"
     },
     {
       "name": "OpenAI Codex",
@@ -292,7 +292,7 @@
       "rank": 1,
       "url": "https://www.figma.com",
       "bestFor": "Turning Figma designs into working prototypes",
-      "pricing": "Free tier: Unknown · Entry: $16/month (Professional full seat); Dev seat $12/month",
+      "pricing": "Free tier: Unknown · Entry: $16/month (Professional Full seat; Dev seat doesn't include Make)",
       "pros": [
         "Native to Figma"
       ],
@@ -300,11 +300,11 @@
         "Requires Figma plan"
       ],
       "freeTier": "Unknown",
-      "entryPrice": "$16/month (Professional full seat); Dev seat $12/month",
+      "entryPrice": "$16/month (Professional Full seat; Dev seat doesn't include Make)",
       "pricingUrl": "https://www.figma.com/pricing",
-      "pricingNote": "Includes AI credits",
+      "pricingNote": "Full seat includes 3,000 AI credits/month; Starter plan is free with up to 500 AI credits/month, Make access on Starter unconfirmed",
       "rankReason": "Native to where designs already live",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-10-27"
     },
     {
       "name": "Builder.io",
@@ -312,19 +312,19 @@
       "rank": 2,
       "url": "https://builderio.partnerlinks.io/f6y9zd7hnxs7",
       "bestFor": "Figma-to-code for existing codebases",
-      "pricing": "Free tier: Yes · Entry: $24/user/month (Pro)",
+      "pricing": "Free tier: Yes (15 credits/day, 60/month max) · Entry: $24/user/month (Pro)",
       "pros": [
         "Maps to your components"
       ],
       "cons": [
         "Setup effort"
       ],
-      "freeTier": "Yes",
+      "freeTier": "Yes (15 credits/day, 60/month max)",
       "entryPrice": "$24/user/month (Pro)",
       "pricingUrl": "https://www.builder.io/pricing",
       "pricingNote": "",
       "rankReason": "Maps designs to your own components, more setup",
-      "lastChecked": "2026-10-16",
+      "lastChecked": "2026-10-27",
       "affiliate": true
     },
     {
