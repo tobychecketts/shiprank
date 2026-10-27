@@ -30,7 +30,7 @@ for t in d["tools"]:
 <div class=card><span class=rank>#{t['rank']} in {e(c)}</span><p><b>Best for:</b> {e(t['bestFor'])}</p><p><b>Why this rank:</b> {e(t['rankReason'])}</p></div>
 <div class=card><h2>Pricing</h2><p>Free tier: {e(t['freeTier'])}<br>Entry price: {e(t['entryPrice'])}</p><small>{e(t.get('pricingNote',''))} Checked {t['lastChecked']} on the <a href="{t['pricingUrl']}" rel="nofollow">official pricing page</a>.</small></div>
 <div class=card><h2>Pros</h2><ul>{''.join('<li>'+e(x)+'</li>' for x in t['pros'])}</ul><h2>Cons</h2><ul>{''.join('<li>'+e(x)+'</li>' for x in t['cons'])}</ul></div>
-<p><a href="{t['url']}" rel="nofollow">Visit {e(t['name'])} →</a></p>
+<p><a href="{t['url']}" rel="{'sponsored nofollow' if t.get('affiliate') else 'nofollow'}">Visit {e(t['name'])} →</a>{' <small>(affiliate link)</small>' if t.get('affiliate') else ''}</p>
 {''.join(f'<p>⚖️ <a href="{BASE}compare/{a["slug"]}/">{e(a["title"])}</a></p>' for a in compare_links.get(t["name"],[]))}<h2>Alternatives to {e(t['name'])}</h2><ul>{''.join(f'<li><a href="{BASE}tools/{slug(x["name"])}/">{e(x["name"])}</a> – {e(x["bestFor"])}</li>' for x in peers)}</ul>"""
     page(f"tools/{s}", f"{t['name']} Review & Pricing ({YEAR}) – ShipRank", f"{t['name']}: {t['bestFor']}. Free tier: {t['freeTier']}. Entry price: {t['entryPrice']}. Ranked #{t['rank']} in {c}."[:160], body)
 for c in cats:
