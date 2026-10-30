@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27",
+  "updated": "2026-10-30",
   "tools": [
     {
       "name": "Cursor",
@@ -41,7 +41,7 @@
       "pricingUrl": "https://github.com/features/copilot/plans",
       "pricingNote": "Page also lists AI-credit add-on tiers",
       "rankReason": "Cheapest solid paid tier and works in almost any IDE",
-      "lastChecked": "2026-10-27"
+      "lastChecked": "2026-10-30"
     },
     {
       "name": "Windsurf",
@@ -143,7 +143,7 @@
       "pricingUrl": "https://replit.com/pricing",
       "pricingNote": "",
       "rankReason": "All-in-one build+host, but costs climb with agent use",
-      "lastChecked": "2026-10-23"
+      "lastChecked": "2026-10-30"
     },
     {
       "name": "Claude Code",
@@ -510,6 +510,76 @@
   ],
   "releases": [
     {
+      "date": "2026-10-29",
+      "name": "Mistral Large 4 open weights",
+      "summary": "Mistral released the weights of its improved Mistral Large 4 (Le Chonk), a ~1T-parameter multimodal MoE model with a 1M-token context, which Mistral calls the best open-weight model for coding. Download from Hugging Face or use it via the Mistral API and OpenRouter at $0.70/$2.10 per 1M input/output tokens; commercial model-as-a-service use needs a separate licence.",
+      "url": "https://huggingface.co/blog/mistral-large4",
+      "verified": "2026-10-30"
+    },
+    {
+      "date": "2026-10-28",
+      "name": "GitHub Copilot Fusion (GA)",
+      "summary": "Pick Copilot Fusion in the model picker and Copilot routes and orchestrates models for each task, with Standard, High and Max effort levels. GitHub says Fusion Max scored within two points of Claude Code with Opus 5.5 Max on the Artificial Analysis Coding Agent Index at about half the cost. On all Copilot plans in VS Code, the Copilot app, Copilot CLI and JetBrains.",
+      "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/",
+      "verified": "2026-10-30"
+    },
+    {
+      "date": "2026-10-28",
+      "name": "GitHub Copilot app: Projects and computer use (preview)",
+      "summary": "Copilot Projects (public preview) give Copilot an ongoing goal that can span several repositories or none, running as many agents as needed and returning pull requests for review, with project automations for repeat tasks. Computer use, in public preview on macOS and Windows, lets Copilot click and type in desktop apps after asking your approval.",
+      "url": "https://github.blog/changelog/2026-10-28-github-copilot-app-universe-releases/",
+      "verified": "2026-10-30"
+    },
+    {
+      "date": "2026-10-28",
+      "name": "GitHub Replica (open source)",
+      "summary": "GitHub Design open-sourced Replica, an MIT-licensed AI prototyping tool: describe an idea in natural language in the GitHub Copilot app and it builds an interactive prototype using your team's own design system components and docs. An optional self-hosted Replica Hub lets teammates explore prototypes and comment.",
+      "url": "https://github.blog/changelog/2026-10-28-introducing-replica-an-open-source-ai-prototyping-tool/",
+      "verified": "2026-10-30"
+    },
+    {
+      "date": "2026-10-28",
+      "name": "GitHub Agentic Workflows (GA)",
+      "summary": "Write automations such as issue triage, CI failure analysis, docs updates and test writing as natural-language Markdown files, and GitHub compiles them into standard Actions YAML run by Copilot or your own coding agent. Runs read-only and sandboxed by default; available on GitHub Free, Team and Enterprise (the default Copilot CLI engine needs a Copilot licence).",
+      "url": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available/",
+      "verified": "2026-10-30"
+    },
+    {
+      "date": "2026-10-28",
+      "name": "Microsoft Copilot harness in Foundry",
+      "summary": "The multi-model agent harness behind Copilot Code, the GitHub Copilot app, the CLI and VS Code is now available through Microsoft Foundry, with 20+ frontier models plus bring-your-own-key. Download the SDK or run the harness in the cloud, managed by Foundry, to build agents for long-running tasks.",
+      "url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+      "verified": "2026-10-30"
+    },
+    {
+      "date": "2026-10-28",
+      "name": "Gemini 4 Carbon (limited access)",
+      "summary": "Google announced Gemini 4 Carbon, its strongest model for long-horizon coding and cybersecurity, ranked #1 on the Artificial Analysis Intelligence Index v5.0. Not yet open to developers: access starts with selected cyber defenders via the Fairwind Program. Google says it will launch at $2/$10 per 1M input/output tokens (introductory), then $4/$20.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "verified": "2026-10-30"
+    },
+    {
+      "date": "2026-10-28",
+      "name": "Particle-1 coding model",
+      "summary": "New company Particle launched Particle-1, post-trained on DeepSeek V4.1 Flash to use about 45% fewer tokens on software-engineering tasks while keeping accuracy close to the base model, so tasks finish sooner and cost less. Available today through the Particle API.",
+      "url": "https://particle.ai/blog/introducing-particle-1",
+      "verified": "2026-10-30"
+    },
+    {
+      "date": "2026-10-27",
+      "name": "OpenAI Codex CLI 0.165",
+      "summary": "Adds a built-in Google Cloud Vertex AI provider (model_provider = \"gcp\"), GPT-6.1 Terra in the model catalogs, a repository filter in the session picker, reasoning-effort changes mid-conversation by default, and memory v2 by default for fresh profiles.",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.165.0",
+      "verified": "2026-10-30"
+    },
+    {
+      "date": "2026-10-27",
+      "name": "Lovable Events & Hooks",
+      "summary": "Business and Enterprise workspace admins can connect their own services: Events notify your HTTPS endpoint when a project is created, published, transferred or deleted, and Hooks let your endpoint allow or block an action first, such as screening chat messages for sensitive data. Also new: a Scrive connector for e-signatures and eID.",
+      "url": "https://docs.lovable.dev/changelog",
+      "verified": "2026-10-30"
+    },
+    {
       "name": "Entire Git forge for agents and humans",
       "date": "2026-10-26",
       "summary": "Former GitHub CEO Thomas Dohmke's Entire launched a Git-compatible forge built for coding agents. It replaces pull requests with Trails (agent-scored evals on every push), adds Continuous Memory that syncs agent sessions into the repo, and integrates with Buildkite and Depot CI. Available to every developer today.",
@@ -825,5 +895,5 @@
       "verified": "2026-10-16"
     }
   ],
-  "lastVerified": "2026-10-27"
+  "lastVerified": "2026-10-30"
 }
