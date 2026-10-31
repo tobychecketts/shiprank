@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "tools": [
     {
       "name": "Cursor",
@@ -413,19 +413,19 @@
       "rank": 2,
       "url": "https://www.descript.com",
       "bestFor": "Editing product demo videos by text",
-      "pricing": "Free tier: Unknown · Entry: $16/month billed annually ($24 monthly) – Hobbyist",
+      "pricing": "Free tier: Yes (Free plan: 60 media minutes/month, 720p export) · Entry: $16/month billed annually ($24 monthly) – Hobbyist",
       "pros": [
         "Text-based editing"
       ],
       "cons": [
         "Exports limited on free tier"
       ],
-      "freeTier": "Unknown",
+      "freeTier": "Yes (Free plan: 60 media minutes/month, 720p export)",
       "entryPrice": "$16/month billed annually ($24 monthly) – Hobbyist",
       "pricingUrl": "https://www.descript.com/pricing",
       "pricingNote": "",
       "rankReason": "Text-based video editing makes polished demos quick",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-10-31"
     },
     {
       "name": "Loom",
@@ -445,7 +445,7 @@
       "pricingUrl": "https://www.loom.com/pricing",
       "pricingNote": "",
       "rankReason": "Fastest for quick walkthroughs, fewer editing tools",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-10-31"
     },
     {
       "name": "LangGraph",
@@ -510,11 +510,32 @@
   ],
   "releases": [
     {
+      "date": "2026-10-30",
+      "name": "Claude Code: block writes outside working directories + idle compaction",
+      "summary": "Claude Code added a permissions.blockWritesOutsideWorkingDirectories setting so Write, Edit and NotebookEdit refuse paths outside your working directories in every permission mode, plus idle compaction in VS Code and Claude Desktop's Code tab that summarises long (200K+ token) idle conversations before your next message.",
+      "url": "https://code.claude.com/docs/en/changelog",
+      "verified": "2026-10-31"
+    },
+    {
+      "date": "2026-10-30",
+      "name": "Bolt database tables private by default",
+      "summary": "From 30 October, new Bolt database tables are private by default, so your app needs explicit permissions to read or write data. Existing databases aren't affected, and Bolt sets up permissions when it creates a new database; if you hit a permissions error you can ask Bolt to fix the table permissions.",
+      "url": "https://support.bolt.new/release-notes",
+      "verified": "2026-10-31"
+    },
+    {
       "date": "2026-10-29",
       "name": "Mistral Large 4 open weights",
       "summary": "Mistral released the weights of its improved Mistral Large 4 (Le Chonk), a ~1T-parameter multimodal MoE model with a 1M-token context, which Mistral calls the best open-weight model for coding. Download from Hugging Face or use it via the Mistral API and OpenRouter at $0.70/$2.10 per 1M input/output tokens; commercial model-as-a-service use needs a separate licence.",
       "url": "https://huggingface.co/blog/mistral-large4",
       "verified": "2026-10-30"
+    },
+    {
+      "date": "2026-10-29",
+      "name": "Factory Droid 1.0",
+      "summary": "Factory released Droid 1.0, a rebuilt harness for its model-agnostic coding agent. Programmatic tool calling is now on by default: the model writes a sandboxed JavaScript program that can run hundreds of tool calls in one request, keeping raw outputs out of context. Factory reports higher Terminal-Bench 4 scores at lower cost than other harnesses (self-reported).",
+      "url": "https://factory.com/news/frontier-harness",
+      "verified": "2026-10-31"
     },
     {
       "date": "2026-10-28",
@@ -564,6 +585,20 @@
       "summary": "New company Particle launched Particle-1, post-trained on DeepSeek V4.1 Flash to use about 45% fewer tokens on software-engineering tasks while keeping accuracy close to the base model, so tasks finish sooner and cost less. Available today through the Particle API.",
       "url": "https://particle.ai/blog/introducing-particle-1",
       "verified": "2026-10-30"
+    },
+    {
+      "date": "2026-10-28",
+      "name": "Android Studio Rabbit 2: Bring Your Own Agent (stable)",
+      "summary": "Android Studio Rabbit 2 is stable with Bring Your Own Agent: plug in 40+ ACP-compatible coding agents, including Claude Agent, OpenAI Codex, Junie and Google Antigravity, with access to the emulator, build tools and Logcat. You sign in with your own subscription or API key; the built-in agent stays free.",
+      "url": "https://developer.android.com/blog/posts/ai-agents-android-studio-integration",
+      "verified": "2026-10-31"
+    },
+    {
+      "date": "2026-10-28",
+      "name": "GitHub Copilot code review Max (public preview)",
+      "summary": "Copilot code review gained a Max tier in public preview: several independent review agents using models from different providers review a pull request, then an aggregation agent reconciles their findings into one review. It's meant for high-risk changes and takes longer and uses more AI credits than Lite or Balanced.",
+      "url": "https://github.blog/changelog/2026-10-28-copilot-code-review-merge-with-confidence-with-max-and-approvals/",
+      "verified": "2026-10-31"
     },
     {
       "date": "2026-10-27",
@@ -755,6 +790,13 @@
       "verified": "2026-10-23"
     },
     {
+      "date": "2026-10-20",
+      "name": "Cursor Agent SDK (GA)",
+      "summary": "Cursor's Agent SDK is generally available: define an agent as a folder of code (instructions, typed tools, skills, MCP connections, channels), test it with evals, and deploy it to Cursor with agent-sdk deploy or run it on your own infrastructure. Agents can wake on GitHub, GitLab, Bitbucket, Slack, webhook and cron events.",
+      "url": "https://cursor.com/changelog",
+      "verified": "2026-10-31"
+    },
+    {
       "name": "v0: Slack MCP integration",
       "date": "2026-10-19",
       "summary": "Connect Slack to v0 so it can use team discussions as context for a change and post updates to Slack when you ask. Available on all v0 plans.",
@@ -895,5 +937,5 @@
       "verified": "2026-10-16"
     }
   ],
-  "lastVerified": "2026-10-30"
+  "lastVerified": "2026-10-31"
 }
