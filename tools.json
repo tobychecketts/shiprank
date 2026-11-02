@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "tools": [
     {
       "name": "Cursor",
@@ -243,7 +243,7 @@
       "pricingUrl": "https://docs.anthropic.com/en/docs/about-claude/pricing",
       "pricingNote": "USD",
       "rankReason": "Top choice for coding/agent workloads; ranked just behind OpenAI on breadth",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-11-02"
     },
     {
       "name": "Google Gemini API",
@@ -465,7 +465,7 @@
       "pricingUrl": "https://www.langchain.com/pricing",
       "pricingNote": "Plus pay-as-you-go usage",
       "rankReason": "Most control for production stateful agents",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-11-02"
     },
     {
       "name": "CrewAI",
@@ -509,6 +509,13 @@
     }
   ],
   "releases": [
+    {
+      "date": "2026-10-31",
+      "name": "DeepSeek dsh-superagent (open-source research prototype)",
+      "summary": "DeepSeek's Harness team open-sourced dsh-superagent under the MIT licence: a proactive coding agent for one GitHub repository that listens to GitHub (and optionally Feishu), turns authorised requests into work items, runs each in its own agent session and directory, and replies with results such as pull requests. A web panel shows what needs a person. DeepSeek labels it research code, not production-ready, and it runs as a bundle for DeepSeek Harness.",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "verified": "2026-11-02"
+    },
     {
       "date": "2026-10-31",
       "name": "Claude Code 2.1.316: subagent effort control; Opus 4.8 fast mode deprecated",
@@ -557,6 +564,13 @@
       "summary": "Factory released Droid 1.0, a rebuilt harness for its model-agnostic coding agent. Programmatic tool calling is now on by default: the model writes a sandboxed JavaScript program that can run hundreds of tool calls in one request, keeping raw outputs out of context. Factory reports higher Terminal-Bench 4 scores at lower cost than other harnesses (self-reported).",
       "url": "https://factory.com/news/frontier-harness",
       "verified": "2026-10-31"
+    },
+    {
+      "date": "2026-10-28",
+      "name": "Vercel Labs agent-desktop 1.0: computer use for any coding agent",
+      "summary": "agent-desktop is a free, open-source (Apache 2.0) Rust CLI that lets agents like Claude Code or Codex operate desktop apps on macOS, Windows and Linux by reading the OS accessibility tree instead of screenshots, returning JSON element references and retry-safe error codes. Version 1.0 (adding Linux) shipped 28 Oct, with 1.0.2 on 30 Oct; it installs via npm.",
+      "url": "https://github.com/vercel-labs/agent-desktop/releases",
+      "verified": "2026-11-02"
     },
     {
       "date": "2026-10-28",
@@ -949,14 +963,7 @@
       "summary": "Universal work agent that writes and runs code, announced at Gemini at Work 2026.",
       "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
       "verified": "2026-10-16"
-    },
-    {
-      "name": "Supabase Select: code-first backend + app MCP servers",
-      "date": "2026-10-02",
-      "summary": "Schema/config in code for agents, Docker-free local Supabase (alpha), and authenticated MCP servers for your app.",
-      "url": "https://supabase.com/blog/supabase-select-2026-recap",
-      "verified": "2026-10-16"
     }
   ],
-  "lastVerified": "2026-11-01"
+  "lastVerified": "2026-11-02"
 }
