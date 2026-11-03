@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "tools": [
     {
       "name": "Cursor",
@@ -223,7 +223,7 @@
       "pricingUrl": "https://platform.openai.com/docs/pricing",
       "pricingNote": "USD, pay-as-you-go",
       "rankReason": "Widest model range and tooling",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-11-03"
     },
     {
       "name": "Anthropic API",
@@ -525,6 +525,20 @@
     },
     {
       "date": "2026-10-30",
+      "name": "Replit Cloud Agents for company codebases (Enterprise) + Agent chat messaging",
+      "summary": "Replit Enterprise customers can describe a change in plain language and a Cloud Agent finds the relevant code, makes the change, tests it in the running app and opens a GitHub pull request or GitLab merge request with screenshots and video, working in isolated cloud sandboxes for engineers to review. On Pro and Enterprise, Agent can now send messages to other chats or start new ones, and GPT-6.1 Terra is in the model selector for Agent in Power Mode.",
+      "url": "https://docs.replit.com/updates",
+      "verified": "2026-11-03"
+    },
+    {
+      "date": "2026-10-30",
+      "name": "Lovable project and personal memory",
+      "summary": "Lovable now remembers preferences, decisions and facts you state while building and applies them in later conversations. Project memory is shared by everyone who can edit a project; personal memory covers how you like to work across all projects. Memory settings show a plain-language summary you can correct or switch off.",
+      "url": "https://docs.lovable.dev/changelog",
+      "verified": "2026-11-03"
+    },
+    {
+      "date": "2026-10-30",
       "name": "OpenCode 2.2.3: use your Claude Code login inside OpenCode",
       "summary": "The open-source OpenCode agent added a built-in Claude Agent provider: install Claude Code, run claude auth login, then pick Claude Agent in /connect to use your Claude Code login and models while OpenCode keeps its own tools and permissions. Desktop also got faster on long, streaming sessions.",
       "url": "https://opencode.ai/changelog",
@@ -543,6 +557,13 @@
       "summary": "From 30 October, new Bolt database tables are private by default, so your app needs explicit permissions to read or write data. Existing databases aren't affected, and Bolt sets up permissions when it creates a new database; if you hit a permissions error you can ask Bolt to fix the table permissions.",
       "url": "https://support.bolt.new/release-notes",
       "verified": "2026-10-31"
+    },
+    {
+      "date": "2026-10-29",
+      "name": "Lovable: import apps from Replit, Bolt, Base44, v0 or Manus, or an existing website",
+      "summary": "You can now bring a project built elsewhere into Lovable and keep building: upload a ZIP export from Replit, Bolt, Base44, v0 or Manus, or enter the address of an existing site, including Wix, Squarespace or Webflow sites. The first import is free; later imports use standard build credits.",
+      "url": "https://docs.lovable.dev/changelog",
+      "verified": "2026-11-03"
     },
     {
       "date": "2026-10-29",
@@ -965,5 +986,5 @@
       "verified": "2026-10-16"
     }
   ],
-  "lastVerified": "2026-11-02"
+  "lastVerified": "2026-11-03"
 }
