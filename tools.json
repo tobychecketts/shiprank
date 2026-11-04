@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "tools": [
     {
       "name": "Cursor",
@@ -272,19 +272,19 @@
       "rank": 4,
       "url": "https://openrouter.ai",
       "bestFor": "One API key for many models",
-      "pricing": "Free tier: Unknown · Entry: Pay-as-you-go; Standard plan includes $25,000/month of list-price inference with no fees, 5% fee after",
+      "pricing": "Free tier: Yes (25+ free models, 50 requests/day) · Entry: Pay-as-you-go at provider list prices; 5.5% fee on credit purchases (Standard)",
       "pros": [
         "Easy model switching"
       ],
       "cons": [
         "Extra layer between you and provider"
       ],
-      "freeTier": "Unknown",
-      "entryPrice": "Pay-as-you-go; Standard plan includes $25,000/month of list-price inference with no fees, 5% fee after",
+      "freeTier": "Yes (25+ free models, 50 requests/day)",
+      "entryPrice": "Pay-as-you-go at provider list prices; 5.5% fee on credit purchases (Standard)",
       "pricingUrl": "https://openrouter.ai/pricing",
-      "pricingNote": "",
+      "pricingNote": "No markup on inference; Business plan fee is 8%. BYOK includes $25,000/month of list-price inference with no fee, 5% after.",
       "rankReason": "Best for switching models, but adds a middle layer",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-11-04"
     },
     {
       "name": "Figma Make",
@@ -509,6 +509,34 @@
     }
   ],
   "releases": [
+    {
+      "date": "2026-11-04",
+      "name": "Claude Code 2.1.318: cloud sessions without a repo + sign-in expiry warnings",
+      "summary": "Anthropic's Claude Code 2.1.318 lets a cloud session on an Anthropic-hosted environment start with no repository picked, shows when a stored claude.ai sign-in ends (in claude auth status and claude -p JSON, plus a warning 10 days before), and adds an effort option for quick side jobs. It also fixes lost --continue history, macOS stalls with many Bash commands, and config and login corruption on shared network home directories.",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
+      "verified": "2026-11-04"
+    },
+    {
+      "date": "2026-11-03",
+      "name": "GitHub Copilot in JetBrains Air",
+      "summary": "GitHub Copilot is now available as an agent in JetBrains Air through the Agent Client Protocol. Pick Copilot in Air's agent picker to delegate coding tasks on your existing Copilot subscription, track several agent sessions in parallel and review changes next to your code. Cloud tasks run in isolated containers through Air Teams and use your Copilot plan rather than JetBrains AI credits.",
+      "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/",
+      "verified": "2026-11-04"
+    },
+    {
+      "date": "2026-11-03",
+      "name": "Vercel Security Review (public beta)",
+      "summary": "Vercel Security Review is in public beta for Pro and Enterprise teams. Once enabled, every push to a connected GitHub repo is reviewed for vulnerabilities, with findings (summary, suggested fix and AI-rated severity) in a Vulnerabilities dashboard, a GitHub check and PR comments. Fix with Vercel Agent opens a PR, or pull findings into your own coding agent with vercel security vulnerabilities. Reviews are free until 10 November 2026, then billed at the Vercel Agent rate.",
+      "url": "https://vercel.com/changelog/vercel-security-review-public-beta",
+      "verified": "2026-11-04"
+    },
+    {
+      "date": "2026-11-01",
+      "name": "Lovable: download an SBOM for your project",
+      "summary": "Lovable now lets you download a software bill of materials for your project from the dependency list in the Security view, in SPDX 2.3 or CycloneDX 1.5 format. It lists production dependencies and their known vulnerabilities, so you can hand it to a security or procurement team. Downloading is free.",
+      "url": "https://docs.lovable.dev/changelog",
+      "verified": "2026-11-04"
+    },
     {
       "date": "2026-10-31",
       "name": "DeepSeek dsh-superagent (open-source research prototype)",
@@ -986,5 +1014,5 @@
       "verified": "2026-10-16"
     }
   ],
-  "lastVerified": "2026-11-03"
+  "lastVerified": "2026-11-04"
 }
