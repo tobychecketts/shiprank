@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "tools": [
     {
       "name": "Cursor",
@@ -264,7 +264,7 @@
       "pricingUrl": "https://ai.google.dev/gemini-api/docs/pricing",
       "pricingNote": "Price rise announced for 1 Dec 2026",
       "rankReason": "Generous free tier and long context",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-11-09"
     },
     {
       "name": "OpenRouter",
@@ -485,7 +485,7 @@
       "pricingUrl": "https://www.crewai.com/pricing",
       "pricingNote": "No self-serve paid tier listed",
       "rankReason": "Quickest way to multi-agent crews",
-      "lastChecked": "2026-10-16"
+      "lastChecked": "2026-11-09"
     },
     {
       "name": "OpenAI Agents SDK",
@@ -539,10 +539,24 @@
     },
     {
       "date": "2026-11-05",
+      "name": "Hermes Agent v0.23.0: full Desktop workspace in a browser",
+      "summary": "NousResearch's open-source Hermes Agent can now serve its full Desktop workspace in a browser tab from your own gateway (off by default). One gateway owns every session, and the release adds /rewind, pluggable delegation, plugin auto-updates and spend limits for paid MCP tools. Check the breaking changes before upgrading.",
+      "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.0",
+      "verified": "2026-11-09"
+    },
+    {
+      "date": "2026-11-05",
       "name": "Cursor: Build Live Apps from cloud agents",
       "summary": "Cursor cloud agents can scaffold a web app, spin up Postgres when needed, configure Cursor SSO auth, run publish-time security checks, and return a live shareable link. Available on paid plans with cloud agents enabled; local agents cannot publish.",
       "url": "https://cursor.com/changelog/build-live-apps",
       "verified": "2026-11-07"
+    },
+    {
+      "date": "2026-11-04",
+      "name": "Perplexity Teammates (research preview)",
+      "summary": "Always-on agents built on Perplexity Computer that own ongoing work: they plan tasks, coordinate other agents, watch connected tools like Slack, GitHub and Linear, and follow up on things like PR review comments. Research preview on the web for individual Perplexity Max subscribers.",
+      "url": "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work",
+      "verified": "2026-11-09"
     },
     {
       "date": "2026-11-04",
@@ -1040,14 +1054,7 @@
       "summary": "Google's newest frontier model now GA in Copilot.",
       "url": "https://github.blog/changelog/month/10-2026/",
       "verified": "2026-10-16"
-    },
-    {
-      "name": "Replit: cross-project chat + Windows Desktop preview",
-      "date": "2026-10-09",
-      "summary": "Send tasks across projects from one chat; Windows desktop app in private preview.",
-      "url": "https://docs.replit.com/updates/2026/10/09/changelog",
-      "verified": "2026-10-16"
     }
   ],
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-09"
 }
