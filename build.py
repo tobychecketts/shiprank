@@ -168,7 +168,7 @@ if keys:
          f'<div class="head">{kicker(("This week", None))}<h1>What shipped this week</h1><p class="dek">New releases from the AI tools builders actually use, newest first. Week {int(k[-2:])}, {k[:4]}. We only list something once we\'ve seen it on the company\'s own page.</p><p class="mute" style="margin-top:12px">Follow along in your reader with the <a href="{BASE}weekly/feed.xml">RSS feed</a>. An email version is on the way.</p></div>' + wbody(k, weeks[k]) + arch, active="weekly")
 
 # ---- featured (sponsorship) page ----
-MAILTO = "mailto:toby211@hotmail.co.uk?subject=" + "Get%20featured%20on%20ShipRank"
+MAILTO = "mailto:hello@shiprank.co.uk?subject=" + "Get%20featured%20on%20ShipRank"
 opts = [("Featured category slot","£49","per week","A highlighted ‘Featured’ card at the top of one category ranking page (e.g. Best app builders), clearly labelled as sponsored, with your logo, one-line pitch and link."),
         ("Weekly roundup spotlight","£29","per week","A spotlight card at the top of that week’s /weekly/ roundup page and its RSS item, labelled as sponsored."),
         ("Launch listing","£19","per week","Your launch listed on the homepage ‘New releases’ feed and the weekly roundup, labelled as sponsored. Must be a genuine, live launch.")]
