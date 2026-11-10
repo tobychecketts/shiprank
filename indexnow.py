@@ -8,8 +8,8 @@ Usage (run AFTER pushing and once GitHub Pages is live):
   python3 indexnow.py URL [URL...] # specific URLs
 """
 import json, re, subprocess, sys, urllib.request
-BASE = "https://tobychecketts.github.io/shiprank/"
-HOST = "tobychecketts.github.io"
+BASE = "https://shiprank.co.uk/"
+HOST = "shiprank.co.uk"
 KEY = "e5f47d70a4c91ed0ebc65a31f5ba958e"  # public key; key file is /<KEY>.txt at repo root
 ENDPOINT = "https://api.indexnow.org/indexnow"
 

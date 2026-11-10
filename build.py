@@ -7,7 +7,7 @@ Daily routine: edit tools.json -> python3 build.py -> commit + push -> python3 i
 """
 import json, re, os, html, shutil, hashlib, datetime
 from email.utils import format_datetime
-BASE = "https://tobychecketts.github.io/shiprank/"  # hosting address only; never shown as text
+BASE = "https://shiprank.co.uk/"  # hosting address only; never shown as text
 d = json.load(open("tools.json"))
 slug = lambda s: re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 e = html.escape
@@ -18,8 +18,9 @@ def nice(ds):
     except Exception: return ds
 def longdate(ds): return datetime.date.fromisoformat(ds).strftime("%A %-d %B %Y")
 CSS_VER = hashlib.md5(open("assets/style.css", "rb").read()).hexdigest()[:8]
-ANALYTICS = """<script>/* Cookie-free anonymous visit counter (Abacus, no cookies, no personal data) */(function(){try{var n="shiprank.tobychecketts",s=location.pathname.split("/")[2]||"home",a="https://abacus.jasoncameron.dev/hit/"+n+"/";["visits","section-"+s.replace(/[^a-z0-9_-]/gi,"")].forEach(function(k){fetch(a+k,{mode:"no-cors",keepalive:true})})}catch(e){}})();</script>"""
-FAVICON = "data:image/svg+xml," + "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231c1a16'/><text x='16' y='24' font-family='Georgia,serif' font-weight='700' font-size='22' fill='%23f7f3ea' text-anchor='middle'>S</text><rect x='22' y='20' width='4' height='4' fill='%23c8401c'/></svg>"
+ANALYTICS = """<script>/* Cookie-free anonymous visit counter (Abacus, no cookies, no personal data) */(function(){try{var n="shiprank.tobychecketts",s=location.pathname.split("/")[1]||"home",a="https://abacus.jasoncameron.dev/hit/"+n+"/";["visits","section-"+s.replace(/[^a-z0-9_-]/gi,"")].forEach(function(k){fetch(a+k,{mode:"no-cors",keepalive:true})})}catch(e){}})();</script>"""
+ICONS = '<link rel="icon" href="' + BASE + 'favicon.svg" type="image/svg+xml"><link rel="icon" href="' + BASE + 'favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="' + BASE + 'apple-touch-icon.png">'
+MARK = '<img class="mark" src="' + BASE + 'assets/brand/mark.svg" alt="" width="34" height="34">'
 cats = sorted({t["category"] for t in d["tools"]}, key=lambda c: [t["category"] for t in d["tools"]].index(c))
 lc = lambda c: c if c.startswith(("AI", "LLM")) else c[0].lower() + c[1:]
 NOUN = {"Design-to-code": "design-to-code tools", "Deployment & backend": "deployment & backend tools", "Voice & video for demos": "voice & video demo tools"}
@@ -29,20 +30,20 @@ urls = [BASE]
 def masthead(active):
     items = [("rankings", f"{BASE}#rankings", "Rankings"), ("compare", f"{BASE}compare/", "Compare"), ("guides", f"{BASE}guides/", "Guides"), ("weekly", f"{BASE}weekly/", "This week"), ("featured", f"{BASE}featured/", "Sponsor")]
     nav = "".join(f'<a href="{h}"{" class=on" if k == active else ""}>{l}</a>' for k, h, l in items)
-    return (f'<a class="skip" href="#main">Skip to content</a><header class="mast"><div class="wrap"><a class="logo" href="{BASE}" aria-label="ShipRank home">ShipRank<b>.</b></a><nav class="nav" aria-label="Main">{nav}</nav></div></header>'
+    return (f'<a class="skip" href="#main">Skip to content</a><header class="mast"><div class="wrap"><a class="logo" href="{BASE}" aria-label="ShipRank home">{MARK}ShipRank<b>.</b></a><nav class="nav" aria-label="Main">{nav}</nav></div></header>'
             f'<div class="strap"><div class="wrap"><span>Last updated {longdate(LV)}</span><span class="r">{len(d["tools"])} tools in {len(cats)} categories · nobody pays to rank</span></div></div>')
 
 def footer():
     best = "".join(f'<li><a href="{BASE}best/{slug(c)}/">{e(c)}</a></li>' for c in cats)
-    return f"""<footer class="foot"><div class="wrap"><div class="grid"><div><a class="logo" href="{BASE}">ShipRank<b>.</b></a><p>A small, independent site ranking the AI tools people use to build things. We read the changelogs and pricing pages every morning so you don't have to, and we keep the rankings honest: sponsors get a label, not a better spot.</p></div>
+    return f"""<footer class="foot"><div class="wrap"><div class="grid"><div><a class="logo" href="{BASE}">{MARK}ShipRank<b>.</b></a><p>A small, independent site ranking the AI tools people use to build things. We read the changelogs and pricing pages every morning so you don't have to, and we keep the rankings honest: sponsors get a label, not a better spot.</p></div>
 <div><h4>Rankings</h4><ul>{best}</ul></div><div><h4>Elsewhere</h4><ul><li><a href="{BASE}guides/">Guides</a></li><li><a href="{BASE}compare/">Comparisons</a></li><li><a href="{BASE}weekly/">This week</a></li><li><a href="{BASE}weekly/feed.xml">RSS feed</a></li><li><a href="{BASE}featured/">Sponsor a spot</a></li><li><a href="{BASE}sitemap.xml">Sitemap</a></li></ul></div></div>
 <p class="small">Disclosure: some links on ShipRank may be affiliate links, and we may earn a commission if you buy through them, at no extra cost to you. Sponsored placements are always labelled. Neither affects our rankings, which are editorial. Privacy: we count visits anonymously with a cookie-free counter; no cookies, no tracking across sites, no personal data. © {YEAR} ShipRank.</p></div></footer>"""
 
 def page(path, title, desc, body, head="", active="", ogtype="website"):
     url = BASE + path + ("/" if path else "")
     out = f"""<!doctype html><html lang="en-GB"><head><meta name='impact-site-verification' value='433c0488-f7f6-4a86-9b9a-075a81062f41'><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{url}"><meta name="theme-color" content="#f7f3ea"><link rel="icon" href="{FAVICON}">
-<meta property="og:type" content="{ogtype}"><meta property="og:site_name" content="ShipRank"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{BASE}screenshot.png"><link rel="alternate" type="application/rss+xml" title="ShipRank Weekly" href="{BASE}weekly/feed.xml"><meta name="twitter:card" content="summary_large_image">
+<title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{url}"><meta name="theme-color" content="#f7f3ea">{ICONS}
+<meta property="og:type" content="{ogtype}"><meta property="og:site_name" content="ShipRank"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{BASE}assets/brand/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="ShipRank: a small sailing boat logo beside the ShipRank name"><link rel="alternate" type="application/rss+xml" title="ShipRank Weekly" href="{BASE}weekly/feed.xml"><meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="{BASE}assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="{BASE}assets/style.css?v={CSS_VER}">{ANALYTICS}{head}</head><body>{masthead(active)}
 <main id="main" class="wrap page">{body}</main>{footer()}</body></html>"""
     os.makedirs(path or ".", exist_ok=True); open(os.path.join(path, "index.html"), "w").write(out)
@@ -137,7 +138,7 @@ for g in G:
             + secs("top") + picks + items + secs("sections") + '<h2 id="faq">FAQ</h2>' + faq_html(g["faq"]) + srcs + relh +
             '<hr><p><small>Prices in USD from official pages. Anything marked unverified could not be confirmed.</small></p></div>')
     gurl = f"{BASE}guides/{g['slug']}/"
-    art = {"@context": "https://schema.org", "@type": "Article", "headline": g["title"], "description": g["desc"], "mainEntityOfPage": gurl, "url": gurl, "image": BASE + "screenshot.png", "author": {"@type": "Organization", "name": "ShipRank", "url": BASE}, "publisher": {"@type": "Organization", "name": "ShipRank", "url": BASE}}
+    art = {"@context": "https://schema.org", "@type": "Article", "headline": g["title"], "description": g["desc"], "mainEntityOfPage": gurl, "url": gurl, "image": BASE + "assets/brand/og.png", "author": {"@type": "Organization", "name": "ShipRank", "url": BASE}, "publisher": {"@type": "Organization", "name": "ShipRank", "url": BASE, "logo": {"@type": "ImageObject", "url": BASE + "apple-touch-icon.png"}}}
     if g.get("published"): art["datePublished"] = g["published"]
     if g.get("updated"): art["dateModified"] = g["updated"]
     page(f"guides/{g['slug']}", g.get("metaTitle", g["title"] + " – ShipRank"), g["desc"][:160], body, ldjson(art) + (ldjson(faq_ld(g["faq"])) if g["faq"] else ""), active="guides", ogtype="article")
@@ -190,7 +191,7 @@ side = (f'<aside class="side"><section><h2>Shipped lately</h2><ul class="log">' 
         f'<section><h2>Worth reading</h2><ol class="reads">' + "".join(f'<li><a href="{BASE}guides/{g["slug"]}/">{e(g["title"])}</a></li>' for g in G[::-1][:6]) + "".join(f'<li><a href="{BASE}compare/{a["slug"]}/">{e(a["title"].split(":")[0])}</a></li>' for a in cmp["articles"][:3]) + '</ol></section>'
         f'<section class="note">Make a tool for builders? You can <a href="{BASE}featured/">pay for a labelled spot</a>. It won’t change where you rank, and we’ll say so on the page.</section></aside>')
 hbody = intro + f'<div class="cols" style="margin-top:8px"><div id="rankings"><div class="sechead" style="margin-top:28px;border:0;padding:0"><h2 style="font-size:1.1rem;font-family:var(--mono);font-weight:400;color:var(--mute)">The rankings</h2></div>{jump}{boards}</div>{side}</div>'
-home_ld = ldjson({"@context": "https://schema.org", "@type": "WebSite", "name": "ShipRank", "url": BASE, "description": "AI tool rankings for vibe coders and builders", "publisher": {"@type": "Organization", "name": "ShipRank", "url": BASE}})
+home_ld = ldjson({"@context": "https://schema.org", "@type": "WebSite", "name": "ShipRank", "url": BASE, "description": "AI tool rankings for vibe coders and builders", "publisher": {"@type": "Organization", "name": "ShipRank", "url": BASE, "logo": {"@type": "ImageObject", "url": BASE + "apple-touch-icon.png"}}})
 page("", "ShipRank – AI tool rankings for builders", "ShipRank ranks the best AI tools for vibe coders and builders by use case, with verified pricing and new releases.", hbody, home_ld, active="")
 
 # ---- RSS feed of releases ----
@@ -203,7 +204,7 @@ open("weekly/feed.xml", "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<rs
 # ---- private-ish stats page (not in sitemap, noindex) ----
 os.makedirs("stats", exist_ok=True)
 SECTIONS = ["home","tools","best","compare","guides","weekly","featured"]
-open("stats/index.html","w").write(f"""<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ShipRank visit stats</title><link rel="icon" href="{FAVICON}"><link rel="stylesheet" href="{BASE}assets/style.css?v={CSS_VER}"></head><body>{masthead("")}<main id="main" class="wrap page"><div class="head"><h1>Visit stats</h1><p class="dek">Anonymous, cookie-free page-view counts (all-time totals since 23 Oct 2026).</p></div><div class="tbl" style="max-width:520px"><table id=t><tr><th>Counter</th><th>Page views</th></tr></table></div><p><small>Counts come from Abacus (abacus.jasoncameron.dev). Viewing this page does not add a visit.</small></p></main>
+open("stats/index.html","w").write(f"""<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ShipRank visit stats</title>{ICONS}<link rel="stylesheet" href="{BASE}assets/style.css?v={CSS_VER}"></head><body>{masthead("")}<main id="main" class="wrap page"><div class="head"><h1>Visit stats</h1><p class="dek">Anonymous, cookie-free page-view counts (all-time totals since 23 Oct 2026).</p></div><div class="tbl" style="max-width:520px"><table id=t><tr><th>Counter</th><th>Page views</th></tr></table></div><p><small>Counts come from Abacus (abacus.jasoncameron.dev). Viewing this page does not add a visit.</small></p></main>
 <script>var a="https://abacus.jasoncameron.dev/get/shiprank.tobychecketts/";["visits"].concat({json.dumps(SECTIONS)}.map(function(s){{return "section-"+s}})).forEach(function(k){{var tr=document.createElement("tr");tr.innerHTML="<td>"+(k=="visits"?"<b>All pages</b>":k.slice(8))+"</td><td>…</td>";document.getElementById("t").appendChild(tr);fetch(a+k).then(function(r){{return r.json()}}).then(function(j){{tr.lastChild.textContent=j.value!=null?j.value:0}}).catch(function(){{tr.lastChild.textContent="0"}})}});</script></body></html>""")
 open("sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"<url><loc>{u}</loc><lastmod>{LV}</lastmod></url>\n" for u in urls) + "</urlset>\n")
 open("robots.txt", "w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\n")

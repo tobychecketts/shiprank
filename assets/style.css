@@ -95,3 +95,4 @@ tbody th{font-weight:600;color:var(--mute);font-size:.85rem;white-space:nowrap;p
 .verdict .kicker{font:.8rem/1.4 var(--mono)}
 @media (max-width:640px){.nav{gap:13px;font-size:.9rem}}
 @media (max-width:640px){.prices .opt{grid-template-columns:1fr;gap:4px}.prices .amt{text-align:left;order:-1;font-size:1.6rem}.prices .amt small{display:inline;margin-left:8px}}
+.logo{display:inline-flex;align-items:center}.logo .mark{display:block;width:1.35em;height:1.35em;margin-right:.4em;flex:none;transform:rotate(-2deg)}.foot .logo .mark{width:1.15em;height:1.15em}

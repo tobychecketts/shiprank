@@ -25,7 +25,7 @@ Daily routine: update `tools.json` → run `python3 build.py` → commit and pus
 
 ## IndexNow (Bing, Yandex, etc. – no sign-in)
 
-Key file: `e5f47d70a4c91ed0ebc65a31f5ba958e.txt` at the repo root (served at `https://tobychecketts.github.io/shiprank/e5f47d70a4c91ed0ebc65a31f5ba958e.txt`; keep it). After a push is live on GitHub Pages, run:
+Key file: `e5f47d70a4c91ed0ebc65a31f5ba958e.txt` at the repo root (served at `https://shiprank.co.uk/e5f47d70a4c91ed0ebc65a31f5ba958e.txt`; keep it). After a push is live on GitHub Pages, run:
 - `python3 indexnow.py` – pings URLs of HTML pages changed in the last commit
 - `python3 indexnow.py --since <ref>` – pages changed since a commit
 - `python3 indexnow.py --all` – every URL in `sitemap.xml`
