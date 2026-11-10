@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "tools": [
     {
       "name": "Cursor",
@@ -241,9 +241,9 @@
       "freeTier": "Small free credits for new users",
       "entryPrice": "From $0.10 per 1M input tokens (Haiku 5.5); Sonnet 5 $2/$10 per 1M in/out",
       "pricingUrl": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-      "pricingNote": "USD",
+      "pricingNote": "USD; new Claude Fable 5.2 is $8/$40 per 1M in/out",
       "rankReason": "Top choice for coding/agent workloads; ranked just behind OpenAI on breadth",
-      "lastChecked": "2026-11-02"
+      "lastChecked": "2026-11-10"
     },
     {
       "name": "Google Gemini API",
@@ -393,7 +393,7 @@
       "rank": 1,
       "url": "https://elevenlabs.io",
       "bestFor": "Voiceovers for demo videos",
-      "pricing": "Free tier: Yes · Entry: $6/month (Starter; $1 first month offer until 18 Oct)",
+      "pricing": "Free tier: Yes · Entry: $6/month (Starter; $1 first month intro offer)",
       "pros": [
         "Natural voices"
       ],
@@ -401,11 +401,11 @@
         "Character limits on free tier"
       ],
       "freeTier": "Yes",
-      "entryPrice": "$6/month (Starter; $1 first month offer until 18 Oct)",
+      "entryPrice": "$6/month (Starter; $1 first month intro offer)",
       "pricingUrl": "https://elevenlabs.io/pricing",
-      "pricingNote": "",
+      "pricingNote": "Creator $22/month ($11 first month); annual billing = 10x monthly",
       "rankReason": "Most natural voiceovers for demos",
-      "lastChecked": "2026-10-18"
+      "lastChecked": "2026-11-10"
     },
     {
       "name": "Descript",
@@ -509,6 +509,27 @@
     }
   ],
   "releases": [
+    {
+      "date": "2026-11-09",
+      "name": "Claude Fable 5.2",
+      "summary": "Anthropic's newest Fable model, now the default Fable model in Claude Code (2.1.321) and generally available in GitHub Copilot for Pro+, Max, Business and Enterprise users. 1M context; API price $8/$40 per 1M input/output tokens, down from $10/$50 on Fable 5.1. Also on Vercel AI Gateway.",
+      "url": "https://github.blog/changelog/2026-11-09-claude-fable-5-5-in-github-copilot/",
+      "verified": "2026-11-10"
+    },
+    {
+      "date": "2026-11-09",
+      "name": "Boxes.dev (Launch YC)",
+      "summary": "Cloud environment for AI coding: run unmodified Claude Code and Codex on parallel cloud machines with your full dev environment, using your existing subscriptions. Start agents from a desktop app, phone, Slack or Linear; each agent gets its own machine to test its work.",
+      "url": "https://www.ycombinator.com/launches/Wp5-boxes-dev-move-your-ai-coding-to-the-cloud",
+      "verified": "2026-11-10"
+    },
+    {
+      "date": "2026-11-09",
+      "name": "Codenotary AgentMon Live (open source)",
+      "summary": "Free Apache-2.0 plugin for Claude Code (2.1.308+) with a live dashboard of agent and subagent activity, token and cost visibility, and a 'Done Gate' that checks for failed tests or unfinished tasks before the agent says it's done.",
+      "url": "https://github.com/codenotary/agentmon-live",
+      "verified": "2026-11-10"
+    },
     {
       "date": "2026-11-06",
       "name": "Cursor: voice chat with agents",
@@ -1056,5 +1077,5 @@
       "verified": "2026-10-16"
     }
   ],
-  "lastVerified": "2026-11-09"
+  "lastVerified": "2026-11-10"
 }
