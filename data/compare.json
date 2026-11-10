@@ -1,24 +1,331 @@
-{"checked":"2026-10-16","extraTools":{
- "Firebase":{"name":"Firebase","category":"Deployment & backend","url":"https://firebase.google.com","bestFor":"Google-backed backend (auth, database, hosting) with a no-cost starter plan","freeTier":"Yes (Spark plan: no-cost usage limits, no payment method needed)","entryPrice":"Pay as you go (Blaze plan); eligible new users may get $300 free credit","pricingUrl":"https://firebase.google.com/pricing","pricingNote":"Per-product Blaze rates not checked here","pros":["No payment method needed on Spark"],"cons":["Not ranked by ShipRank yet; pros/cons not independently reviewed"],"lastChecked":"2026-10-16","rank":null}},
-"articles":[
-{"slug":"cursor-vs-windsurf-vs-github-copilot","title":"Cursor vs Windsurf vs GitHub Copilot (2026): which AI code editor should vibe coders use?","desc":"Cursor vs Windsurf vs GitHub Copilot compared for vibe coders: verdict, pricing checked 16 Oct 2026, who each suits, and FAQs.","tools":["Cursor","Windsurf","GitHub Copilot"],
-"verdict":"Pick <b>Cursor</b> if you want the deepest agent features and don't mind its new Grok/X-bundled plans. Pick <b>GitHub Copilot</b> if you want the cheapest solid paid tier ($10/month Pro) inside the IDE you already use. Pick <b>Windsurf</b> if you want a capable agentic editor at $20/month and like trying an alternative.",
-"who":{"Cursor":"Builders who live in one editor all day and want agent mode, cloud agents and automations (Premium plan and up).","Windsurf":"Builders who want an AI-native editor with a free tier and a straightforward $20/month Pro plan.","GitHub Copilot":"Anyone already on GitHub or using JetBrains/VS Code/other IDEs who wants AI without switching editor."},
-"faq":[["Is there a free version of each?","Yes. All three list a free plan on their official pricing pages (checked 16 Oct 2026), with limited usage."],["Why is Cursor's pricing linked to X/Grok?","Cursor's pricing page (16 Oct 2026) shows plans sold via X Subscription Corp with Grok features included. The Plus plan ($8/month) is Grok-models-only; third-party models are billed at API list price."],["Which is cheapest for paid use?","Of the entry paid plans we checked: Cursor Plus $8/month (Grok models only), Copilot Pro $10/month, Windsurf Pro $20/month."]]},
-{"slug":"lovable-vs-bolt-vs-v0-vs-replit","title":"Lovable vs Bolt.new vs v0 vs Replit (2026): best AI app builder for vibe coders","desc":"Lovable, Bolt.new, v0 and Replit compared: quick verdict, verified pricing (16 Oct 2026), who each is best for, and FAQs.","tools":["Lovable","Bolt.new","v0","Replit"],
-"verdict":"<b>Lovable</b> is the fastest route from a prompt to a full-stack app if you don't code. <b>v0</b> produces the best-looking React/Next.js UI. <b>Bolt.new</b> is great for quick in-browser full-stack prototypes. <b>Replit</b> is the all-in-one choice when you want building and hosting in one place.",
-"who":{"Lovable":"Non-coders shipping a full-stack web app, especially with Supabase.","Bolt.new":"Builders who want to prototype in the browser with nothing to install.","v0":"Front-end builders on React/Next.js who will deploy on Vercel.","Replit":"People who want an agent plus hosting in one product and don't mind usage-based costs."},
-"faq":[["Which has the most generous free tier?","Hard to compare directly: Lovable gives 5 daily build credits (up to 30/month), v0 gives 7 messages/day, Replit has a Free Mode, Bolt has a free plan (limits not compared here)."],["How much is Lovable Pro?","Unverified: the paid price wasn't shown on the pricing page we fetched on 16 Oct 2026. Check lovable.dev/pricing."],["Do I own the code?","Lovable's pricing FAQ says you own the code and apps you build. We haven't verified the equivalent terms for the others."]]},
-{"slug":"claude-code-vs-openai-codex-vs-devin","title":"Claude Code vs OpenAI Codex vs Devin (2026): which coding agent should you use?","desc":"Claude Code, OpenAI Codex and Devin compared for builders: verdict, pricing checked 16 Oct 2026, who each suits and FAQs.","tools":["Claude Code","OpenAI Codex","Devin"],
-"verdict":"<b>Claude Code</b> is our top pick for hands-on agentic coding in the terminal on real codebases (from $20/month via Claude Pro). <b>OpenAI Codex</b> is a close second, with limited access even on ChatGPT Free. <b>Devin</b> suits delegating whole tasks rather than pairing.",
-"who":{"Claude Code":"Developers comfortable in the terminal working on large existing repos.","OpenAI Codex":"ChatGPT users who want parallel cloud coding tasks without another subscription.","Devin":"Builders who want to hand off tasks to an autonomous agent."},
-"faq":[["Can I try them free?","Codex: limited access on ChatGPT Free. Devin: a free plan is listed. Claude Code on the free Claude plan: unverified."],["Why does Devin's pricing look like Windsurf's?","On 16 Oct 2026 devin.ai/pricing showed the same plan page as Windsurf (Free, Pro $20, Max $200), both from Cognition."],["Does Claude Code do code review?","Anthropic announced Code Review as generally available for Claude Team and Enterprise plans (release date not shown on the page)."]]},
-{"slug":"supabase-vs-firebase","title":"Supabase vs Firebase for vibe-coded apps (2026)","desc":"Supabase vs Firebase for AI-built apps: verdict, free tiers and pricing checked 16 Oct 2026, who each is best for, and FAQs.","tools":["Supabase","Firebase"],
-"verdict":"For vibe-coded web apps, <b>Supabase</b> is the default: Postgres, auth and storage, with built-in support in tools like Lovable and Bolt, plus new agent-friendly code-first features. <b>Firebase</b> is a solid alternative if you're in the Google ecosystem; its Spark plan needs no payment method.",
-"who":{"Supabase":"Anyone building with Lovable/Bolt or wanting a SQL (Postgres) database their agent can manage from code.","Firebase":"Builders already on Google Cloud or wanting to start with no card on file."},
-"faq":[["Which is free?","Both: Supabase has a $0 Free plan (free projects pause when idle); Firebase's Spark plan is no-cost with no payment method needed."],["What do paid plans cost?","Supabase Pro starts at $25/month. Firebase Blaze is pay-as-you-go; eligible users may get $300 free credit. Per-product Firebase rates weren't checked."],["What's new for agents?","At Supabase Select (2 Oct 2026) Supabase announced code-first schema/config, Docker-free local Supabase (alpha) and MCP servers for your app."]]},
-{"slug":"vercel-vs-netlify","title":"Vercel vs Netlify for AI app deployment (2026)","desc":"Vercel vs Netlify for deploying AI apps: verdict, pricing checked 16 Oct 2026, who each suits, and FAQs.","tools":["Vercel","Netlify"],
-"verdict":"<b>Vercel</b> is the smoothest choice for Next.js and AI apps (AI SDK 7, AI Gateway, previews); Pro is $20/month. <b>Netlify</b> is simpler and cheaper to start for static sites, with a $9/month Personal plan.",
-"who":{"Vercel":"Next.js and AI SDK builders who want previews and AI Gateway.","Netlify":"Static sites and simple serverless apps on a tight budget."},
-"faq":[["Do both have free plans?","Yes: Vercel Hobby ($0) and Netlify Free ($0)."],["What's Vercel Token Pass?","Announced 15 Oct 2026 in early access for Pro teams: $30/month for $80 of GLM 5.3 and Kimi K3 credit through AI Gateway."],["Can bills spike?","Both have usage-based extras (Vercel usage credit, Netlify credits). Set spend limits."]]}
-]}
+{
+ "checked": "2026-10-16",
+ "extraTools": {
+  "Firebase": {
+   "name": "Firebase",
+   "category": "Deployment & backend",
+   "url": "https://firebase.google.com",
+   "bestFor": "Google-backed backend (auth, database, hosting) with a no-cost starter plan",
+   "freeTier": "Yes (Spark plan: no-cost usage limits, no payment method needed)",
+   "entryPrice": "Pay as you go (Blaze plan); eligible new users may get $300 free credit",
+   "pricingUrl": "https://firebase.google.com/pricing",
+   "pricingNote": "Per-product Blaze rates not checked here",
+   "pros": [
+    "No payment method needed on Spark"
+   ],
+   "cons": [
+    "Not ranked by ShipRank yet; pros/cons not independently reviewed"
+   ],
+   "lastChecked": "2026-10-16",
+   "rank": null
+  }
+ },
+ "articles": [
+  {
+   "slug": "cursor-vs-windsurf-vs-github-copilot",
+   "title": "Cursor vs Windsurf vs GitHub Copilot (2026): which AI code editor should vibe coders use?",
+   "desc": "Cursor vs Windsurf vs GitHub Copilot compared for vibe coders: verdict, pricing checked 16 Oct 2026, who each suits, and FAQs.",
+   "tools": [
+    "Cursor",
+    "Windsurf",
+    "GitHub Copilot"
+   ],
+   "verdict": "Pick <b>Cursor</b> if you want the deepest agent features and don't mind its new Grok/X-bundled plans. Pick <b>GitHub Copilot</b> if you want the cheapest solid paid tier ($10/month Pro) inside the IDE you already use. Pick <b>Windsurf</b> if you want a capable agentic editor at $20/month and like trying an alternative.",
+   "who": {
+    "Cursor": "Builders who live in one editor all day and want agent mode, cloud agents and automations (Premium plan and up).",
+    "Windsurf": "Builders who want an AI-native editor with a free tier and a straightforward $20/month Pro plan.",
+    "GitHub Copilot": "Anyone already on GitHub or using JetBrains/VS Code/other IDEs who wants AI without switching editor."
+   },
+   "faq": [
+    [
+     "Is there a free version of each?",
+     "Yes. All three list a free plan on their official pricing pages (checked 16 Oct 2026), with limited usage."
+    ],
+    [
+     "Why is Cursor's pricing linked to X/Grok?",
+     "Cursor's pricing page (16 Oct 2026) shows plans sold via X Subscription Corp with Grok features included. The Plus plan ($8/month) is Grok-models-only; third-party models are billed at API list price."
+    ],
+    [
+     "Which is cheapest for paid use?",
+     "Of the entry paid plans we checked: Cursor Plus $8/month (Grok models only), Copilot Pro $10/month, Windsurf Pro $20/month."
+    ]
+   ]
+  },
+  {
+   "slug": "lovable-vs-bolt-vs-v0-vs-replit",
+   "title": "Lovable vs Bolt.new vs v0 vs Replit (2026): best AI app builder for vibe coders",
+   "desc": "Lovable, Bolt.new, v0 and Replit compared: quick verdict, verified pricing (checked 10 Nov 2026), who each is best for, and FAQs.",
+   "tools": [
+    "Lovable",
+    "Bolt.new",
+    "v0",
+    "Replit"
+   ],
+   "verdict": "<b>Lovable</b> is the fastest route from a prompt to a full-stack app if you don't code. <b>v0</b> produces the best-looking React/Next.js UI. <b>Bolt.new</b> is great for quick in-browser full-stack prototypes. <b>Replit</b> is the all-in-one choice when you want building and hosting in one place.",
+   "who": {
+    "Lovable": "Non-coders shipping a full-stack web app, especially with Supabase.",
+    "Bolt.new": "Builders who want to prototype in the browser with nothing to install.",
+    "v0": "Front-end builders on React/Next.js who will deploy on Vercel.",
+    "Replit": "People who want an agent plus hosting in one product and don't mind usage-based costs."
+   },
+   "faq": [
+    [
+     "Which has the most generous free tier?",
+     "They measure usage differently, so there's no straight answer. Checked 10 Nov 2026: Lovable gives 5 build credits a day (up to 30 a month), Bolt.new gives 1M tokens a month (300K a day), v0 gives 7 messages a day, and Replit's free Starter plan has a daily Agent allowance and one published app."
+    ],
+    [
+     "How much is Lovable Pro?",
+     "$25/month for 100 credits, or $21/month billed annually, according to Lovable's subscription plans docs (checked 10 Nov 2026)."
+    ],
+    [
+     "Do I own the code?",
+     "Lovable's pricing FAQ says you own the code and apps you build. We haven't verified the equivalent terms for the others."
+    ]
+   ]
+  },
+  {
+   "slug": "claude-code-vs-openai-codex-vs-devin",
+   "title": "Claude Code vs OpenAI Codex vs Devin (2026): which coding agent should you use?",
+   "desc": "Claude Code, OpenAI Codex and Devin compared for builders: verdict, pricing checked 16 Oct 2026, who each suits and FAQs.",
+   "tools": [
+    "Claude Code",
+    "OpenAI Codex",
+    "Devin"
+   ],
+   "verdict": "<b>Claude Code</b> is our top pick for hands-on agentic coding in the terminal on real codebases (from $20/month via Claude Pro). <b>OpenAI Codex</b> is a close second, with limited access even on ChatGPT Free. <b>Devin</b> suits delegating whole tasks rather than pairing.",
+   "who": {
+    "Claude Code": "Developers comfortable in the terminal working on large existing repos.",
+    "OpenAI Codex": "ChatGPT users who want parallel cloud coding tasks without another subscription.",
+    "Devin": "Builders who want to hand off tasks to an autonomous agent."
+   },
+   "faq": [
+    [
+     "Can I try them free?",
+     "Codex: limited access on ChatGPT Free. Devin: a free plan is listed. Claude Code on the free Claude plan: unverified."
+    ],
+    [
+     "Why does Devin's pricing look like Windsurf's?",
+     "On 16 Oct 2026 devin.ai/pricing showed the same plan page as Windsurf (Free, Pro $20, Max $200), both from Cognition."
+    ],
+    [
+     "Does Claude Code do code review?",
+     "Anthropic announced Code Review as generally available for Claude Team and Enterprise plans (release date not shown on the page)."
+    ]
+   ]
+  },
+  {
+   "slug": "supabase-vs-firebase",
+   "title": "Supabase vs Firebase for vibe-coded apps (2026)",
+   "desc": "Supabase vs Firebase for AI-built apps: verdict, free tiers and pricing checked 16 Oct 2026, who each is best for, and FAQs.",
+   "tools": [
+    "Supabase",
+    "Firebase"
+   ],
+   "verdict": "For vibe-coded web apps, <b>Supabase</b> is the default: Postgres, auth and storage, with built-in support in tools like Lovable and Bolt, plus new agent-friendly code-first features. <b>Firebase</b> is a solid alternative if you're in the Google ecosystem; its Spark plan needs no payment method.",
+   "who": {
+    "Supabase": "Anyone building with Lovable/Bolt or wanting a SQL (Postgres) database their agent can manage from code.",
+    "Firebase": "Builders already on Google Cloud or wanting to start with no card on file."
+   },
+   "faq": [
+    [
+     "Which is free?",
+     "Both: Supabase has a $0 Free plan (free projects pause when idle); Firebase's Spark plan is no-cost with no payment method needed."
+    ],
+    [
+     "What do paid plans cost?",
+     "Supabase Pro starts at $25/month. Firebase Blaze is pay-as-you-go; eligible users may get $300 free credit. Per-product Firebase rates weren't checked."
+    ],
+    [
+     "What's new for agents?",
+     "At Supabase Select (2 Oct 2026) Supabase announced code-first schema/config, Docker-free local Supabase (alpha) and MCP servers for your app."
+    ]
+   ]
+  },
+  {
+   "slug": "vercel-vs-netlify",
+   "title": "Vercel vs Netlify for AI app deployment (2026)",
+   "desc": "Vercel vs Netlify for deploying AI apps: verdict, pricing checked 16 Oct 2026, who each suits, and FAQs.",
+   "tools": [
+    "Vercel",
+    "Netlify"
+   ],
+   "verdict": "<b>Vercel</b> is the smoothest choice for Next.js and AI apps (AI SDK 7, AI Gateway, previews); Pro is $20/month. <b>Netlify</b> is simpler and cheaper to start for static sites, with a $9/month Personal plan.",
+   "who": {
+    "Vercel": "Next.js and AI SDK builders who want previews and AI Gateway.",
+    "Netlify": "Static sites and simple serverless apps on a tight budget."
+   },
+   "faq": [
+    [
+     "Do both have free plans?",
+     "Yes: Vercel Hobby ($0) and Netlify Free ($0)."
+    ],
+    [
+     "What's Vercel Token Pass?",
+     "Announced 15 Oct 2026 in early access for Pro teams: $30/month for $80 of GLM 5.3 and Kimi K3 credit through AI Gateway."
+    ],
+    [
+     "Can bills spike?",
+     "Both have usage-based extras (Vercel usage credit, Netlify credits). Set spend limits."
+    ]
+   ]
+  },
+  {
+   "slug": "lovable-vs-bolt",
+   "updated": "2026-11-10",
+   "title": "Lovable vs Bolt.new (2026): which AI app builder should you use?",
+   "desc": "Lovable vs Bolt.new compared for people who don't code: free plans, the $25 paid plans, hosting and domains, and which one we'd pick. Prices checked 10 Nov 2026.",
+   "tools": [
+    "Lovable",
+    "Bolt.new"
+   ],
+   "verdict": "Pick <b>Lovable</b> if you don't code and want the shortest route from a description to a working full-stack web app. It's our No. 1 app builder. Pick <b>Bolt.new</b> if you want to tinker in the browser on a bigger free allowance, with hosting included even on the free plan. Both start at <b>$25/month</b> when you go paid.",
+   "body": "<h2>The main differences</h2><ul><li><b>How usage is counted.</b> Lovable uses credits: a small change like \"make the button gray\" costs about 0.5 credits, and a landing page with generated images about 1.7, according to its pricing page. Bolt.new counts tokens: 1M a month on the free plan (300K a day), and Pro starts at 10M a month with no daily limit.</li><li><b>Hosting and domains.</b> Bolt.new includes website hosting and unlimited databases on every plan. Custom domains and removing the Bolt branding need Pro. Lovable says hosting a small or new app is usually covered by the Cloud credits included with every plan.</li><li><b>Teams.</b> Lovable charges per workspace, not per seat, so you can invite as many people as you like to share the credits. Bolt.new Teams is $30 per member a month.</li></ul><p>Not sure you need an app builder at all? See <a href=\"@/guides/best-ai-coding-tool-for-non-developers/\">the best AI coding tools for non-developers</a> or the full <a href=\"@/best/app-builders/\">app builder ranking</a>.</p>",
+   "who": {
+    "Lovable": "Non-coders who want a full-stack web app (pages, logins, data) built by chatting, and teams who want to share one pot of credits.",
+    "Bolt.new": "People who want to experiment for free in the browser, and who want hosting, databases and their own domain in one $25 plan."
+   },
+   "faq": [
+    [
+     "Is Lovable or Bolt.new cheaper?",
+     "They cost the same to start: Lovable Pro is $25/month for 100 credits ($21/month billed annually) and Bolt.new Pro is $25/month, with up to 28% off billed yearly. Checked 10 Nov 2026."
+    ],
+    [
+     "Which free plan is better?",
+     "They measure usage differently. Lovable's free plan gives 5 build credits a day (up to 30 a month). Bolt.new's gives 1M tokens a month, up to 300K a day, and puts Bolt branding on your site."
+    ],
+    [
+     "Can I use my own domain?",
+     "On Bolt.new, custom domains are part of Pro ($25/month). We haven't confirmed Lovable's custom domain terms on its own pages this time, so check its pricing page before you buy."
+    ],
+    [
+     "Do I own what I build?",
+     "Lovable's pricing FAQ says you own the code and the apps you build. We haven't verified Bolt.new's terms on this point."
+    ]
+   ]
+  },
+  {
+   "slug": "lovable-vs-v0",
+   "updated": "2026-11-10",
+   "title": "Lovable vs v0 (2026): full-stack app builder or React UI generator?",
+   "desc": "Lovable vs v0 by Vercel: what each builds, free limits, paid plans ($25 vs $30/month) and who should use which. Prices checked 10 Nov 2026.",
+   "tools": [
+    "Lovable",
+    "v0"
+   ],
+   "verdict": "Pick <b>Lovable</b> if you want a whole working app without touching code. Pick <b>v0</b> if you're happy with React/Next.js and want polished UI that syncs to GitHub and deploys to Vercel. For most non-coders, Lovable is the easier start, and it's also cheaper ($25/month against $30/user/month).",
+   "body": "<h2>The main differences</h2><ul><li><b>What you get.</b> Lovable builds full web apps by chat, and runs them for you on its Cloud. v0 lists deploying to Vercel, syncing with GitHub and a visual Design Mode on every plan, including Free.</li><li><b>Free limits.</b> Lovable's free plan gives 5 build credits a day (up to 30 a month). v0's gives 7 messages a day.</li><li><b>Paid plans.</b> Lovable Pro is $25/month for 100 credits. v0 Plus is $30/user/month, which includes $30 of monthly credits plus $2 of free credits each day you log in.</li></ul><p>Compare all four builders in <a href=\"@/compare/lovable-vs-bolt-vs-v0-vs-replit/\">Lovable vs Bolt.new vs v0 vs Replit</a>, or see the <a href=\"@/best/app-builders/\">app builder ranking</a>.</p>",
+   "who": {
+    "Lovable": "Non-coders who want a complete app, not just the front end.",
+    "v0": "Builders who know a little React/Next.js, or work with someone who does, and want to own the code in GitHub and host it on Vercel."
+   },
+   "faq": [
+    [
+     "Is v0 free?",
+     "Yes. v0's free plan includes 7 messages a day, deploys to Vercel, Design Mode and GitHub sync (checked 10 Nov 2026)."
+    ],
+    [
+     "How much is Lovable compared with v0?",
+     "Lovable Pro is $25/month for 100 credits ($21/month billed annually). v0 Plus is $30 per user per month with $30 of included monthly credits."
+    ],
+    [
+     "Do I need to know how to code?",
+     "Not for Lovable. v0 produces React/Next.js code, so it helps if you can read it."
+    ]
+   ]
+  },
+  {
+   "slug": "lovable-vs-replit",
+   "updated": "2026-11-10",
+   "title": "Lovable vs Replit (2026): which should a non-coder build with?",
+   "desc": "Lovable vs Replit Agent compared: free plans, paid plans ($25 vs $20/month), publishing apps and who each suits. Prices checked 10 Nov 2026.",
+   "tools": [
+    "Lovable",
+    "Replit"
+   ],
+   "verdict": "Pick <b>Lovable</b> for the quickest path from an idea to a polished web app. Pick <b>Replit</b> if you want building, databases and publishing in one place, and want the cheaper paid plan (Core is $20/month against Lovable's $25). Replit's free plan is fine for a first try, but your one free published app goes offline after 30 days.",
+   "body": "<h2>The main differences</h2><ul><li><b>Free plans.</b> Lovable's free plan gives 5 build credits a day (up to 30 a month). Replit's free Starter plan gives a daily Agent allowance and one published app, which carries a \"Made with Replit\" badge and goes down after 30 days.</li><li><b>Paid plans.</b> Replit Core is $20/month ($18 billed annually) and includes $20 of monthly credits and unlimited published apps. Lovable Pro is $25/month for 100 credits.</li><li><b>Connecting other services.</b> On Replit, third-party connectors like Stripe and Google need Core. Lovable's paid credits also cover AI features built into your app.</li></ul><p>See the full <a href=\"@/best/app-builders/\">app builder ranking</a> or our guide to <a href=\"@/guides/best-ai-coding-tool-for-non-developers/\">AI coding tools for non-developers</a>.</p>",
+   "who": {
+    "Lovable": "Non-coders who want the fastest route to a finished-looking web app.",
+    "Replit": "People who want build, database and hosting in one product, and may grow into its more powerful paid Agent modes."
+   },
+   "faq": [
+    [
+     "Is Replit free?",
+     "Yes, the Starter plan is free with no time limit. It includes a daily Agent allowance, monthly cloud credits and one published app that goes down after 30 days (Replit docs, checked 10 Nov 2026)."
+    ],
+    [
+     "Which is cheaper, Lovable or Replit?",
+     "Replit Core is $20/month ($18 billed annually). Lovable Pro is $25/month ($21 billed annually). Heavier use costs more on both."
+    ],
+    [
+     "Can I take my app off Replit's badge?",
+     "Removing the \"Made with Replit\" badge needs the Core plan or higher."
+    ]
+   ]
+  },
+  {
+   "slug": "cursor-vs-github-copilot",
+   "updated": "2026-11-10",
+   "title": "Cursor vs GitHub Copilot (2026): which AI coding assistant is worth paying for?",
+   "desc": "Cursor vs GitHub Copilot: free plans, Copilot Pro at $10 vs Cursor Plus at $8 and Premium at $30, which editors they work in, and our pick. Checked 10 Nov 2026.",
+   "tools": [
+    "Cursor",
+    "GitHub Copilot"
+   ],
+   "verdict": "Pick <b>GitHub Copilot</b> if you want to stay in the editor you already use: it works in VS Code, Visual Studio, JetBrains, Xcode, Neovim, Eclipse and Zed, and Pro is $10/month with unlimited completions. Pick <b>Cursor</b> if you want an AI-first editor and the strongest agent features. Cloud agents and other companies' models start on Premium at $30/month.",
+   "body": "<h2>The main differences</h2><ul><li><b>Where it runs.</b> Cursor is its own editor. Copilot plugs into the editor you already use, the terminal (Copilot CLI) and GitHub itself.</li><li><b>The cheap plans.</b> Cursor Plus is $8/month, but it only includes Grok models. Copilot Pro is $10/month with unlimited inline suggestions and $15 a month of AI credits for chat and agents.</li><li><b>The serious plans.</b> Cursor Premium ($30/month) adds cloud agents and automations, AI code reviews, and other companies' models billed at API list price. Copilot Pro+ ($39/month) adds premium models and more included usage.</li><li><b>How you buy it.</b> Cursor plans are sold through X Subscription Corp and bundle X and Grok features. Copilot is billed by GitHub.</li></ul><p>Want the three-way version with Windsurf? See <a href=\"@/compare/cursor-vs-windsurf-vs-github-copilot/\">Cursor vs Windsurf vs GitHub Copilot</a> and the <a href=\"@/best/ai-code-editors/\">AI code editor ranking</a>.</p>",
+   "who": {
+    "Cursor": "People who code most days and want one AI-native editor with agents, cloud agents and automations.",
+    "GitHub Copilot": "Anyone happy in VS Code, JetBrains, Xcode and the rest who wants dependable AI help at the lowest solid price."
+   },
+   "faq": [
+    [
+     "Is GitHub Copilot free?",
+     "Yes. Copilot Free includes 2,000 inline suggestions a month and limited chat and agent use, with no credit card (checked 10 Nov 2026)."
+    ],
+    [
+     "Is Cursor free?",
+     "Yes. Cursor's free plan includes limited agent and chat requests."
+    ],
+    [
+     "Which is cheaper?",
+     "Cursor Plus is $8/month but only includes Grok models. Copilot Pro is $10/month. Cursor Premium, which adds cloud agents and other companies' models at API list price, is $30/month."
+    ],
+    [
+     "Can I use Claude or GPT models?",
+     "On Copilot Pro, the pricing page lists models from Anthropic, OpenAI, Google and xAI, with some reserved for Pro+. On Cursor, other companies' models need Premium or higher and are billed at API list price."
+    ]
+   ]
+  },
+  {
+   "slug": "builder-io-vs-figma-make",
+   "updated": "2026-11-10",
+   "title": "Builder.io vs Figma Make (2026): which turns your designs into code?",
+   "desc": "Builder.io vs Figma Make for design-to-code: free plans, Builder.io Pro at $24 vs a $16 Figma Full seat, prototype vs production code. Checked 10 Nov 2026.",
+   "tools": [
+    "Figma Make",
+    "Builder.io"
+   ],
+   "verdict": "Pick <b>Figma Make</b> if you want a working prototype from your designs without leaving Figma. It's our No. 1 design-to-code tool, and a Professional Full seat is $16/month. Pick <b>Builder.io</b> if the code has to land in a real codebase and use your own components. It connects to GitHub, GitLab and Bitbucket and has a free plan. Builder.io is a ShipRank affiliate, which doesn't change its No. 2 spot.",
+   "body": "<h2>The main differences</h2><ul><li><b>What comes out.</b> Figma Make turns prompts and designs into functional prototypes and web apps inside Figma. Builder.io connects to your Git repo and design system, with a Figma plugin and a VS Code extension, so changes go into your codebase.</li><li><b>Free plans.</b> Figma's Starter plan includes Make with up to 150 AI credits a day (500 a month), but no team libraries. Builder.io Free gives 15 credits a day (60 a month) and one design system.</li><li><b>Paid plans.</b> A Figma Professional Full seat is $16/month with 3,000 AI credits. Dev seats only let you try Make in drafts. Builder.io Pro is $24/user/month with 500 credits and up to 3 design systems. Extra credits are $25 per 500.</li></ul><p>For the full walkthrough, read <a href=\"@/guides/figma-to-code-ai/\">how to turn Figma designs into code with AI</a> or see the <a href=\"@/best/design-to-code/\">design-to-code ranking</a>.</p>",
+   "who": {
+    "Figma Make": "Designers and founders who want something clickable to test or show people, fast.",
+    "Builder.io": "Teams with an existing codebase and component library who want designs turned into code their developers will merge."
+   },
+   "faq": [
+    [
+     "Is Figma Make free?",
+     "Yes, with limits. It's on Figma's free Starter plan, which has 150 AI credits a day and up to 500 a month. Starter users must also publish to the Figma Community to publish to the public web (Figma Help Center, checked 10 Nov 2026)."
+    ],
+    [
+     "Is Builder.io free?",
+     "Yes. Builder.io's free plan gives 15 credits a day (60 a month max) and includes Git connections, the Figma plugin and the VS Code extension."
+    ],
+    [
+     "Does ShipRank earn money from Builder.io?",
+     "Yes. Builder.io links on this page are affiliate links, so we may earn a commission if you buy. That doesn't change our ranking, which still puts Figma Make first."
+    ]
+   ]
+  }
+ ]
+}

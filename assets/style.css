@@ -97,3 +97,11 @@ tbody th{font-weight:600;color:var(--mute);font-size:.85rem;white-space:nowrap;p
 @media (max-width:640px){.prices .opt{grid-template-columns:1fr;gap:4px}.prices .amt{text-align:left;order:-1;font-size:1.6rem}.prices .amt small{display:inline;margin-left:8px}}
 .logo{display:inline-flex;align-items:center}.logo .mark{display:block;width:1.35em;height:1.35em;margin-right:.4em;flex:none;transform:rotate(-2deg)}.foot .logo .mark{width:1.15em;height:1.15em}
 .foot .xfollow{margin-top:.8em}
+/* try-it links: plain outlined, hand-drawn feel, not a shiny button */
+.cta{margin:.45em 0 0}
+a.try{display:inline-block;font:600 .86rem/1.2 var(--sans);color:var(--ink);text-decoration:none;border:1.5px solid var(--ink);padding:5px 9px 4px;box-shadow:2px 2px 0 var(--ink);background:var(--paper)}
+a.try:hover{background:var(--mark);color:var(--ink);transform:translate(1px,1px);box-shadow:1px 1px 0 var(--ink)}
+.aff.tag{display:inline-block;font:11px/1 var(--mono);text-transform:uppercase;letter-spacing:.05em;border:1px dashed var(--mute);padding:3px 5px 2px;margin-left:6px;vertical-align:2px}
+.ctas{display:flex;flex-wrap:wrap;gap:6px 14px;margin:6px 0 4px}.ctas p{margin:0}
+.ctas .btn{box-shadow:3px 3px 0 var(--ink)}
+.tbl td a.try{white-space:nowrap}

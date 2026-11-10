@@ -20,7 +20,7 @@
       "pricingUrl": "https://cursor.com/pricing",
       "pricingNote": "Plans bundled with X/Grok subscription; Plus is Grok-only; Premium+ add cloud agents & third-party models at API list price",
       "rankReason": "Best all-round agentic editor; deepest agent + cloud agent features",
-      "lastChecked": "2026-11-07"
+      "lastChecked": "2026-11-10"
     },
     {
       "name": "GitHub Copilot",
@@ -39,9 +39,9 @@
       "freeTier": "Yes (2,000 completions/month, limited chat and agent use)",
       "entryPrice": "$10/month (Pro)",
       "pricingUrl": "https://github.com/features/copilot/plans",
-      "pricingNote": "Page also lists AI-credit add-on tiers",
+      "pricingNote": "Pro+ $39/month, Max $100/month; chat and agent use draws on GitHub AI Credits (Pro includes $15/month of credits)",
       "rankReason": "Cheapest solid paid tier and works in almost any IDE",
-      "lastChecked": "2026-10-30"
+      "lastChecked": "2026-11-10"
     },
     {
       "name": "Windsurf",
@@ -69,7 +69,7 @@
       "rank": 1,
       "url": "https://lovable.dev",
       "bestFor": "Prompt-to-full-stack web apps for non-coders",
-      "pricing": "Free tier: Yes (5 daily build credits, up to 30/month) · Entry: Unknown – price not shown in fetched page",
+      "pricing": "Free tier: Yes (5 daily build credits, up to 30/month) · Entry: $25/month (Pro, 100 credits; $21/month billed annually)",
       "pros": [
         "Very fast to first app",
         "Supabase integration"
@@ -78,11 +78,11 @@
         "Less control over code"
       ],
       "freeTier": "Yes (5 daily build credits, up to 30/month)",
-      "entryPrice": "Unknown – price not shown in fetched page",
+      "entryPrice": "$25/month (Pro, 100 credits; $21/month billed annually)",
       "pricingUrl": "https://lovable.dev/pricing",
-      "pricingNote": "Credit-based; unlimited members",
+      "pricingNote": "Credit-based and priced per workspace with unlimited members; Pro tiers go up to 10,000 credits; 50% student discount on Pro 100 (monthly). Paid prices from Lovable's subscription plans docs",
       "rankReason": "Fastest path from prompt to full-stack app for non-coders",
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-10"
     },
     {
       "name": "Bolt.new",
@@ -90,7 +90,7 @@
       "rank": 2,
       "url": "https://bolt.new",
       "bestFor": "In-browser full-stack prototypes",
-      "pricing": "Free tier: Yes (1M tokens/month, 300K/day; Bolt branding) · Entry: $25/month (Pro; $18/month billed annually)",
+      "pricing": "Free tier: Yes (1M tokens/month, 300K/day; Bolt branding) · Entry: $25/month (Pro); up to 28% off billed yearly",
       "pros": [
         "Runs entirely in browser"
       ],
@@ -98,11 +98,11 @@
         "Token-based usage can add up"
       ],
       "freeTier": "Yes (1M tokens/month, 300K/day; Bolt branding)",
-      "entryPrice": "$25/month (Pro; $18/month billed annually)",
+      "entryPrice": "$25/month (Pro); up to 28% off billed yearly",
       "pricingUrl": "https://bolt.new/pricing",
-      "pricingNote": "Up to 28% off yearly",
+      "pricingNote": "Pro starts at 10M tokens/month, no daily limit, custom domains, no Bolt branding; Teams $30/member/month",
       "rankReason": "Great in-browser full-stack prototyping, slightly less polished output",
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-10"
     },
     {
       "name": "v0",
@@ -121,9 +121,9 @@
       "freeTier": "Yes (7 messages/day)",
       "entryPrice": "$30/user/month (Plus)",
       "pricingUrl": "https://v0.app/pricing",
-      "pricingNote": "",
+      "pricingNote": "Plus includes $30 of monthly credits plus $2 of free daily credits on login; Business $100/user/month",
       "rankReason": "Best UI quality but tied to React/Next.js",
-      "lastChecked": "2026-10-24"
+      "lastChecked": "2026-11-10"
     },
     {
       "name": "Replit",
@@ -131,19 +131,19 @@
       "rank": 4,
       "url": "https://replit.com",
       "bestFor": "Build, host and deploy apps with an agent in one place",
-      "pricing": "Free tier: Yes (Free Mode) · Entry: $20/month (Core; $18 billed annually)",
+      "pricing": "Free tier: Yes (Starter plan: daily Agent allowance, 1 published app) · Entry: $20/month (Core; $18 billed annually)",
       "pros": [
         "Hosting included"
       ],
       "cons": [
         "Costs scale with agent use"
       ],
-      "freeTier": "Yes (Free Mode)",
+      "freeTier": "Yes (Starter plan: daily Agent allowance, 1 published app)",
       "entryPrice": "$20/month (Core; $18 billed annually)",
       "pricingUrl": "https://replit.com/pricing",
-      "pricingNote": "",
+      "pricingNote": "Core includes $20 of monthly credits; Pro $100/month ($90 billed annually). Starter's one published app carries a Made with Replit badge and goes down after 30 days",
       "rankReason": "All-in-one build+host, but costs climb with agent use",
-      "lastChecked": "2026-11-07"
+      "lastChecked": "2026-11-10"
     },
     {
       "name": "Claude Code",
@@ -292,19 +292,19 @@
       "rank": 1,
       "url": "https://www.figma.com",
       "bestFor": "Turning Figma designs into working prototypes",
-      "pricing": "Free tier: Unknown · Entry: $16/month (Professional Full seat; Dev seat doesn't include Make)",
+      "pricing": "Free tier: Yes (Starter plan, with limits: 150 AI credits/day, up to 500/month) · Entry: $16/month (Professional Full seat; Dev seat doesn't include Make)",
       "pros": [
         "Native to Figma"
       ],
       "cons": [
         "Requires Figma plan"
       ],
-      "freeTier": "Unknown",
+      "freeTier": "Yes (Starter plan, with limits: 150 AI credits/day, up to 500/month)",
       "entryPrice": "$16/month (Professional Full seat; Dev seat doesn't include Make)",
       "pricingUrl": "https://www.figma.com/pricing",
-      "pricingNote": "Full seat includes 3,000 AI credits/month; Starter plan is free with up to 500 AI credits/month, Make access on Starter unconfirmed",
+      "pricingNote": "Make is on Full seats; Dev, Collab and View seats can only try it in drafts. Starter can't use team libraries and must publish to the Figma Community to publish on the public web",
       "rankReason": "Native to where designs already live",
-      "lastChecked": "2026-10-27"
+      "lastChecked": "2026-11-10"
     },
     {
       "name": "Builder.io",
@@ -322,9 +322,9 @@
       "freeTier": "Yes (15 credits/day, 60/month max)",
       "entryPrice": "$24/user/month (Pro)",
       "pricingUrl": "https://www.builder.io/pricing",
-      "pricingNote": "",
+      "pricingNote": "Pro includes 500 credits/month; extra credits $25 per 500; Team $40/user/month",
       "rankReason": "Maps designs to your own components, more setup",
-      "lastChecked": "2026-10-27",
+      "lastChecked": "2026-11-10",
       "affiliate": true
     },
     {
