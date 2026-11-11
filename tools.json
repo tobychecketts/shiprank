@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "tools": [
     {
       "name": "Cursor",
@@ -163,7 +163,7 @@
       "pricingUrl": "https://claude.com/pricing",
       "pricingNote": "Max plan from $100/month",
       "rankReason": "Strongest terminal agent on real codebases",
-      "lastChecked": "2026-10-27"
+      "lastChecked": "2026-11-11"
     },
     {
       "name": "OpenAI Codex",
@@ -183,7 +183,7 @@
       "pricingUrl": "https://chatgpt.com/pricing",
       "pricingNote": "Expanded on Plus/Pro",
       "rankReason": "Strong agent with parallel cloud tasks; close second",
-      "lastChecked": "2026-10-18"
+      "lastChecked": "2026-11-11"
     },
     {
       "name": "Devin",
@@ -509,6 +509,41 @@
     }
   ],
   "releases": [
+    {
+      "date": "2026-11-10",
+      "name": "Cursor Projects goes multiplayer (beta)",
+      "summary": "Cursor Projects, where one coordinator directs a fleet of agents on large pieces of work, now lets you invite teammates into a Project to plan, build and ship together. A shared task board shows who's doing what, what each person's agents are working on and the PR behind each task. Rolling out in beta to all Cursor users.",
+      "url": "https://cursor.com/blog/projects-multiplayer",
+      "verified": "2026-11-11"
+    },
+    {
+      "date": "2026-11-10",
+      "name": "Gemini 4 Carbon in GitHub Copilot (GA)",
+      "summary": "Google's Gemini 4 Carbon, aimed at complex coding, agentic work and secure code generation, is generally available in GitHub Copilot for Pro+, Max, Business and Enterprise users, billed at provider list pricing. Pick it in VS Code, Visual Studio, Copilot CLI, the coding agent, JetBrains, Xcode and more; rollout is gradual.",
+      "url": "https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot/",
+      "verified": "2026-11-11"
+    },
+    {
+      "date": "2026-11-10",
+      "name": "v0 Security Review",
+      "summary": "Ask v0 to \"run a security review\" and it checks the code your chat changed (or your riskiest code) for missing auth checks, injection and SSRF, verifies each finding against the whole project, and reports a severity and suggested fix. It only changes code if you agree. Paid plans; uses v0 credits.",
+      "url": "https://v0.app/changelog",
+      "verified": "2026-11-11"
+    },
+    {
+      "date": "2026-11-10",
+      "name": "Copilot in Visual Studio gets a new engine",
+      "summary": "Visual Studio 2026 version 18.12 runs Copilot Chat on the Microsoft Copilot SDK, the same engine as Copilot CLI, the Copilot app and VS Code. You can steer it mid-task, see each step's results and per-request cost, watch subagents live and point it at folders outside your solution. On by default.",
+      "url": "https://devblogs.microsoft.com/visualstudio/copilot-in-visual-studio-just-got-a-major-upgrade/",
+      "verified": "2026-11-11"
+    },
+    {
+      "date": "2026-11-10",
+      "name": "Runpod for Agents",
+      "summary": "Runpod expanded its tools for letting coding agents handle GPU infrastructure: a hosted MCP server plus tested skills so Claude Code, Codex or Cursor can pick hardware, deploy Pods or Serverless endpoints, debug failures and shut things down. Destructive actions need your confirmation; native plugins for Claude Code, Codex and ChatGPT. Set up at agents.runpod.io.",
+      "url": "https://www.prnewswire.com/news-releases/runpod-for-agents-lets-developers-hand-infrastructure-work-to-their-coding-agents-302934084.html",
+      "verified": "2026-11-11"
+    },
     {
       "date": "2026-11-09",
       "name": "Claude Fable 5.2",
@@ -1077,5 +1112,5 @@
       "verified": "2026-10-16"
     }
   ],
-  "lastVerified": "2026-11-10"
+  "lastVerified": "2026-11-11"
 }
