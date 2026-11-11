@@ -235,3 +235,11 @@ open("stats/index.html","w").write(f"""<!doctype html><html lang="en-GB"><head><
 open("sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"<url><loc>{u}</loc><lastmod>{LV}</lastmod></url>\n" for u in urls) + "</urlset>\n")
 open("robots.txt", "w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\n")
 print(f"Built {len(urls)} URLs")
+
+# ---- short-link redirects (fix links that got cut off when shared; not in sitemap) ----
+REDIRECTS = {"compare/cu": "compare/cursor-vs-github-copilot/"}
+for src, dst in REDIRECTS.items():
+    os.makedirs(src, exist_ok=True)
+    u = BASE + dst
+    with open(os.path.join(src, "index.html"), "w") as f:
+        f.write(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Redirecting…</title><link rel="canonical" href="{u}"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url={u}"><script>location.replace("{u}")</script></head><body><p><a href="{u}">Continue to the page</a></p></body></html>')
