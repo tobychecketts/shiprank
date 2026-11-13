@@ -362,9 +362,20 @@ open("robots.txt", "w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.
 print(f"Built {len(urls)} URLs")
 
 # ---- short-link redirects (fix links that got cut off when shared; not in sitemap) ----
-REDIRECTS = {"compare/cu": "compare/cursor-vs-github-copilot/"}
+REDIRECTS = {"compare/cu": "compare/cursor-vs-github-copilot/", "tools/repl": "tools/replit/"}
 for src, dst in REDIRECTS.items():
     os.makedirs(src, exist_ok=True)
     u = BASE + dst
     with open(os.path.join(src, "index.html"), "w") as f:
         f.write(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Redirecting…</title><link rel="canonical" href="{u}"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url={u}"><script>location.replace("{u}")</script></head><body><p><a href="{u}">Continue to the page</a></p></body></html>')
+
+# ---- 404 page: if a shared link got cut off, jump to the page it was meant to be ----
+import json as _json
+_paths = sorted({"/" + u[len(BASE):] for u in urls if u.startswith(BASE)})
+with open("404.html", "w") as f:
+    f.write('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found – ShipRank</title><meta name="robots" content="noindex"><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/assets/style.css">'
+            '<script>(function(){var P=' + _json.dumps(_paths) + ';var p=location.pathname.toLowerCase().replace(/\\/+$/,"");if(p.length<3)return;'
+            'var m=P.filter(function(x){return x.indexOf(p)===0&&x!==p+"/";});'
+            'if(!m.length){var q=p.replace(/[^/]+$/,"");m=[q+"/"].filter(function(x){return P.indexOf(x)>-1&&x.length>1;});}'
+            'm.sort(function(a,b){return a.length-b.length;});if(m.length)location.replace(m[0]+location.search);})();</script>'
+            '</head><body><main class="wrap" style="padding:60px 20px"><h1>That page has gone walkabout</h1><p>The link may have been cut short. Try the <a href="/">ShipRank homepage</a> or <a href="/weekly/">this week\'s releases</a>.</p></main></body></html>')
