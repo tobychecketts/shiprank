@@ -57,6 +57,9 @@ hr{border:0;border-top:1px solid var(--rule);margin:28px 0}
 /* changelog list */
 .log{list-style:none;margin:0;padding:0}.log li{padding:10px 0;border-bottom:1px solid var(--rule);margin:0}
 .log .date{font-size:.75rem;color:var(--mute);display:block}.log b{font-weight:650}.log p{margin:.15em 0 0;color:var(--ink2);font-size:.9rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.article .log li,.article .log p,.article .log small{font-family:var(--sans);line-height:1.5}
+.article .log li{font-size:1rem}.article .log p{font-size:.9rem}.article .log small{font-size:.82rem;color:var(--mute)}
+.article .log + .sechead,.article .mute + .sechead{margin-top:36px}
 .reads{margin:0;padding-left:1.4em}.reads li{padding:4px 0}.reads li::marker{font-family:var(--mono);color:var(--mute);font-size:.85em}
 .note{border:1px dashed var(--rule2);padding:14px 16px;font-size:.92rem;color:var(--ink2)}
 /* article */

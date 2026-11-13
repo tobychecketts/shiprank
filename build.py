@@ -6,6 +6,7 @@ Outputs: / (homepage), /tools/<slug>/, /best/<cat>/, /compare/, /guides/, /weekl
 Daily routine: edit tools.json -> python3 build.py -> commit + push -> python3 indexnow.py
 """
 import json, re, os, html, shutil, hashlib, datetime
+from urllib.parse import urlparse
 from email.utils import format_datetime
 BASE = "https://shiprank.co.uk/"  # hosting address only; never shown as text
 d = json.load(open("tools.json"))
@@ -86,16 +87,140 @@ def tlink(n): return f'<a href="{BASE}tools/{slug(n)}/">{e(n)}</a>' if internal(
 G = json.load(open("data/guides.json"))["guides"]
 bycat = {c: sorted([x for x in d["tools"] if x["category"] == c], key=lambda x: x["rank"]) for c in cats}
 
+# Releases have no tool field. Map each one to the ranked tool(s) it is actually
+# about: official domains, the release name ("Gemini 4 Hydrogen in Cursor"), and
+# a few precise phrases in the summary ("available in GitHub Copilot", "plugin
+# for Claude Code"). Ignore mentions that are only examples or import sources
+# (Hermes v0.23.0 is not v0; Lovable importing from Replit is not a Replit
+# release; Microsoft Copilot is not GitHub Copilot).
+_ALIAS = {
+    "Cursor": ["Cursor"],
+    "GitHub Copilot": ["GitHub Copilot"],
+    "Windsurf": ["Windsurf"],
+    "Lovable": ["Lovable"],
+    "Bolt.new": ["Bolt.new"],
+    "v0": ["v0"],
+    "Replit": ["Replit"],
+    "Claude Code": ["Claude Code"],
+    "OpenAI Codex": ["OpenAI Codex", "Codex CLI"],
+    "Devin": ["Devin"],
+    "OpenAI API": ["OpenAI API"],
+    "Anthropic API": ["Anthropic API"],
+    "Google Gemini API": ["Google Gemini API", "Gemini API"],
+    "OpenRouter": ["OpenRouter"],
+    "Figma Make": ["Figma Make"],
+    "Builder.io": ["Builder.io"],
+    "Vercel": ["Vercel"],
+    "Supabase": ["Supabase"],
+    "Netlify": ["Netlify"],
+    "ElevenLabs": ["ElevenLabs", "Eleven Labs"],
+    "Descript": ["Descript"],
+    "Loom": ["Loom"],
+    "LangGraph": ["LangGraph"],
+    "CrewAI": ["CrewAI", "Crew AI"],
+    "OpenAI Agents SDK": ["OpenAI Agents SDK", "OpenAI Agents API"],
+}
+_HOST_TOOL = {
+    "cursor.com": "Cursor", "lovable.dev": "Lovable", "docs.lovable.dev": "Lovable",
+    "v0.app": "v0", "replit.com": "Replit", "docs.replit.com": "Replit",
+    "devin.ai": "Devin", "bolt.new": "Bolt.new", "support.bolt.new": "Bolt.new",
+    "builder.io": "Builder.io", "vercel.com": "Vercel", "windsurf.com": "Windsurf",
+    "code.claude.com": "Claude Code",
+}
+_INCIDENTAL = re.compile(
+    r"(?:import\s+(?:\w+\s+)*from|ZIP export from|use your|unmodified|agents? like|"
+    r"built elsewhere|using your existing|login inside)", re.I)
+_EXTRA = [
+    r"(?:plugin|add-?on|extension)\s+for\s+{a}",
+    r"(?:generally\s+)?available\s+in\s+{a}",
+    r"(?:now\s+)?(?:the\s+)?(?:default|standard)\b[^.]*?\bin\s+{a}",
+    r"now\s+live\s+in\s+{a}",
+    r"live\s+in\s+{a}",
+]
+def _alias_rx(alias):
+    if alias == "v0":
+        return re.compile(r"(?<![A-Za-z0-9])v0(?![\d.])", re.I)
+    return re.compile(r"\b" + re.escape(alias) + r"\b", re.I)
+def _starts_with(name, alias):
+    if alias == "v0":
+        return bool(re.match(r"v0(?![\d.])(\b|:|$)", name, re.I))
+    return bool(re.match(re.escape(alias) + r"(\b|:|$)", name, re.I))
+def _is_github_copilot_release(r):
+    if re.search(r"\bMicrosoft Copilot\b", r["name"]):
+        return False
+    if re.search(r"\bCopilot\b", r["name"]):
+        return True
+    return bool(re.search(r"github-copilot|github_copilot", r["url"], re.I))
+def tools_for_release(r):
+    found, name, url, summary = set(), r["name"], r["url"], r.get("summary", "")
+    h = urlparse(url).netloc.lower().removeprefix("www.")
+    if h in _HOST_TOOL:
+        found.add(_HOST_TOOL[h])
+    for tool, aliases in _ALIAS.items():
+        if any(_starts_with(name, a) for a in aliases):
+            found.add(tool)
+        for a in aliases:
+            if re.search(r"\bin\s+" + _alias_rx(a).pattern, name, re.I):
+                found.add(tool)
+    if _starts_with(name, "Bolt"):
+        found.add("Bolt.new")
+    if re.search(r"\bCodex\b", name):
+        found.add("OpenAI Codex")
+    if re.search(r"\bOpenAI models\b", name):
+        found.add("OpenAI API")
+    if re.match(r"Gemini\s+\d", name) and not re.search(r"\bin\b", name):
+        found.add("Google Gemini API")
+    if _is_github_copilot_release(r):
+        found.add("GitHub Copilot")
+    blob = name + ". " + summary
+    extra = dict(_ALIAS)
+    extra["GitHub Copilot"] = ["GitHub Copilot", "Copilot"]
+    extra["Bolt.new"] = ["Bolt.new", "Bolt"]
+    extra["OpenAI Codex"] = ["OpenAI Codex", "Codex"]
+    extra["v0"] = ["v0"]
+    for tool, aliases in extra.items():
+        for alias in aliases:
+            rx = _alias_rx(alias)
+            for pat in _EXTRA:
+                for m in re.finditer(pat.format(a=rx.pattern), blob, re.I):
+                    if _INCIDENTAL.search(blob[max(0, m.start() - 80):m.end() + 80]):
+                        continue
+                    found.add(tool)
+    return found
+_cutoff = datetime.date.fromisoformat(LV) - datetime.timedelta(days=30)
+releases_by_tool = {t["name"]: [] for t in d["tools"]}
+for r in d["releases"]:
+    try:
+        rd = datetime.date.fromisoformat(r["date"])
+    except ValueError:
+        continue
+    if rd < _cutoff:
+        continue
+    for name in tools_for_release(r):
+        if name in releases_by_tool:
+            releases_by_tool[name].append(r)
+for _n in releases_by_tool:
+    releases_by_tool[_n].sort(key=lambda r: r["date"], reverse=True)
+
 # ---- tool pages ----
 for p in ("tools", "best"): shutil.rmtree(p, ignore_errors=True)
 for t in d["tools"]:
     s = slug(t["name"]); c = t["category"]; peers = [x for x in bycat[c] if x is not t]
     facts = f'<dl class="facts"><div><dt>Free tier</dt><dd>{e(t["freeTier"])}</dd></div><div><dt>Paid from</dt><dd>{e(t["entryPrice"])}</dd></div>' + (f'<div><dt>Worth knowing</dt><dd>{e(t["pricingNote"])}</dd></div>' if t.get("pricingNote") else "") + f'<div><dt>Checked</dt><dd>{nice(t["lastChecked"])} on the <a href="{t["pricingUrl"]}" rel="nofollow">official pricing page</a></dd></div></dl>'
     cmps = "".join(f'<li><a href="{BASE}compare/{a["slug"]}/">{e(a["title"])}</a></li>' for a in compare_links.get(t["name"], []))
+    recents = releases_by_tool[t["name"]]
+    if recents:
+        rel_html = (f'<div class="sechead"><h2>Recent releases</h2><a href="{BASE}weekly/">This week →</a></div><ul class="log">'
+                    + "".join(f'<li><span class="date">{nice(r["date"])}</span><b>{e(r["name"])}</b><p>{e(r["summary"])}</p><small><a href="{r["url"]}" rel="nofollow">Source</a></small></li>' for r in recents)
+                    + "</ul>")
+    else:
+        rel_html = (f'<div class="sechead"><h2>Recent releases</h2><a href="{BASE}weekly/">This week →</a></div>'
+                    f'<p class="mute">No new releases in the last 30 days. See the <a href="{BASE}weekly/">weekly roundup</a> for what has shipped across all tools.</p>')
     body = f"""<div class="head">{kicker(("Rankings", f"{BASE}#rankings"), (c, f"{BASE}best/{slug(c)}/"), (t["name"], None))}<h1>{e(t['name'])}</h1><p class="dek">{e(t['bestFor'])}.</p><p class="mute" style="margin-top:12px">No. {t['rank']} of {len(bycat[c])} in <a href="{BASE}best/{slug(c)}/">{e(lc(c))}</a>. Prices checked {nice(t['lastChecked'])}.</p></div>
 <div class="cols"><div class="article"><h2>Why it's No. {t['rank']}</h2><p>{e(t['rankReason'])}.</p>
 <div class="twocol"><div><h3>What's good</h3><ul>{''.join('<li>'+e(x)+'</li>' for x in t['pros'])}</ul></div><div><h3>What's not</h3><ul>{''.join('<li>'+e(x)+'</li>' for x in t['cons'])}</ul></div></div>
 {('<h2>Head-to-heads</h2><ul>'+cmps+'</ul>') if cmps else ''}
+{rel_html}
 <div class="sechead"><h3>Other {e(noun(c))} we rank</h3><a href="{BASE}best/{slug(c)}/">Full ranking →</a></div><ol class="board">{''.join(row(x, x['rank']) for x in peers)}</ol></div>
 <aside class="side"><section><h2>Price</h2>{facts}<p style="margin-top:16px">{try_btn(t, cls="btn solid")}</p>{'<p><small>We may earn a commission if you sign up through this link. It doesn&#39;t affect the ranking.</small></p>' if t.get("affiliate") else ''}</section></aside></div>"""
     page(f"tools/{s}", f"{t['name']} Review & Pricing ({YEAR}) – ShipRank", f"{t['name']}: {t['bestFor']}. Free tier: {t['freeTier']}. Entry price: {t['entryPrice']}. Ranked #{t['rank']} in {c}."[:160], body, active="rankings")
