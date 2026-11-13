@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-13",
   "tools": [
     {
       "name": "Cursor",
@@ -20,7 +20,7 @@
       "pricingUrl": "https://cursor.com/pricing",
       "pricingNote": "Plans bundled with X/Grok subscription; Plus is Grok-only; Premium+ add cloud agents & third-party models at API list price",
       "rankReason": "Best all-round agentic editor; deepest agent + cloud agent features",
-      "lastChecked": "2026-11-10"
+      "lastChecked": "2026-11-13"
     },
     {
       "name": "GitHub Copilot",
@@ -61,7 +61,7 @@
       "pricingUrl": "https://devin.ai/pricing",
       "pricingNote": "Windsurf is now Devin Desktop (windsurf.com redirects to devin.ai); Max plan $200/month",
       "rankReason": "Capable agentic editor but smaller ecosystem than the top two",
-      "lastChecked": "2026-11-01"
+      "lastChecked": "2026-11-13"
     },
     {
       "name": "Lovable",
@@ -203,7 +203,7 @@
       "pricingUrl": "https://devin.ai/pricing",
       "pricingNote": "devin.ai/pricing shows the same plan page as Windsurf (Free/Pro/Max $200)",
       "rankReason": "Most autonomous option, best for delegated tasks rather than hands-on coding",
-      "lastChecked": "2026-10-25"
+      "lastChecked": "2026-11-13"
     },
     {
       "name": "OpenAI API",
@@ -509,6 +509,62 @@
     }
   ],
   "releases": [
+    {
+      "date": "2026-11-12",
+      "name": "Gemini 4 Hydrogen in Cursor",
+      "summary": "Google's Gemini 4 Hydrogen, the successor to Gemini 3.8 Flash, is now available in Cursor for everyday agentic coding. Cursor says that at its default effort it scores 54.3% on CursorBench, up from 39.6% for Gemini 3.8 Flash. It supports low, medium, high (default) and xhigh effort. It's a third-party model, so it isn't part of the usage included with Cursor plans.",
+      "url": "https://cursor.com/docs/models/gemini-4-hydrogen",
+      "verified": "2026-11-13"
+    },
+    {
+      "date": "2026-11-12",
+      "name": "Claude Code 2.1.323: Code Mode (experimental)",
+      "summary": "Claude Code 2.1.323 adds Code Mode, an experimental opt-in in which Claude writes JavaScript to call its tools rather than invoking them one at a time. Organisations can turn it off. The release also lets plugins declare a supported Claude Code version range, and adds a menu when a model needs usage credits that are off or used up.",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "verified": "2026-11-13"
+    },
+    {
+      "date": "2026-11-12",
+      "name": "Replit Agent can buy supplies and run Google Ads",
+      "summary": "Replit Agent can now buy supplies for your business and help you run Google Ads, without leaving Replit. Purchases use Link (by Stripe) and Visa: Agent prepares the checkout and waits for you to approve the total before anything is charged. Agentic Commerce is for Core and Pro users, starting in the US and limited to one-time purchases. For ads, Agent can draft copy, images and a budget across Google Search, YouTube, Display and Discover, and you approve before it launches.",
+      "url": "https://replit.com/blog/replit-agent-ads-commerce",
+      "verified": "2026-11-13"
+    },
+    {
+      "date": "2026-11-12",
+      "name": "Claude Meetings (beta)",
+      "summary": "Anthropic is rolling out Claude Meetings in beta on Team and Enterprise plans. You can add Claude to a Google Meet call as a visible participant that takes notes, answers questions, and builds docs, whiteboards and other artifacts during the call. Support for other video platforms is coming later. During the beta, notes and transcripts are free; artifacts Claude makes on the call are free through 10 February 2027.",
+      "url": "https://claude.com/resources/articles/claude-meetings",
+      "verified": "2026-11-13"
+    },
+    {
+      "date": "2026-11-12",
+      "name": "v0: Meta's Astryx design system",
+      "summary": "Meta's Astryx design system is now available in v0. You can select it for a project and v0 builds with Astryx's components, patterns and templates in context.",
+      "url": "https://v0.app/design-systems",
+      "verified": "2026-11-13"
+    },
+    {
+      "date": "2026-11-11",
+      "name": "Lovable Automations",
+      "summary": "Automations let Lovable take care of recurring work, such as a morning check of your published sites, a weekly summary of new signups, or a Friday list of the oldest items in your backlog. Ask for one in Chats and say how often, and Lovable posts what it finds there. Available on Free, Pro and Business plans, and each run is chat usage.",
+      "url": "https://docs.lovable.dev/changelog",
+      "verified": "2026-11-13"
+    },
+    {
+      "date": "2026-11-11",
+      "name": "Qwen Code 1.0 Preview",
+      "summary": "Alibaba's Qwen team released a v1.0.0-preview of Qwen Code that merges the agent capabilities of its Qoder coding tool and the open-source Qwen Code CLI into one agent for understanding, implementing, debugging and testing code. You can sign in with a Qwen or Qoder account, and it ships native installers for macOS, Linux and Windows that don't need a separate Node.js install. Marked as a preview, so interfaces and behaviour may change.",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v1.0.0-preview",
+      "verified": "2026-11-13"
+    },
+    {
+      "date": "2026-11-11",
+      "name": "Gemini 4 Hydrogen in Devin",
+      "summary": "Gemini 4 Hydrogen is now live in Devin Desktop and Devin CLI. On Cognition's FrontierCode 2.0 benchmark, it scores 38.2%, close to GPT-6.1 Sol's 39.0% and Gemini 4 Carbon's 40.0%, at $2.40 per task compared with Carbon's $4.04.",
+      "url": "https://devin.ai/blog/gemini-4-hydrogen",
+      "verified": "2026-11-13"
+    },
     {
       "date": "2026-11-10",
       "name": "Cursor Projects goes multiplayer (beta)",
@@ -1103,14 +1159,7 @@
       "summary": "Open-source TypeScript framework for agentic apps where the agent and UI share actions, data and state; every app is also an MCP server and supports A2A.",
       "url": "https://www.builder.io/blog/introducing-agent-native",
       "verified": "2026-10-17"
-    },
-    {
-      "name": "Gemini 4 Argon in GitHub Copilot",
-      "date": "2026-10-13",
-      "summary": "Google's newest frontier model now GA in Copilot.",
-      "url": "https://github.blog/changelog/month/10-2026/",
-      "verified": "2026-10-16"
     }
   ],
-  "lastVerified": "2026-11-11"
+  "lastVerified": "2026-11-13"
 }
