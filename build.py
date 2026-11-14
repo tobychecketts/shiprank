@@ -362,7 +362,7 @@ open("robots.txt", "w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.
 print(f"Built {len(urls)} URLs")
 
 # ---- short-link redirects (fix links that got cut off when shared; not in sitemap) ----
-REDIRECTS = {"compare/cu": "compare/cursor-vs-github-copilot/", "tools/repl": "tools/replit/"}
+REDIRECTS = {"compare/cu": "compare/cursor-vs-github-copilot/", "tools/repl": "tools/replit/", "tools": "tools/v0/"}
 for src, dst in REDIRECTS.items():
     os.makedirs(src, exist_ok=True)
     u = BASE + dst
