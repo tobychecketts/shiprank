@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "tools": [
     {
       "name": "Cursor",
@@ -385,7 +385,7 @@
       "pricingUrl": "https://www.netlify.com/pricing",
       "pricingNote": "Credit-based",
       "rankReason": "Simple, cheap static hosting",
-      "lastChecked": "2026-10-27"
+      "lastChecked": "2026-11-15"
     },
     {
       "name": "ElevenLabs",
@@ -445,7 +445,7 @@
       "pricingUrl": "https://www.loom.com/pricing",
       "pricingNote": "",
       "rankReason": "Fastest for quick walkthroughs, fewer editing tools",
-      "lastChecked": "2026-10-31"
+      "lastChecked": "2026-11-15"
     },
     {
       "name": "LangGraph",
@@ -509,6 +509,20 @@
     }
   ],
   "releases": [
+    {
+      "date": "2026-11-13",
+      "name": "GitHub Copilot to retire six models on 14 Dec",
+      "summary": "GitHub will deprecate Claude Fable 5, Claude Haiku 4.5, Gemini 3.8 Flash, Gemini 4 Argon, Grok 4.6 and Kimi K3 across all Copilot experiences on 14 December 2026. Suggested swaps: Fable 5.2, Haiku 5.5, Gemini 4 Hydrogen, Gemini 4 Carbon and Grok 4.7. Haiku 4.5 stays for individual subscribers on annual plans.",
+      "url": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december/",
+      "verified": "2026-11-15"
+    },
+    {
+      "date": "2026-11-13",
+      "name": "OpenAI Codex CLI 0.169: side-chat tabs",
+      "summary": "The opt-in terminal workspace now supports multiple side-chat tabs you can reopen after a restart, and you can search older tasks in the agent command center. Codex exec now keeps project config and MCP servers off in untrusted folders unless you pass --trust.",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0",
+      "verified": "2026-11-15"
+    },
     {
       "date": "2026-11-13",
       "name": "Gemini 4 Hydrogen in GitHub Copilot (GA)",
@@ -1110,70 +1124,7 @@
       "summary": "Hardened microVM dev environments for developers and coding agents, plus fast in-loop CI checks agents can call via MCP or SDK. 30-day beta trials.",
       "url": "https://www.infoq.com/news/2026/10/chainguard-workspaces-checks/",
       "verified": "2026-10-17"
-    },
-    {
-      "name": "Vercel Token Pass (early access)",
-      "date": "2026-10-15",
-      "summary": "$30/month for $80 of GLM 5.3 and Kimi K3 credit via AI Gateway, for Pro teams.",
-      "url": "https://vercel.com/changelog/introducing-token-pass",
-      "verified": "2026-10-16"
-    },
-    {
-      "name": "Vercel AI SDK 7",
-      "date": "2026-10-15",
-      "summary": "AI SDK becomes a provider-agnostic toolkit for building multi-turn agents, announced at Vercel Ship 2026.",
-      "url": "https://vercel.com/blog/vercel-ship-2026-recap",
-      "verified": "2026-10-16"
-    },
-    {
-      "name": "Meta Muse Spark Open",
-      "date": "2026-10-15",
-      "summary": "Coding-optimised open-weight MoE model (816B, 42B active) with 1M-token context.",
-      "url": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
-      "verified": "2026-10-16"
-    },
-    {
-      "name": "Lovable: AI models and tools inside your apps",
-      "date": "2026-10-15",
-      "summary": "Apps built in Lovable can now use GPT-Live voice, the latest Claude models, Gemini 4 Argon, Gemini Omni, Lyria, Perplexity, Firecrawl, Parallel and Jev without leaving Lovable.",
-      "url": "https://lovable.dev/blog/ai-models-and-tools-in-lovable",
-      "verified": "2026-10-18"
-    },
-    {
-      "name": "GitHub agentic autofix for code scanning (GA)",
-      "date": "2026-10-15",
-      "summary": "Agents propose fixes for code scanning alerts.",
-      "url": "https://github.blog/changelog/month/10-2026/",
-      "verified": "2026-10-16"
-    },
-    {
-      "name": "GitHub AI Scan for PRs (GA)",
-      "date": "2026-10-15",
-      "summary": "AI vulnerability scanning on pull requests, complementing CodeQL.",
-      "url": "https://github.blog/changelog/month/10-2026/",
-      "verified": "2026-10-16"
-    },
-    {
-      "name": "Claude Code Review (GA)",
-      "date": "2026-10-15",
-      "summary": "Multi-agent review of GitHub pull requests is out of research preview for Claude Team and Enterprise, with reviews ~3x faster (6-10 min) and Quick, Standard or Deep levels per repo.",
-      "url": "https://claude.com/resources/articles/code-review-is-now-generally-available",
-      "verified": "2026-10-18"
-    },
-    {
-      "name": "Bluesky Attie site builder",
-      "date": "2026-10-15",
-      "summary": "\"Social vibe coding\": describe a poll, quiz, guestbook or game and Attie builds a shareable page on attie.site that Bluesky followers can sign in to and use.",
-      "url": "https://madrobot.blog/2026/10/16/bluesky-attie-ai-site-builder-vibe-code-games-polls-websites/",
-      "verified": "2026-10-18"
-    },
-    {
-      "name": "Band for Developers",
-      "date": "2026-10-15",
-      "summary": "Desktop app and CLI for managing a team of coding agents at once: projects, ownership, blockers, questions and progress in one view.",
-      "url": "https://siliconangle.com/2026/10/16/band-launches-desktop-app-for-developer-collaboration-and-control-of-multiple-ai-coding-agents/",
-      "verified": "2026-10-17"
     }
   ],
-  "lastVerified": "2026-11-14"
+  "lastVerified": "2026-11-15"
 }
