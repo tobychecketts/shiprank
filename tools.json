@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "tools": [
     {
       "name": "Cursor",
@@ -264,7 +264,7 @@
       "pricingUrl": "https://ai.google.dev/gemini-api/docs/pricing",
       "pricingNote": "Price rise announced for 1 Dec 2026",
       "rankReason": "Generous free tier and long context",
-      "lastChecked": "2026-11-09"
+      "lastChecked": "2026-11-18"
     },
     {
       "name": "OpenRouter",
@@ -485,7 +485,7 @@
       "pricingUrl": "https://www.crewai.com/pricing",
       "pricingNote": "No self-serve paid tier listed",
       "rankReason": "Quickest way to multi-agent crews",
-      "lastChecked": "2026-11-09"
+      "lastChecked": "2026-11-18"
     },
     {
       "name": "OpenAI Agents SDK",
@@ -1159,7 +1159,42 @@
       "summary": "Connect Slack to v0 so it can use team discussions as context for a change and post updates to Slack when you ask. Available on all v0 plans.",
       "url": "https://v0.app/changelog",
       "verified": "2026-10-23"
+    },
+    {
+      "date": "2026-11-17",
+      "name": "GPT-6.2 Astra and GPT-6.2 Sol",
+      "summary": "OpenAI's new frontier (Astra) and everyday (Sol) models, out in ChatGPT, Codex and the API. Astra's API price is 20% lower than GPT-6 Astra ($8 in / $40 out per 1M tokens, $0.40 cached input); Sol keeps GPT-6.1 Sol's prices. OpenAI says Astra builds better-looking frontends.",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "verified": "2026-11-18"
+    },
+    {
+      "date": "2026-11-17",
+      "name": "MAI Code 2 and MAI Code 2 Flash in GitHub Copilot",
+      "summary": "Microsoft's new coding models: MAI Code 2 for multi-file work, debugging and refactors (Copilot Pro and up) and the cheaper MAI Code 2 Flash for quick edits and fixes, which is available on Copilot Free too. Billed under Copilot's usage-based billing.",
+      "url": "https://github.blog/changelog/2026-11-17-mai-code-2-and-mai-code-2-flash-in-github-copilot/",
+      "verified": "2026-11-18"
+    },
+    {
+      "date": "2026-11-17",
+      "name": "Replit Missions",
+      "summary": "Set an outcome and a budget and Replit runs a swarm of agents to plan, build, test and iterate towards it, with an independent AI judge checking results against your success criteria. Work stops if the budget runs out; you choose how often it sends updates.",
+      "url": "https://replit.com/blog/introducing-replit-missions",
+      "verified": "2026-11-18"
+    },
+    {
+      "date": "2026-11-17",
+      "name": "Google AI Studio builds full-stack Android apps",
+      "summary": "AI Studio's Build agent can now go from a prompt to a Kotlin Android app with a Firestore database, Google Sign-In and Gemini API calls that keep your key out of the APK, then publish it to your own Google Play library. Also adds a faster HD emulator and one-click screenshots to the agent.",
+      "url": "https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/",
+      "verified": "2026-11-18"
+    },
+    {
+      "date": "2026-11-17",
+      "name": "Claude Code 2.1.327: add MCP servers from stdin + /status health list",
+      "summary": "claude mcp add-json <name> - reads the server's JSON from stdin so API tokens stay off the command line, /status now lists broken agent, skill and command files, and /export asks before overwriting a file. Also fixes project-scope mcp add/remove wiping other keys in .mcp.json.",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
+      "verified": "2026-11-18"
     }
   ],
-  "lastVerified": "2026-11-17"
+  "lastVerified": "2026-11-18"
 }
