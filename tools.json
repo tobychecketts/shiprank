@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "tools": [
     {
       "name": "Cursor",
@@ -41,7 +41,7 @@
       "pricingUrl": "https://github.com/features/copilot/plans",
       "pricingNote": "Pro+ $39/month, Max $100/month; chat and agent use draws on GitHub AI Credits (Pro includes $15/month of credits)",
       "rankReason": "Cheapest solid paid tier and works in almost any IDE",
-      "lastChecked": "2026-11-10"
+      "lastChecked": "2026-11-19"
     },
     {
       "name": "Windsurf",
@@ -82,7 +82,7 @@
       "pricingUrl": "https://lovable.dev/pricing",
       "pricingNote": "Credit-based and priced per workspace with unlimited members; Pro tiers go up to 10,000 credits; 50% student discount on Pro 100 (monthly). Paid prices from Lovable's subscription plans docs",
       "rankReason": "Fastest path from prompt to full-stack app for non-coders",
-      "lastChecked": "2026-11-10"
+      "lastChecked": "2026-11-19"
     },
     {
       "name": "Bolt.new",
@@ -509,6 +509,48 @@
     }
   ],
   "releases": [
+    {
+      "date": "2026-11-18",
+      "name": "Gemini 4 Neon (Gemini API, Antigravity, Gemini app)",
+      "summary": "Google's new mid-range Gemini 4 model for coding and agent work, sitting between Carbon and Hydrogen. Gemini API price is $3 per 1M input tokens and $15 per 1M output (thinking tokens included), with a 1M-token context window; not on the API free tier. Also rolling out to paid Google AI Pro and Ultra subscribers in Google Antigravity and the Gemini app.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "verified": "2026-11-19"
+    },
+    {
+      "date": "2026-11-18",
+      "name": "Gemini 4 Neon in GitHub Copilot (GA)",
+      "summary": "Gemini 4 Neon is generally available in GitHub Copilot for Pro+, Max, Business and Enterprise users, in the model picker across VS Code, Visual Studio, JetBrains, Xcode, Eclipse, Copilot CLI, the coding agent and github.com. Rolling out gradually.",
+      "url": "https://github.blog/changelog/2026-11-18-gemini-4-neon-in-github-copilot/",
+      "verified": "2026-11-19"
+    },
+    {
+      "date": "2026-11-18",
+      "name": "Vercel Board (experimental, all plans)",
+      "summary": "A shared message board where your agents and people coordinate tasks, with each task's discussion and results kept in one thread, channel-level permissions, and two-way sync with Slack and GitHub. Agents use it through the Vercel CLI or JavaScript SDK; install with npx skills add vercel/board.",
+      "url": "https://vercel.com/changelog/vercel-board-is-now-available",
+      "verified": "2026-11-19"
+    },
+    {
+      "date": "2026-11-18",
+      "name": "Vercel one-second static deploys now take CSS, images and fonts",
+      "summary": "Instant deployments, which put eligible static sites live in about a second with no build step, now accept CSS, images, fonts, PDFs and media alongside HTML and Markdown. Up to 100 files and 25 MB, deployed with the Vercel CLI or API; rolling out on all plans.",
+      "url": "https://vercel.com/changelog/single-second-static-deployments-now-support-more-assets",
+      "verified": "2026-11-19"
+    },
+    {
+      "date": "2026-11-18",
+      "name": "Google Stitch Loop (waitlist)",
+      "summary": "An experimental product agent from Google Labs that connects to your GitHub repo and live metrics, suggests improvements, writes the code in a sandbox and opens a pull request for you to approve. Comes with built-in security, latency and accessibility loops. Waitlist open globally, with priority for eligible Google AI Ultra users.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop/",
+      "verified": "2026-11-19"
+    },
+    {
+      "date": "2026-11-18",
+      "name": "Replit Desktop local work and Replit in Microsoft Teams (GA)",
+      "summary": "Local access in the Replit Desktop app is generally available on Windows, Mac and Linux: pick which folders Replit can use, ask the Agent for changes and review them locally. Replit's Microsoft Teams integration and Microsoft Fabric integration are also generally available, with publishing to Azure in early access.",
+      "url": "https://replit.com/blog/build-where-your-business-works-replit-at-microsoft-ignite",
+      "verified": "2026-11-19"
+    },
     {
       "date": "2026-11-16",
       "name": "ngrok MCP server (all plans, including free)",
@@ -1154,13 +1196,6 @@
       "verified": "2026-10-31"
     },
     {
-      "name": "v0: Slack MCP integration",
-      "date": "2026-10-19",
-      "summary": "Connect Slack to v0 so it can use team discussions as context for a change and post updates to Slack when you ask. Available on all v0 plans.",
-      "url": "https://v0.app/changelog",
-      "verified": "2026-10-23"
-    },
-    {
       "date": "2026-11-17",
       "name": "GPT-6.2 Astra and GPT-6.2 Sol",
       "summary": "OpenAI's new frontier (Astra) and everyday (Sol) models, out in ChatGPT, Codex and the API. Astra's API price is 20% lower than GPT-6 Astra ($8 in / $40 out per 1M tokens, $0.40 cached input); Sol keeps GPT-6.1 Sol's prices. OpenAI says Astra builds better-looking frontends.",
@@ -1196,5 +1231,5 @@
       "verified": "2026-11-18"
     }
   ],
-  "lastVerified": "2026-11-18"
+  "lastVerified": "2026-11-19"
 }
