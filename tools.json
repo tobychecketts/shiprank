@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-21",
   "tools": [
     {
       "name": "Cursor",
@@ -102,7 +102,7 @@
       "pricingUrl": "https://bolt.new/pricing",
       "pricingNote": "Pro starts at 10M tokens/month, no daily limit, custom domains, no Bolt branding; Teams $30/member/month",
       "rankReason": "Great in-browser full-stack prototyping, slightly less polished output",
-      "lastChecked": "2026-11-10"
+      "lastChecked": "2026-11-21"
     },
     {
       "name": "v0",
@@ -123,7 +123,7 @@
       "pricingUrl": "https://v0.app/pricing",
       "pricingNote": "Plus includes $30 of monthly credits plus $2 of free daily credits on login; Business $100/user/month",
       "rankReason": "Best UI quality but tied to React/Next.js",
-      "lastChecked": "2026-11-10"
+      "lastChecked": "2026-11-21"
     },
     {
       "name": "Replit",
@@ -1140,62 +1140,6 @@
       "verified": "2026-10-24"
     },
     {
-      "name": "Recursive Flint",
-      "date": "2026-10-21",
-      "summary": "Free, Apache 2.0 coding model small enough to run on a laptop (40B-parameter MoE, 2.5B active), so you can code offline and keep your code private. Download on Hugging Face.",
-      "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
-      "verified": "2026-10-23"
-    },
-    {
-      "name": "OpenAI models and Codex on Google Cloud (private preview)",
-      "date": "2026-10-21",
-      "summary": "OpenAI's frontier models and Codex workflows are coming to Google Cloud's Model Garden, billed via Google Cloud Marketplace; private preview now, GA planned in the coming weeks.",
-      "url": "https://openai.com/index/openai-models-google-cloud/",
-      "verified": "2026-10-23"
-    },
-    {
-      "name": "GemDB Code (VS Code extension)",
-      "date": "2026-10-21",
-      "summary": "Free VS Code extension with an object database where your code is the schema, so you or your coding agent change a class and commit with no migration scripts. Python only at launch; includes an MCP server.",
-      "url": "https://www.businesswire.com/news/home/20261021228398/en/GemDB-Makes-Code-the-Schema-Eliminating-Database-Migration-Bottlenecks-to-Accelerate-AI-Driven-Development",
-      "verified": "2026-10-23"
-    },
-    {
-      "name": "Claude Duet (research preview)",
-      "date": "2026-10-21",
-      "summary": "Anthropic's proactive agent app: runs tasks on its own cloud computer, sends a morning brief from your connected apps, can prototype and build web apps, and asks before sending, paying or deleting. Waitlist for US Pro and Max.",
-      "url": "https://claude.com/resources/articles/claude-duet",
-      "verified": "2026-10-23"
-    },
-    {
-      "name": "Vercel WebSockets in Functions (GA)",
-      "date": "2026-10-20",
-      "summary": "WebSocket support in Vercel Functions is generally available, for AI chat, streaming and realtime multiplayer apps, at normal Function pricing (CPU billed only while processing messages).",
-      "url": "https://vercel.com/changelog/websocket-support-is-now-generally-available",
-      "verified": "2026-10-23"
-    },
-    {
-      "name": "Mistral Voxtral 3 + voice agent SDK",
-      "date": "2026-10-20",
-      "summary": "New speech-to-text and text-to-speech models (50+ languages) plus a voice agent SDK that listens, reasons, calls tools and speaks in one real-time pipeline. Transcription from $0.0035/min.",
-      "url": "https://mistral.ai/news/voxtral-3/",
-      "verified": "2026-10-23"
-    },
-    {
-      "name": "Lovable can create your Supabase project",
-      "date": "2026-10-20",
-      "summary": "Ask Lovable to create a Supabase project for an app with no backend: pick the organisation and region and Lovable creates and connects it, billed to your own Supabase org.",
-      "url": "https://docs.lovable.dev/changelog",
-      "verified": "2026-10-23"
-    },
-    {
-      "date": "2026-10-20",
-      "name": "Cursor Agent SDK (GA)",
-      "summary": "Cursor's Agent SDK is generally available: define an agent as a folder of code (instructions, typed tools, skills, MCP connections, channels), test it with evals, and deploy it to Cursor with agent-sdk deploy or run it on your own infrastructure. Agents can wake on GitHub, GitLab, Bitbucket, Slack, webhook and cron events.",
-      "url": "https://cursor.com/changelog",
-      "verified": "2026-10-31"
-    },
-    {
       "date": "2026-11-17",
       "name": "GPT-6.2 Astra and GPT-6.2 Sol",
       "summary": "OpenAI's new frontier (Astra) and everyday (Sol) models, out in ChatGPT, Codex and the API. Astra's API price is 20% lower than GPT-6 Astra ($8 in / $40 out per 1M tokens, $0.40 cached input); Sol keeps GPT-6.1 Sol's prices. OpenAI says Astra builds better-looking frontends.",
@@ -1229,7 +1173,42 @@
       "summary": "claude mcp add-json <name> - reads the server's JSON from stdin so API tokens stay off the command line, /status now lists broken agent, skill and command files, and /export asks before overwriting a file. Also fixes project-scope mcp add/remove wiping other keys in .mcp.json.",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
       "verified": "2026-11-18"
+    },
+    {
+      "date": "2026-11-19",
+      "name": "Lovable keeps working while you answer its questions",
+      "summary": "When Lovable asks you a question it now carries on building the parts that don't depend on your answer and picks an option for the rest, reworking it if you choose differently. It still waits before hard-to-undo steps such as deleting data.",
+      "url": "https://docs.lovable.dev/changelog",
+      "verified": "2026-11-21"
+    },
+    {
+      "date": "2026-11-19",
+      "name": "Vercel CLI: agents find commands with vercel help search",
+      "summary": "Coding agents can run vercel help search and describe a task in plain language to find the right Vercel CLI command; add --with-help to also get instructions for the best match.",
+      "url": "https://vercel.com/changelog",
+      "verified": "2026-11-21"
+    },
+    {
+      "date": "2026-11-20",
+      "name": "Lovable: free domain for a year when you upgrade",
+      "summary": "After a workspace upgrades from Free to a paid plan on the web, admins and owners can claim one domain free for the first year (claim within 90 days of first payment). Covers extensions such as .app and .dev but not .com, and renews automatically after year one.",
+      "url": "https://docs.lovable.dev/changelog",
+      "verified": "2026-11-21"
+    },
+    {
+      "date": "2026-11-20",
+      "name": "Vercel Functions accept request bodies up to 20MiB (public beta)",
+      "summary": "Vercel Functions now take request bodies up to 20MiB in public beta, up from 4.5MB, for larger uploads, webhooks and API payloads.",
+      "url": "https://vercel.com/changelog",
+      "verified": "2026-11-21"
+    },
+    {
+      "date": "2026-11-20",
+      "name": "Claude Code 2.1.330: easel charts and Enterprise Admin Console sign-in",
+      "summary": "Adds easel, a built-in mod that draws charts when asked and under MCP metrics results (Pro, Max and, where available, Team and Enterprise on macOS and Linux; switch off in /config), sign-in to organisations managed in Anthropic's Enterprise Admin Console, and fixes freezes after compacting very long conversations and in WebFetch.",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+      "verified": "2026-11-21"
     }
   ],
-  "lastVerified": "2026-11-19"
+  "lastVerified": "2026-11-21"
 }
