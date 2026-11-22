@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "tools": [
     {
       "name": "Cursor",
@@ -243,7 +243,7 @@
       "pricingUrl": "https://docs.anthropic.com/en/docs/about-claude/pricing",
       "pricingNote": "USD; new Claude Fable 5.2 is $8/$40 per 1M in/out",
       "rankReason": "Top choice for coding/agent workloads; ranked just behind OpenAI on breadth",
-      "lastChecked": "2026-11-10"
+      "lastChecked": "2026-11-22"
     },
     {
       "name": "Google Gemini API",
@@ -324,7 +324,7 @@
       "pricingUrl": "https://www.builder.io/pricing",
       "pricingNote": "Pro includes 500 credits/month; extra credits $25 per 500; Team $40/user/month",
       "rankReason": "Maps designs to your own components, more setup",
-      "lastChecked": "2026-11-10",
+      "lastChecked": "2026-11-22",
       "affiliate": true
     },
     {
@@ -510,6 +510,62 @@
   ],
   "releases": [
     {
+      "date": "2026-11-20",
+      "name": "Lovable: free domain for a year when you upgrade",
+      "summary": "After a workspace upgrades from Free to a paid plan on the web, admins and owners can claim one domain free for the first year (claim within 90 days of first payment). Covers extensions such as .app and .dev but not .com, and renews automatically after year one.",
+      "url": "https://docs.lovable.dev/changelog",
+      "verified": "2026-11-21"
+    },
+    {
+      "date": "2026-11-20",
+      "name": "Vercel Functions accept request bodies up to 20MiB (public beta)",
+      "summary": "Vercel Functions now take request bodies up to 20MiB in public beta, up from 4.5MB, for larger uploads, webhooks and API payloads.",
+      "url": "https://vercel.com/changelog",
+      "verified": "2026-11-21"
+    },
+    {
+      "date": "2026-11-20",
+      "name": "Claude Code 2.1.330: easel charts and Enterprise Admin Console sign-in",
+      "summary": "Adds easel, a built-in mod that draws charts when asked and under MCP metrics results (Pro, Max and, where available, Team and Enterprise on macOS and Linux; switch off in /config), sign-in to organisations managed in Anthropic's Enterprise Admin Console, and fixes freezes after compacting very long conversations and in WebFetch.",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+      "verified": "2026-11-21"
+    },
+    {
+      "date": "2026-11-20",
+      "name": "Lovable: GPT-6.2 Astra and Sol for app AI features, plus Paystack and Square connectors",
+      "summary": "Apps built in Lovable can now use OpenAI's GPT-6.2 Astra (complex reasoning, coding, research, at lower cost than GPT-6 Astra) and GPT-6.2 Sol (everyday reasoning and coding). New app and chat connectors: Paystack for card, bank transfer and mobile money payments in several African countries, and Square for payment links, card charges, refunds and orders.",
+      "url": "https://docs.lovable.dev/changelog",
+      "verified": "2026-11-22"
+    },
+    {
+      "date": "2026-11-20",
+      "name": "OpenAI Codex CLI 0.171: GPT-6.2 Sol by default and TUI workspace",
+      "summary": "Adds GPT-6.2 Sol and Astra to the model catalog with Sol as the default selection, turns on the TUI workspace by default (searchable document and image previews and subagent transcripts beside the chat), adds undo and redo in the prompt composer, and codex exec --remote for sessions on an existing app server.",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0",
+      "verified": "2026-11-22"
+    },
+    {
+      "date": "2026-11-20",
+      "name": "DreamCoder: coding harness and IDE from the author of Mastering Emacs",
+      "summary": "Mickey Petersen released DreamCoder, a coding harness with a tiling window manager that runs in your browser on Windows, Mac and Linux. It has background sub-agents, MCP servers, your own agents and terminals beside chats.",
+      "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+      "verified": "2026-11-22"
+    },
+    {
+      "date": "2026-11-19",
+      "name": "Lovable keeps working while you answer its questions",
+      "summary": "When Lovable asks you a question it now carries on building the parts that don't depend on your answer and picks an option for the rest, reworking it if you choose differently. It still waits before hard-to-undo steps such as deleting data.",
+      "url": "https://docs.lovable.dev/changelog",
+      "verified": "2026-11-21"
+    },
+    {
+      "date": "2026-11-19",
+      "name": "Vercel CLI: agents find commands with vercel help search",
+      "summary": "Coding agents can run vercel help search and describe a task in plain language to find the right Vercel CLI command; add --with-help to also get instructions for the best match.",
+      "url": "https://vercel.com/changelog",
+      "verified": "2026-11-21"
+    },
+    {
       "date": "2026-11-18",
       "name": "Gemini 4 Neon (Gemini API, Antigravity, Gemini app)",
       "summary": "Google's new mid-range Gemini 4 model for coding and agent work, sitting between Carbon and Hydrogen. Gemini API price is $3 per 1M input tokens and $15 per 1M output (thinking tokens included), with a 1M-token context window; not on the API free tier. Also rolling out to paid Google AI Pro and Ultra subscribers in Google Antigravity and the Gemini app.",
@@ -550,6 +606,48 @@
       "summary": "Local access in the Replit Desktop app is generally available on Windows, Mac and Linux: pick which folders Replit can use, ask the Agent for changes and review them locally. Replit's Microsoft Teams integration and Microsoft Fabric integration are also generally available, with publishing to Azure in early access.",
       "url": "https://replit.com/blog/build-where-your-business-works-replit-at-microsoft-ignite",
       "verified": "2026-11-19"
+    },
+    {
+      "date": "2026-11-18",
+      "name": "Netlify's new AI app-building experience",
+      "summary": "Netlify unveiled a redesigned platform that brings AI app creation, collaboration and its production hosting together, so agents, non-technical builders and developers can build and run apps in one place.",
+      "url": "https://www.netlify.com/press/netlify-unveils-new-ai-app-building-experience-as-annual-recurring-revenue-approaches-130-million/",
+      "verified": "2026-11-22"
+    },
+    {
+      "date": "2026-11-17",
+      "name": "GPT-6.2 Astra and GPT-6.2 Sol",
+      "summary": "OpenAI's new frontier (Astra) and everyday (Sol) models, out in ChatGPT, Codex and the API. Astra's API price is 20% lower than GPT-6 Astra ($8 in / $40 out per 1M tokens, $0.40 cached input); Sol keeps GPT-6.1 Sol's prices. OpenAI says Astra builds better-looking frontends.",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "verified": "2026-11-18"
+    },
+    {
+      "date": "2026-11-17",
+      "name": "MAI Code 2 and MAI Code 2 Flash in GitHub Copilot",
+      "summary": "Microsoft's new coding models: MAI Code 2 for multi-file work, debugging and refactors (Copilot Pro and up) and the cheaper MAI Code 2 Flash for quick edits and fixes, which is available on Copilot Free too. Billed under Copilot's usage-based billing.",
+      "url": "https://github.blog/changelog/2026-11-17-mai-code-2-and-mai-code-2-flash-in-github-copilot/",
+      "verified": "2026-11-18"
+    },
+    {
+      "date": "2026-11-17",
+      "name": "Replit Missions",
+      "summary": "Set an outcome and a budget and Replit runs a swarm of agents to plan, build, test and iterate towards it, with an independent AI judge checking results against your success criteria. Work stops if the budget runs out; you choose how often it sends updates.",
+      "url": "https://replit.com/blog/introducing-replit-missions",
+      "verified": "2026-11-18"
+    },
+    {
+      "date": "2026-11-17",
+      "name": "Google AI Studio builds full-stack Android apps",
+      "summary": "AI Studio's Build agent can now go from a prompt to a Kotlin Android app with a Firestore database, Google Sign-In and Gemini API calls that keep your key out of the APK, then publish it to your own Google Play library. Also adds a faster HD emulator and one-click screenshots to the agent.",
+      "url": "https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/",
+      "verified": "2026-11-18"
+    },
+    {
+      "date": "2026-11-17",
+      "name": "Claude Code 2.1.327: add MCP servers from stdin + /status health list",
+      "summary": "claude mcp add-json <name> - reads the server's JSON from stdin so API tokens stay off the command line, /status now lists broken agent, skill and command files, and /export asks before overwriting a file. Also fixes project-scope mcp add/remove wiping other keys in .mcp.json.",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
+      "verified": "2026-11-18"
     },
     {
       "date": "2026-11-16",
@@ -1103,112 +1201,7 @@
       "summary": "An Apache-2.0 research runtime from AWS and UC Berkeley's Hydro project that suspends an agent during each tool call and resumes it when the result arrives, so idle agents cost little more than their history and can run on serverless platforms. AWS says 75,000 concurrent agents fit in a Raspberry Pi 5's 8 GB.",
       "url": "https://aws.amazon.com/blogs/opensource/introducing-infinity-a-runtime-for-extreme-agent-concurrency/",
       "verified": "2026-10-25"
-    },
-    {
-      "name": "Wodby Agent for vibe coding",
-      "date": "2026-10-22",
-      "summary": "Describe an app and Wodby Agent picks a stack, creates a private repo in your own GitHub/GitLab/Bitbucket, builds it in a live workspace with previews, opens a PR and deploys to infrastructure you control or Wodby Cloud.",
-      "url": "https://wodby.com/blog/vibe-coding-with-wodby-agent",
-      "verified": "2026-10-23"
-    },
-    {
-      "name": "Vercel: deploy without an account",
-      "date": "2026-10-22",
-      "summary": "Run vercel deploy --temporary to get a live tmp.now URL for a project or a single file without signing in. Temporary deployments expire after one hour unless you claim the project via the link in the CLI output.",
-      "url": "https://vercel.com/changelog/deploy-without-an-account-using-vercel-cli",
-      "verified": "2026-10-25"
-    },
-    {
-      "name": "Replit Monitoring Agent",
-      "date": "2026-10-22",
-      "summary": "An autonomous on-call agent for apps published on Replit: it reads production logs and metrics, investigates alerts, validates a fix and can auto-publish it, then emails you a summary.",
-      "url": "https://replit.com/blog/replit-monitoring-agent",
-      "verified": "2026-10-23"
-    },
-    {
-      "name": "Microsoft Copilot Code (Frontier preview)",
-      "date": "2026-10-22",
-      "summary": "A natural-language coding agent in the Microsoft Copilot app that builds apps, dashboards, tools and scripts from a description, using your work context, with a live preview, local or cloud runs, GitHub draft PRs and publishing to Copilot Managed Runtime. Rolling out via the Frontier program.",
-      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/copilot-code-make-the-power-of-coding-accessible-to-everyone/4562358",
-      "verified": "2026-10-24"
-    },
-    {
-      "name": "Google Elephant-Goldfish Model plugin (open source)",
-      "date": "2026-10-22",
-      "summary": "Google open-sourced its internal design-first AI coding plugin: a long-context 'Elephant' session co-designs a spec, then stateless 'Goldfish' sessions review it before any code is written. Apache 2.0, built for Antigravity first.",
-      "url": "https://opensource.googleblog.com/2026/10/introducing-elephant-goldfish-model-plugin.html",
-      "verified": "2026-10-24"
-    },
-    {
-      "date": "2026-11-17",
-      "name": "GPT-6.2 Astra and GPT-6.2 Sol",
-      "summary": "OpenAI's new frontier (Astra) and everyday (Sol) models, out in ChatGPT, Codex and the API. Astra's API price is 20% lower than GPT-6 Astra ($8 in / $40 out per 1M tokens, $0.40 cached input); Sol keeps GPT-6.1 Sol's prices. OpenAI says Astra builds better-looking frontends.",
-      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
-      "verified": "2026-11-18"
-    },
-    {
-      "date": "2026-11-17",
-      "name": "MAI Code 2 and MAI Code 2 Flash in GitHub Copilot",
-      "summary": "Microsoft's new coding models: MAI Code 2 for multi-file work, debugging and refactors (Copilot Pro and up) and the cheaper MAI Code 2 Flash for quick edits and fixes, which is available on Copilot Free too. Billed under Copilot's usage-based billing.",
-      "url": "https://github.blog/changelog/2026-11-17-mai-code-2-and-mai-code-2-flash-in-github-copilot/",
-      "verified": "2026-11-18"
-    },
-    {
-      "date": "2026-11-17",
-      "name": "Replit Missions",
-      "summary": "Set an outcome and a budget and Replit runs a swarm of agents to plan, build, test and iterate towards it, with an independent AI judge checking results against your success criteria. Work stops if the budget runs out; you choose how often it sends updates.",
-      "url": "https://replit.com/blog/introducing-replit-missions",
-      "verified": "2026-11-18"
-    },
-    {
-      "date": "2026-11-17",
-      "name": "Google AI Studio builds full-stack Android apps",
-      "summary": "AI Studio's Build agent can now go from a prompt to a Kotlin Android app with a Firestore database, Google Sign-In and Gemini API calls that keep your key out of the APK, then publish it to your own Google Play library. Also adds a faster HD emulator and one-click screenshots to the agent.",
-      "url": "https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/",
-      "verified": "2026-11-18"
-    },
-    {
-      "date": "2026-11-17",
-      "name": "Claude Code 2.1.327: add MCP servers from stdin + /status health list",
-      "summary": "claude mcp add-json <name> - reads the server's JSON from stdin so API tokens stay off the command line, /status now lists broken agent, skill and command files, and /export asks before overwriting a file. Also fixes project-scope mcp add/remove wiping other keys in .mcp.json.",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
-      "verified": "2026-11-18"
-    },
-    {
-      "date": "2026-11-19",
-      "name": "Lovable keeps working while you answer its questions",
-      "summary": "When Lovable asks you a question it now carries on building the parts that don't depend on your answer and picks an option for the rest, reworking it if you choose differently. It still waits before hard-to-undo steps such as deleting data.",
-      "url": "https://docs.lovable.dev/changelog",
-      "verified": "2026-11-21"
-    },
-    {
-      "date": "2026-11-19",
-      "name": "Vercel CLI: agents find commands with vercel help search",
-      "summary": "Coding agents can run vercel help search and describe a task in plain language to find the right Vercel CLI command; add --with-help to also get instructions for the best match.",
-      "url": "https://vercel.com/changelog",
-      "verified": "2026-11-21"
-    },
-    {
-      "date": "2026-11-20",
-      "name": "Lovable: free domain for a year when you upgrade",
-      "summary": "After a workspace upgrades from Free to a paid plan on the web, admins and owners can claim one domain free for the first year (claim within 90 days of first payment). Covers extensions such as .app and .dev but not .com, and renews automatically after year one.",
-      "url": "https://docs.lovable.dev/changelog",
-      "verified": "2026-11-21"
-    },
-    {
-      "date": "2026-11-20",
-      "name": "Vercel Functions accept request bodies up to 20MiB (public beta)",
-      "summary": "Vercel Functions now take request bodies up to 20MiB in public beta, up from 4.5MB, for larger uploads, webhooks and API payloads.",
-      "url": "https://vercel.com/changelog",
-      "verified": "2026-11-21"
-    },
-    {
-      "date": "2026-11-20",
-      "name": "Claude Code 2.1.330: easel charts and Enterprise Admin Console sign-in",
-      "summary": "Adds easel, a built-in mod that draws charts when asked and under MCP metrics results (Pro, Max and, where available, Team and Enterprise on macOS and Linux; switch off in /config), sign-in to organisations managed in Anthropic's Enterprise Admin Console, and fixes freezes after compacting very long conversations and in WebFetch.",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
-      "verified": "2026-11-21"
     }
   ],
-  "lastVerified": "2026-11-21"
+  "lastVerified": "2026-11-22"
 }
