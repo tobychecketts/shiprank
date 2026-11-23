@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "tools": [
     {
       "name": "Cursor",
@@ -143,7 +143,7 @@
       "pricingUrl": "https://replit.com/pricing",
       "pricingNote": "Core includes $20 of monthly credits; Pro $100/month ($90 billed annually). Starter's one published app carries a Made with Replit badge and goes down after 30 days",
       "rankReason": "All-in-one build+host, but costs climb with agent use",
-      "lastChecked": "2026-11-10"
+      "lastChecked": "2026-11-23"
     },
     {
       "name": "Claude Code",
@@ -163,7 +163,7 @@
       "pricingUrl": "https://claude.com/pricing",
       "pricingNote": "Max plan from $100/month",
       "rankReason": "Strongest terminal agent on real codebases",
-      "lastChecked": "2026-11-11"
+      "lastChecked": "2026-11-23"
     },
     {
       "name": "OpenAI Codex",
@@ -510,6 +510,20 @@
   ],
   "releases": [
     {
+      "date": "2026-11-21",
+      "name": "Cline 4.1.27: LM Studio API keys and full-length file reads",
+      "summary": "Adds an API key field for LM Studio servers that require authentication and read-only badges on MCP tools. read_files results are no longer cut to 8k characters (up to 2,000 lines or about 48k characters), and with no saved model the Cline provider now starts on the first free model.",
+      "url": "https://github.com/cline/cline/releases/tag/v4.1.27",
+      "verified": "2026-11-23"
+    },
+    {
+      "date": "2026-11-20",
+      "name": "OpenAI Agents SDK 1.0 alpha: Codex as a model provider",
+      "summary": "The first preview of Agents SDK v1.0.0 for Python adds Codex as an opt-in model provider (CodexProvider), embedding Codex Core so agents can run on Codex with SDK tools, handoffs and approvals. The alpha wheels are available only through GitHub Releases.",
+      "url": "https://github.com/openai/openai-agents-python/releases/tag/v1.0.0-alpha.1",
+      "verified": "2026-11-23"
+    },
+    {
       "date": "2026-11-20",
       "name": "Lovable: free domain for a year when you upgrade",
       "summary": "After a workspace upgrades from Free to a paid plan on the web, admins and owners can claim one domain free for the first year (claim within 90 days of first payment). Covers extensions such as .app and .dev but not .com, and renews automatically after year one.",
@@ -553,6 +567,13 @@
     },
     {
       "date": "2026-11-19",
+      "name": "Genie 4 in the Gemini API (GA)",
+      "summary": "Google's Genie 4 world model is generally available on the Gemini Interactions API (v1beta) and in Google AI Studio, streaming steerable 720p, 24fps worlds with synchronised audio from a text prompt, a reference image or both. Paid tier only, at about $0.10 per second of video output.",
+      "url": "https://aistudio.google.com/docs/changelog",
+      "verified": "2026-11-23"
+    },
+    {
+      "date": "2026-11-19",
       "name": "Lovable keeps working while you answer its questions",
       "summary": "When Lovable asks you a question it now carries on building the parts that don't depend on your answer and picks an option for the rest, reworking it if you choose differently. It still waits before hard-to-undo steps such as deleting data.",
       "url": "https://docs.lovable.dev/changelog",
@@ -564,6 +585,20 @@
       "summary": "Coding agents can run vercel help search and describe a task in plain language to find the right Vercel CLI command; add --with-help to also get instructions for the best match.",
       "url": "https://vercel.com/changelog",
       "verified": "2026-11-21"
+    },
+    {
+      "date": "2026-11-18",
+      "name": "GitHub Copilot connectors: Supabase, Box, Calendly and more (preview)",
+      "summary": "Copilot can now connect to eight more services through GitHub-verified MCP servers: Box, Buildkite, Calendly, ClickUp, Mixpanel, Supabase, Webflow and Wix. Connectors are in public preview on all Copilot plans; Business and Enterprise admins must enable the Editor preview features policy.",
+      "url": "https://github.blog/changelog/2026-11-18-connect-supabase-box-calendly-and-more-to-copilot/",
+      "verified": "2026-11-23"
+    },
+    {
+      "date": "2026-11-18",
+      "name": "AWS Lambda runs GPU functions on Lambda Managed Instances",
+      "summary": "Lambda Event Functions on Lambda Managed Instances can now run on EC2 G-series GPU instances, deployed as container images, with base images for vLLM, SGLang and PyTorch. You pay the EC2 On-Demand price plus a 9.75% Lambda management fee and $0.20 per million requests.",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-gpu-managed-instances/",
+      "verified": "2026-11-23"
     },
     {
       "date": "2026-11-18",
@@ -613,6 +648,13 @@
       "summary": "Netlify unveiled a redesigned platform that brings AI app creation, collaboration and its production hosting together, so agents, non-technical builders and developers can build and run apps in one place.",
       "url": "https://www.netlify.com/press/netlify-unveils-new-ai-app-building-experience-as-annual-recurring-revenue-approaches-130-million/",
       "verified": "2026-11-22"
+    },
+    {
+      "date": "2026-11-17",
+      "name": "Devin Desktop (Windsurf) 3.14: Devin Bots",
+      "summary": "Devin Desktop 3.14.30819 adds Devin Bots: give a Bot an outcome to own in its chat and it plans the work and runs sessions until it is done. The release also adds image viewer zoom and proxy auto-detection for managed enterprise machines.",
+      "url": "https://windsurf.com/changelog",
+      "verified": "2026-11-23"
     },
     {
       "date": "2026-11-17",
@@ -1138,70 +1180,7 @@
       "summary": "Former GitHub CEO Thomas Dohmke's Entire launched a Git-compatible forge built for coding agents. It replaces pull requests with Trails (agent-scored evals on every push), adds Continuous Memory that syncs agent sessions into the repo, and integrates with Buildkite and Depot CI. Available to every developer today.",
       "url": "https://entire.com/news/entire-launches-an-independent-git-forge-for-agent-human-collaboration",
       "verified": "2026-10-27"
-    },
-    {
-      "name": "TanStack AI 1.0",
-      "date": "2026-10-23",
-      "summary": "The open-source, provider-agnostic AI toolkit hits 1.0 with stable core APIs, 23 provider adapters, support for coding agents like Claude Code, Codex and OpenCode in sandboxes, plus a new experimental agent harness.",
-      "url": "https://tanstack.com/blog/tanstack-ai-1-0",
-      "verified": "2026-10-24"
-    },
-    {
-      "name": "Replit Agent workspace skills + keep apps running past credits",
-      "date": "2026-10-23",
-      "summary": "Replit Agent can now suggest new or improved workspace skills from your chats and projects, which you review and approve before they land. The same update lets eligible top-up customers keep published apps running when credits run out, up to an overage limit, and adds Stripe Atlas on Replit.",
-      "url": "https://docs.replit.com/updates",
-      "verified": "2026-10-27"
-    },
-    {
-      "name": "OpenAI Codex CLI 0.164",
-      "date": "2026-10-23",
-      "summary": "Adds /presets (ten saved prompt and slash-command slots), inline arguments for /model and /permissions, image previews on Kitty/Sixel terminals, enterprise MCP sign-in, and credential masking in remote Bash, plus sandbox hardening.",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.164.0",
-      "verified": "2026-10-26"
-    },
-    {
-      "name": "OpenAI Agents API: Scheduled Automations",
-      "date": "2026-10-23",
-      "summary": "Schedule a message into an existing agent session or have it start a new one, using a cron expression for recurring jobs or a timestamp for one-offs. Add the automations tool and agents can create, update or remove their own schedules from natural-language requests.",
-      "url": "https://community.openai.com/t/introducing-scheduled-automations-to-the-agents-api/1409223",
-      "verified": "2026-10-25"
-    },
-    {
-      "name": "Kimi K3.1 Pro (Moonshot API)",
-      "date": "2026-10-23",
-      "summary": "Moonshot's new flagship model is live on the Kimi API at $2/$10 per 1M input/output tokens, plus a 2-3x faster Highspeed tier at twice the price. Moonshot says full open weights follow by 4 Nov 2026; Artificial Analysis scored it 55, behind only Claude Opus 5.5.",
-      "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
-      "verified": "2026-10-26"
-    },
-    {
-      "name": "GitHub app for Microsoft Teams with Copilot",
-      "date": "2026-10-23",
-      "summary": "The new consolidated GitHub app in Teams brings notifications and Copilot together: @mention GitHub on an issue notification and Copilot investigates, fixes the bug and opens a pull request. The legacy app retires on 16 November.",
-      "url": "https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams/",
-      "verified": "2026-10-24"
-    },
-    {
-      "name": "Devin Desktop (Windsurf) new Agent Window",
-      "date": "2026-10-23",
-      "summary": "v3.11.212 rebuilds the Agent Window on the Devin web app UI: up to 8 sessions side by side, per-session Files, Changes and terminal views, cloud app previews with an element picker, and Enter to steer a running turn. v3.11.216 (24 Oct) fixes Local sessions and CLI install.",
-      "url": "https://windsurf.com/changelog",
-      "verified": "2026-10-26"
-    },
-    {
-      "name": "Cursor Computer Use",
-      "date": "2026-10-23",
-      "summary": "Cursor's agents can now click and type across any desktop app on your computer, not just the browser, for example driving the iOS Simulator to test a feature they just built. The agent uses it when a task needs it, or you can @-mention Computer Use; update Cursor to get it. Desktop-app release notes weren't out yet at announcement.",
-      "url": "https://www.linkedin.com/posts/cursorai_cursor-can-now-control-your-computer-with-activity-7519427217731444736-1aBg",
-      "verified": "2026-10-26"
-    },
-    {
-      "name": "AWS Infinity agent runtime (open source)",
-      "date": "2026-10-23",
-      "summary": "An Apache-2.0 research runtime from AWS and UC Berkeley's Hydro project that suspends an agent during each tool call and resumes it when the result arrives, so idle agents cost little more than their history and can run on serverless platforms. AWS says 75,000 concurrent agents fit in a Raspberry Pi 5's 8 GB.",
-      "url": "https://aws.amazon.com/blogs/opensource/introducing-infinity-a-runtime-for-extreme-agent-concurrency/",
-      "verified": "2026-10-25"
     }
   ],
-  "lastVerified": "2026-11-22"
+  "lastVerified": "2026-11-23"
 }
