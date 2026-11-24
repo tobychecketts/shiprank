@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "tools": [
     {
       "name": "Cursor",
@@ -20,7 +20,7 @@
       "pricingUrl": "https://cursor.com/pricing",
       "pricingNote": "Plans bundled with X/Grok subscription; Plus is Grok-only; Premium+ add cloud agents & third-party models at API list price",
       "rankReason": "Best all-round agentic editor; deepest agent + cloud agent features",
-      "lastChecked": "2026-11-13"
+      "lastChecked": "2026-11-24"
     },
     {
       "name": "GitHub Copilot",
@@ -365,7 +365,7 @@
       "pricingUrl": "https://supabase.com/pricing",
       "pricingNote": "Additional projects from $10/month",
       "rankReason": "Default backend for vibe-coded apps (Lovable/Bolt integration)",
-      "lastChecked": "2026-11-14"
+      "lastChecked": "2026-11-24"
     },
     {
       "name": "Netlify",
@@ -509,6 +509,41 @@
     }
   ],
   "releases": [
+    {
+      "date": "2026-11-24",
+      "name": "OpenAI Codex CLI 0.172: thread links, slash-command Tab completion and Bedrock sign-in",
+      "summary": "Follow thread links from search results and transcripts to reopen saved conversations and nested agents, press Tab to complete slash-command arguments, and jump between task groups in the agent command center. App-server clients can pick Amazon Bedrock Runtime at setup, and codex exec resume now restores saved sandbox permissions and workspace roots.",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.172.0",
+      "verified": "2026-11-24"
+    },
+    {
+      "date": "2026-11-23",
+      "name": "Claude Ship (beta): Claude reviews, fixes and approves pull requests",
+      "summary": "Anthropic's new PR workflow pairs Code Review (GA) with two beta agents: PR Steward keeps a pull request green by fixing failing CI, merge conflicts and review feedback, and Claude Approvals approves routine changes under a policy file in the repo. Developers can run the new /ship command in Claude Code. Available on Claude Team and Enterprise for GitHub repos, billed on tokens.",
+      "url": "https://claude.com/resources/articles/introducing-claude-ship",
+      "verified": "2026-11-24"
+    },
+    {
+      "date": "2026-11-23",
+      "name": "Claude Code 2.1.331: Code Mode on Bedrock and Foundry, API check in claude doctor",
+      "summary": "Code Mode now works in terminal sessions on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude Platform on AWS. claude doctor gains an API connectivity section, plugins can list optional dependencies, and fixes cover MCP tool calls that hung for up to 30 minutes and /compact losing part of its summary.",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
+      "verified": "2026-11-24"
+    },
+    {
+      "date": "2026-11-23",
+      "name": "GLM-5.4: Z.ai's coding model built on a Loop Transformer",
+      "summary": "Z.ai's new flagship loops 28 layers of its 750B GLM-5 base twice for deeper reasoning, adds vision, and targets \"Generalized Coding\" such as games, 3D and CAD work. Available now in the GLM Coding Plan, ZCode and Z.ai Chat; API access is listed as coming soon and open weights are promised after safety hardening.",
+      "url": "https://z.ai/blog/glm-5.4",
+      "verified": "2026-11-24"
+    },
+    {
+      "date": "2026-11-23",
+      "name": "Vercel Drives get CLI commands and standalone SDKs",
+      "summary": "Create, list, fork and delete Vercel Drives with new vercel drives CLI commands, the @vercel/drives TypeScript SDK, the vercel-drives Python SDK or a /v1/drives REST API, without needing Sandbox APIs. Drives still mount into Vercel Sandboxes and are available on Hobby, Pro and Enterprise.",
+      "url": "https://vercel.com/changelog/vercel-drives-adds-cli-commands-and-standalone-sdks",
+      "verified": "2026-11-24"
+    },
     {
       "date": "2026-11-21",
       "name": "Cline 4.1.27: LM Studio API keys and full-length file reads",
@@ -1182,5 +1217,5 @@
       "verified": "2026-10-27"
     }
   ],
-  "lastVerified": "2026-11-23"
+  "lastVerified": "2026-11-24"
 }
