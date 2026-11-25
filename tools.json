@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "tools": [
     {
       "name": "Cursor",
@@ -171,19 +171,19 @@
       "rank": 2,
       "url": "https://openai.com/codex",
       "bestFor": "Cloud and CLI coding agent",
-      "pricing": "Free tier: Limited Codex access on ChatGPT Free · Entry: Unknown – Plus price not shown in fetched page",
+      "pricing": "Free tier: Yes (quick tasks with GPT-6 Luna in the desktop app, subject to rollout) · Entry: $8/month (ChatGPT Go, lightweight tasks); Plus $20/month for Codex on web, CLI, IDE and iOS",
       "pros": [
         "Parallel cloud tasks"
       ],
       "cons": [
         "Plan-dependent limits"
       ],
-      "freeTier": "Limited Codex access on ChatGPT Free",
-      "entryPrice": "Unknown – Plus price not shown in fetched page",
-      "pricingUrl": "https://chatgpt.com/pricing",
-      "pricingNote": "Expanded on Plus/Pro",
+      "freeTier": "Yes (quick tasks with GPT-6 Luna in the desktop app, subject to rollout)",
+      "entryPrice": "$8/month (ChatGPT Go, lightweight tasks); Plus $20/month for Codex on web, CLI, IDE and iOS",
+      "pricingUrl": "https://developers.openai.com/codex/pricing",
+      "pricingNote": "Pro from $100/month (tiers at $100, $200 or $500); Business $20/user/month billed annually ($25 monthly, 2+ users); API-key use billed at API rates",
       "rankReason": "Strong agent with parallel cloud tasks; close second",
-      "lastChecked": "2026-11-11"
+      "lastChecked": "2026-11-25"
     },
     {
       "name": "Devin",
@@ -345,7 +345,7 @@
       "pricingUrl": "https://vercel.com/pricing",
       "pricingNote": "Usage-based extras",
       "rankReason": "Smoothest frontend/Next.js deploys with previews",
-      "lastChecked": "2026-11-14"
+      "lastChecked": "2026-11-25"
     },
     {
       "name": "Supabase",
@@ -510,11 +510,67 @@
   ],
   "releases": [
     {
+      "date": "2026-11-25",
+      "name": "Claude Code 2.1.332: skills from MCP servers (beta) and a PreSkillShellCommand hook",
+      "summary": "MCP servers can now ship skills, which show as server:skill in the / menu (beta). A new PreSkillShellCommand hook can refuse a skill's inline shell commands as it loads, and a long list of fixes targets freezes from flooding hooks and MCP servers, compaction failures and SSE MCP servers that hung after a dropped stream.",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "verified": "2026-11-25"
+    },
+    {
+      "date": "2026-11-24",
+      "name": "Devin: Cognition's SWE-2.1 model, plus a 10x-faster Ultrafast version",
+      "summary": "Cognition's new in-house coding model is trained with reinforcement learning on Kimi K3 and roughly doubles SWE-2's scores on Terminal-Bench 4.1 (50.0 vs 24.2) and FrontierCode 2.0 (41.3 vs 24.1). SWE-2.1 Ultrafast runs the same model at 10x the speed through a Cerebras partnership, and a more permissive SWE-2.1 Cyber version powers Devin Security scans.",
+      "url": "https://cognition.com/blog/swe-2-1",
+      "verified": "2026-11-25"
+    },
+    {
+      "date": "2026-11-24",
+      "name": "GitHub Copilot CLI 1.0.115: Gemini 4 Hydrogen, GPT-6.2 Astra and custom provider models",
+      "summary": "The model picker adds Gemini 4 Hydrogen (with Extra High reasoning where available), GPT-6.2 Astra and MAI-Code-2-Flash, and you can add and manage your own provider models from /model. Windows sandbox package queries are now on by default, and timeline items can show timestamps.",
+      "url": "https://github.com/github/copilot-cli/releases/tag/v1.0.115",
+      "verified": "2026-11-25"
+    },
+    {
+      "date": "2026-11-24",
+      "name": "Google Antigravity adds MCP Apps",
+      "summary": "MCP tools can now render interactive HTML views in Antigravity instead of raw JSON: inline in chat, as a side-panel tab, as a full page in the sidebar, or as a custom viewer for a file type. Standard MCP Apps work without code changes; launch plugins include Vercel, Datadog, CodeRabbit, Better Stack, monday.com and Qodo.",
+      "url": "https://antigravity.google/blog/mcp-apps-in-antigravity/",
+      "verified": "2026-11-25"
+    },
+    {
+      "date": "2026-11-24",
+      "name": "Vercel: agents can manage AI Gateway through Vercel MCP",
+      "summary": "Ask your coding agent in plain language to create reusable virtual model IDs, set team-wide routing rules that redirect or block requests, and set spending budgets for your team, projects and members. Apps then call the virtual model ID, so you can swap the model behind it without redeploying.",
+      "url": "https://vercel.com/changelog/agents-can-now-manage-ai-gateway-through-vercel-mcp",
+      "verified": "2026-11-25"
+    },
+    {
       "date": "2026-11-24",
       "name": "OpenAI Codex CLI 0.172: thread links, slash-command Tab completion and Bedrock sign-in",
       "summary": "Follow thread links from search results and transcripts to reopen saved conversations and nested agents, press Tab to complete slash-command arguments, and jump between task groups in the agent command center. App-server clients can pick Amazon Bedrock Runtime at setup, and codex exec resume now restores saved sandbox permissions and workspace roots.",
       "url": "https://github.com/openai/codex/releases/tag/rust-v0.172.0",
       "verified": "2026-11-24"
+    },
+    {
+      "date": "2026-11-23",
+      "name": "Lovable: publish to Databricks, auto test users and redesigned security checks",
+      "summary": "Projects linked to Databricks can now publish as a Databricks App from the publish dialog. When testing pages that need a signed-in user, Lovable can create (and later remove) a test user with your approval. The Security view now shows checks first, and running checks doesn't use credits. Also new: Asaas payments for Brazil and a Paper design connector.",
+      "url": "https://docs.lovable.dev/changelog",
+      "verified": "2026-11-25"
+    },
+    {
+      "date": "2026-11-23",
+      "name": "Gemini API file slicing controls",
+      "summary": "Pass PDFs, Office and OpenDocument files, audio and video to the Gemini API and ask for only the pages, sheet and cell ranges, or time segments you need; you're billed tokens only for the parts Gemini inspects. Works across all Gemini 4 models in Google AI Studio and the Gemini platform.",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+      "verified": "2026-11-25"
+    },
+    {
+      "date": "2026-11-23",
+      "name": "Supabase Knowledge Base (supabase.com/kb)",
+      "summary": "A new open-source home for migration guides (from Firebase, Auth0, Neon, Heroku, Vercel Postgres and more), hundreds of troubleshooting articles, FAQs, tutorials and community guides. Every page has a Markdown version that coding agents can request, and it's wired into Supabase's llms.txt.",
+      "url": "https://supabase.com/blog/introducing-supabase-knowledge-base",
+      "verified": "2026-11-25"
     },
     {
       "date": "2026-11-23",
@@ -550,6 +606,13 @@
       "summary": "Adds an API key field for LM Studio servers that require authentication and read-only badges on MCP tools. read_files results are no longer cut to 8k characters (up to 2,000 lines or about 48k characters), and with no saved model the Cline provider now starts on the first free model.",
       "url": "https://github.com/cline/cline/releases/tag/v4.1.27",
       "verified": "2026-11-23"
+    },
+    {
+      "date": "2026-11-20",
+      "name": "Inkling 2 Mini: Thinking Machines' open-weights coding model that runs on a laptop",
+      "summary": "A 26.4B-parameter (3.4B active) looped mixture-of-experts model that runs its middle layers three times per token. Thinking Machines says it leads open-weights models under 100B parameters on DeepSWE v1.1 (48.2%). The ~20GB checkpoint runs on Apple silicon Macs with 32GB+ memory; weights are Apache 2.0 on Hugging Face.",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "verified": "2026-11-25"
     },
     {
       "date": "2026-11-20",
@@ -1217,5 +1280,5 @@
       "verified": "2026-10-27"
     }
   ],
-  "lastVerified": "2026-11-24"
+  "lastVerified": "2026-11-25"
 }
