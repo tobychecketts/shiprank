@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "tools": [
     {
       "name": "Cursor",
@@ -304,7 +304,7 @@
       "pricingUrl": "https://www.figma.com/pricing",
       "pricingNote": "Make is on Full seats; Dev, Collab and View seats can only try it in drafts. Starter can't use team libraries and must publish to the Figma Community to publish on the public web",
       "rankReason": "Native to where designs already live",
-      "lastChecked": "2026-11-10"
+      "lastChecked": "2026-11-26"
     },
     {
       "name": "Builder.io",
@@ -403,9 +403,9 @@
       "freeTier": "Yes",
       "entryPrice": "$6/month (Starter; $1 first month intro offer)",
       "pricingUrl": "https://elevenlabs.io/pricing",
-      "pricingNote": "Creator $22/month ($11 first month); annual billing = 10x monthly",
+      "pricingNote": "Creator $22/month ($11 first month); annual billing = 10x monthly. Black Friday until 1 Dec 2026: Creator $99 for the first year, Pro up to 55% off annually",
       "rankReason": "Most natural voiceovers for demos",
-      "lastChecked": "2026-11-10"
+      "lastChecked": "2026-11-26"
     },
     {
       "name": "Descript",
@@ -509,6 +509,69 @@
     }
   ],
   "releases": [
+    {
+      "date": "2026-11-25",
+      "name": "Mellum2.1 Instruct: JetBrains' open coding model for fast agent work",
+      "summary": "JetBrains released Mellum2.1 Instruct, the non-reasoning sibling of Mellum2.1 Thinking: an open 12B mixture-of-experts model with 2.5B active parameters, built for sub-agents, tool loops and quick edits. It uses about half the tokens of the Thinking variant on agentic coding tasks, and is on Hugging Face under Apache 2.0 with GGUF files and a multi-token prediction head for up to 1.8x faster generation.",
+      "url": "https://blog.jetbrains.com/ai/2026/11/mellum2-1-instruct-is-out-bringing-faster-answers-for-coding-agents/",
+      "verified": "2026-11-26"
+    },
+    {
+      "date": "2026-11-25",
+      "name": "Go by GoLand in Cursor and VS Code (public preview)",
+      "summary": "JetBrains released a free public preview of the Go by GoLand LSP, an extension that brings GoLand's Go language intelligence to VS Code-based editors including Cursor: navigation, inspections with quick-fixes, refactoring, running, debugging, testing and completion. Each preview build expires 30 days after release.",
+      "url": "https://blog.jetbrains.com/go/2026/11/25/go-by-goland-public-preview/",
+      "verified": "2026-11-26"
+    },
+    {
+      "date": "2026-11-25",
+      "name": "Pydantic Pax coding agent and Pydantic AI Harness beta",
+      "summary": "Pydantic released Pax (pydantic-ai-pax), an open-source terminal coding agent where everything is a plugin, including the coding agent itself, plus a beta of the Pydantic AI Harness SDK ahead of 1.0 next month. Pax runs any model, swaps between local and cloud sandboxes, resumes Claude Code or Codex sessions, and in Pydantic's single-run SWE81 tests cost $9.21 a run on GPT-6.2 Sol versus $21.05 for Codex.",
+      "url": "https://pydantic.dev/articles/pax-harness-beta",
+      "verified": "2026-11-26"
+    },
+    {
+      "date": "2026-11-25",
+      "name": "Vercel Workflow SDK 5.8: new engine, 12x lower step latency",
+      "summary": "Workflow SDK 5.8 runs on a rebuilt execution engine with speculative execution for retryable steps. Vercel says step-to-step latency is 12x lower (p75 overhead 85 ms down to 7 ms) and large fan-outs use 14x less function time, speeding up durable AI agents. Upgrade to workflow@5.8.0; non-idempotent steps should set maxRetries = 0.",
+      "url": "https://vercel.com/changelog/workflows-speculative-execution",
+      "verified": "2026-11-26"
+    },
+    {
+      "date": "2026-11-25",
+      "name": "Vercel Pro: Standard builds move to usage-based billing",
+      "summary": "Existing Pro teams no longer include a Standard build slot. Standard builds now cost $0.014 per build minute, with your monthly usage credit applying to build usage, the same model as other build machines. Check build minutes on the Usage page.",
+      "url": "https://vercel.com/changelog/standard-builds-for-existing-pro-teams-have-moved-to-usage-based-billing",
+      "verified": "2026-11-26"
+    },
+    {
+      "date": "2026-11-25",
+      "name": "GitHub Copilot code review billing will default to the organization",
+      "summary": "For Copilot Business and Enterprise organizations that haven't chosen a billing option, code reviews by licensed members will be billed to the organization that owns the repository from 30 December 2026 instead of using the member's Copilot entitlement. Admins who want to keep member billing should select Member in Copilot policy settings before then.",
+      "url": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization/",
+      "verified": "2026-11-26"
+    },
+    {
+      "date": "2026-11-25",
+      "name": "GitHub Copilot CLI 1.0.116: env setting for every process",
+      "summary": "A new env setting sets environment variables for every process Copilot starts (shell commands, local LSP and MCP servers, hooks and extensions), with or without the sandbox. Also: a Jump to latest button in the fullscreen timeline, context-size choice in ACP editors, and warnings when a plugin and a standalone MCP server hit the same endpoint.",
+      "url": "https://github.com/github/copilot-cli/releases/tag/v1.0.116",
+      "verified": "2026-11-26"
+    },
+    {
+      "date": "2026-11-25",
+      "name": "Lovable: ElevenLabs speech and music models for app AI features",
+      "summary": "Apps built in Lovable can now use four ElevenLabs models (Eleven v3, Multilingual v2, Flash v2.5 and Music v2) with no ElevenLabs account or API key, charged to workspace credits as AI gateway usage once an admin enables ElevenLabs. Not available with EU inference. Automations also now work on Enterprise, so they are on all plans.",
+      "url": "https://docs.lovable.dev/changelog",
+      "verified": "2026-11-26"
+    },
+    {
+      "date": "2026-11-24",
+      "name": "Google Workspace MCP servers and CLI (GA)",
+      "summary": "Google made its Workspace MCP servers and Workspace CLI generally available, giving cloud, web and local agents governed access to Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat and Tasks with DLP rules, user confirmations and audit logging. A new AI Tools Addendum will require agents to use the MCP servers or CLI instead of REST APIs, enforced from 1 February 2027.",
+      "url": "https://workspace.google.com/blog/product-announcements/built-for-trust-and-control-new-ai-agent-protections-and-developer-tools-in-google-workspace",
+      "verified": "2026-11-26"
+    },
     {
       "date": "2026-11-25",
       "name": "Claude Code 2.1.332: skills from MCP servers (beta) and a PreSkillShellCommand hook",
@@ -1250,35 +1313,7 @@
       "summary": "Business and Enterprise workspace admins can connect their own services: Events notify your HTTPS endpoint when a project is created, published, transferred or deleted, and Hooks let your endpoint allow or block an action first, such as screening chat messages for sensitive data. Also new: a Scrive connector for e-signatures and eID.",
       "url": "https://docs.lovable.dev/changelog",
       "verified": "2026-10-30"
-    },
-    {
-      "name": "Runway App Studio",
-      "date": "2026-10-26",
-      "summary": "Describe a creative tool in plain language and Runway builds, tests and deploys a custom app that generates images, video and audio using your Brand Kits and Workflows. Share it with your team or publish a link; code stays visible and you can roll back versions.",
-      "url": "https://runway.com/news/company-news/introducing-runway-app-studio",
-      "verified": "2026-10-27"
-    },
-    {
-      "name": "GitHub Copilot assisted permissions (GA)",
-      "date": "2026-10-26",
-      "summary": "When Copilot asks to run a command, touch a path or open a URL, a model evaluates the request: clearly safe ones proceed automatically, the rest still need your approval. Generally available in Copilot CLI (/permissions), the Copilot app and VS Code, with enterprise controls.",
-      "url": "https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available/",
-      "verified": "2026-10-27"
-    },
-    {
-      "name": "GPT-6.1 Terra in GitHub Copilot",
-      "date": "2026-10-26",
-      "summary": "OpenAI's newest model is generally available in Copilot for everyday agentic coding and terminal work at a lower cost than GPT-6.1 Sol. Available on Pro, Pro+, Max, Business and Enterprise across VS Code, Copilot CLI, cloud agent, JetBrains, Xcode and more; billed at provider list pricing.",
-      "url": "https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot/",
-      "verified": "2026-10-27"
-    },
-    {
-      "name": "Entire Git forge for agents and humans",
-      "date": "2026-10-26",
-      "summary": "Former GitHub CEO Thomas Dohmke's Entire launched a Git-compatible forge built for coding agents. It replaces pull requests with Trails (agent-scored evals on every push), adds Continuous Memory that syncs agent sessions into the repo, and integrates with Buildkite and Depot CI. Available to every developer today.",
-      "url": "https://entire.com/news/entire-launches-an-independent-git-forge-for-agent-human-collaboration",
-      "verified": "2026-10-27"
     }
   ],
-  "lastVerified": "2026-11-25"
+  "lastVerified": "2026-11-26"
 }
