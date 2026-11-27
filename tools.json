@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "tools": [
     {
       "name": "Cursor",
@@ -49,7 +49,7 @@
       "rank": 3,
       "url": "https://devin.ai/desktop",
       "bestFor": "Agentic editing with an AI-native editor",
-      "pricing": "Free tier: Yes · Entry: $20/month (Pro)",
+      "pricing": "Free tier: Yes · Entry: $20/month (Pro); Max $200/month",
       "pros": [
         "Agentic flows"
       ],
@@ -57,11 +57,11 @@
         "Smaller ecosystem"
       ],
       "freeTier": "Yes",
-      "entryPrice": "$20/month (Pro)",
+      "entryPrice": "$20/month (Pro); Max $200/month",
       "pricingUrl": "https://devin.ai/pricing",
       "pricingNote": "Windsurf is now Devin Desktop (windsurf.com redirects to devin.ai); Max plan $200/month",
       "rankReason": "Capable agentic editor but smaller ecosystem than the top two",
-      "lastChecked": "2026-11-13"
+      "lastChecked": "2026-11-27"
     },
     {
       "name": "Lovable",
@@ -191,7 +191,7 @@
       "rank": 3,
       "url": "https://devin.ai",
       "bestFor": "Autonomous delegated engineering tasks",
-      "pricing": "Free tier: Yes · Entry: $20/month (Pro)",
+      "pricing": "Free tier: Yes · Entry: $20/month (Pro); Max $200/month",
       "pros": [
         "Highly autonomous"
       ],
@@ -199,11 +199,11 @@
         "Pricier for individuals"
       ],
       "freeTier": "Yes",
-      "entryPrice": "$20/month (Pro)",
+      "entryPrice": "$20/month (Pro); Max $200/month",
       "pricingUrl": "https://devin.ai/pricing",
       "pricingNote": "devin.ai/pricing shows the same plan page as Windsurf (Free/Pro/Max $200)",
       "rankReason": "Most autonomous option, best for delegated tasks rather than hands-on coding",
-      "lastChecked": "2026-11-13"
+      "lastChecked": "2026-11-27"
     },
     {
       "name": "OpenAI API",
@@ -510,6 +510,20 @@
   ],
   "releases": [
     {
+      "date": "2026-11-26",
+      "name": "Lovable: Cal.com, Ghost, Magento and Squarespace Commerce connectors, plus Claude Haiku 5.5 for app AI",
+      "summary": "Lovable added four app and chat connectors: Cal.com for bookings, Ghost for posts and newsletter members, Magento (Adobe Commerce) for products, orders and stock, and Squarespace Commerce for orders and stock levels. App AI features can now use Claude Haiku 5.5; Claude Haiku 4.5 retires on 2 December 2026 and its requests move to Haiku 5.5, which rejects some settings such as a custom temperature, so apps on Haiku 4.5 should switch models before then.",
+      "url": "https://docs.lovable.dev/changelog",
+      "verified": "2026-11-27"
+    },
+    {
+      "date": "2026-11-25",
+      "name": "Devin Desktop (Windsurf) 3.15.14: in-app browser tab",
+      "summary": "Devin Desktop (Windsurf) v3.15.14 adds an in-app Browser tab that opens web pages, local dev servers and Devin Cloud exposed ports next to your session, with persistent cookies, element and area selection for chat, and agent browser control. It also adds an Insert in terminal button for shell code blocks and split-pane session links.",
+      "url": "https://windsurf.com/changelog",
+      "verified": "2026-11-27"
+    },
+    {
       "date": "2026-11-25",
       "name": "Mellum2.1 Instruct: JetBrains' open coding model for fast agent work",
       "summary": "JetBrains released Mellum2.1 Instruct, the non-reasoning sibling of Mellum2.1 Thinking: an open 12B mixture-of-experts model with 2.5B active parameters, built for sub-agents, tool loops and quick edits. It uses about half the tokens of the Thinking variant on agentic coding tasks, and is on Hugging Face under Apache 2.0 with GGUF files and a multi-token prediction head for up to 1.8x faster generation.",
@@ -566,18 +580,18 @@
       "verified": "2026-11-26"
     },
     {
-      "date": "2026-11-24",
-      "name": "Google Workspace MCP servers and CLI (GA)",
-      "summary": "Google made its Workspace MCP servers and Workspace CLI generally available, giving cloud, web and local agents governed access to Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat and Tasks with DLP rules, user confirmations and audit logging. A new AI Tools Addendum will require agents to use the MCP servers or CLI instead of REST APIs, enforced from 1 February 2027.",
-      "url": "https://workspace.google.com/blog/product-announcements/built-for-trust-and-control-new-ai-agent-protections-and-developer-tools-in-google-workspace",
-      "verified": "2026-11-26"
-    },
-    {
       "date": "2026-11-25",
       "name": "Claude Code 2.1.332: skills from MCP servers (beta) and a PreSkillShellCommand hook",
       "summary": "MCP servers can now ship skills, which show as server:skill in the / menu (beta). A new PreSkillShellCommand hook can refuse a skill's inline shell commands as it loads, and a long list of fixes targets freezes from flooding hooks and MCP servers, compaction failures and SSE MCP servers that hung after a dropped stream.",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
       "verified": "2026-11-25"
+    },
+    {
+      "date": "2026-11-24",
+      "name": "Google Workspace MCP servers and CLI (GA)",
+      "summary": "Google made its Workspace MCP servers and Workspace CLI generally available, giving cloud, web and local agents governed access to Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat and Tasks with DLP rules, user confirmations and audit logging. A new AI Tools Addendum will require agents to use the MCP servers or CLI instead of REST APIs, enforced from 1 February 2027.",
+      "url": "https://workspace.google.com/blog/product-announcements/built-for-trust-and-control-new-ai-agent-protections-and-developer-tools-in-google-workspace",
+      "verified": "2026-11-26"
     },
     {
       "date": "2026-11-24",
@@ -1299,21 +1313,7 @@
       "summary": "Android Studio Rabbit 2 is stable with Bring Your Own Agent: plug in 40+ ACP-compatible coding agents, including Claude Agent, OpenAI Codex, Junie and Google Antigravity, with access to the emulator, build tools and Logcat. You sign in with your own subscription or API key; the built-in agent stays free.",
       "url": "https://developer.android.com/blog/posts/ai-agents-android-studio-integration",
       "verified": "2026-10-31"
-    },
-    {
-      "date": "2026-10-27",
-      "name": "OpenAI Codex CLI 0.165",
-      "summary": "Adds a built-in Google Cloud Vertex AI provider (model_provider = \"gcp\"), GPT-6.1 Terra in the model catalogs, a repository filter in the session picker, reasoning-effort changes mid-conversation by default, and memory v2 by default for fresh profiles.",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.165.0",
-      "verified": "2026-10-30"
-    },
-    {
-      "date": "2026-10-27",
-      "name": "Lovable Events & Hooks",
-      "summary": "Business and Enterprise workspace admins can connect their own services: Events notify your HTTPS endpoint when a project is created, published, transferred or deleted, and Hooks let your endpoint allow or block an action first, such as screening chat messages for sensitive data. Also new: a Scrive connector for e-signatures and eID.",
-      "url": "https://docs.lovable.dev/changelog",
-      "verified": "2026-10-30"
     }
   ],
-  "lastVerified": "2026-11-26"
+  "lastVerified": "2026-11-27"
 }
